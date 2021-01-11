@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-11 Mon 16:42 -->
+<!-- 2021-01-11 Mon 16:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CSC108H5F Notes</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Desmond Wang" />
-<link rel="stylesheet" type="text/css" href="./style/org_offical_theme.css" />
+<link rel="stylesheet" type="text/css" href="style/org_offical_theme.css" />
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
@@ -65,369 +65,369 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2bffbaf">1. Notes</a></li>
-<li><a href="#org1efbd75">2. Python As A Calculator (Operations)</a>
+<li><a href="#org8f53a32">1. Notes</a></li>
+<li><a href="#org1149a41">2. Python As A Calculator (Operations)</a>
 <ul>
-<li><a href="#orgd296366">2.1. <b>Standard Arithmetic</b></a></li>
-<li><a href="#org968b619">2.2. <b>Other Operations</b></a></li>
-<li><a href="#orgce16ebb">2.3. Type of Variable</a></li>
-<li><a href="#org4b1af21">2.4. Division Algorithm</a>
+<li><a href="#org026c549">2.1. <b>Standard Arithmetic</b></a></li>
+<li><a href="#orgf441f46">2.2. <b>Other Operations</b></a></li>
+<li><a href="#org3cbb4d9">2.3. Type of Variable</a></li>
+<li><a href="#orgb66b56e">2.4. Division Algorithm</a>
 <ul>
-<li><a href="#org341f83b">2.4.1. Task</a></li>
+<li><a href="#org8f5ce40">2.4.1. Task</a></li>
 </ul>
 </li>
-<li><a href="#org7e5f85b">2.5. Variable</a>
+<li><a href="#org024b3cf">2.5. Variable</a>
 <ul>
-<li><a href="#org4a69a72">2.5.1. Task</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org384cd0c">3. Designing Functions</a>
-<ul>
-<li><a href="#org212094a">3.1. Functions</a>
-<ul>
-<li><a href="#orgb4dd25b">3.1.1. Question 1</a></li>
+<li><a href="#org7bb0281">2.5.1. Task</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgc562d18">4. Return Statement</a>
+<li><a href="#org3f58556">3. Designing Functions</a>
 <ul>
-<li><a href="#orgdde9fa9">4.1. Definition 1 (return)</a>
+<li><a href="#orgb86fa98">3.1. Functions</a>
 <ul>
-<li><a href="#orgc9cfae4">4.1.1. Question 2</a></li>
-<li><a href="#org6b9d127">4.1.2. Question 3</a></li>
-<li><a href="#org3f78cf4">4.1.3. Question 4</a></li>
-<li><a href="#org3a9263e">4.1.4. Question 5</a></li>
-<li><a href="#orgcb67468">4.1.5. Task 1 (Area of Triangle)</a></li>
+<li><a href="#org69e267f">3.1.1. Question 1</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgb3eeae6">5. Improving Our Functions (Doc Strings)</a>
+<li><a href="#org3970ad2">4. Return Statement</a>
 <ul>
-<li><a href="#org7e5ac8b">5.1. Definition 2 (Python Function)</a></li>
-</ul>
-</li>
-<li><a href="#org523cecf">6. Logical Operations and Constants</a>
+<li><a href="#orgcf5aa42">4.1. Definition 1 (return)</a>
 <ul>
-<li><a href="#orgb9f937a">6.1. Basic Operands of Logic</a></li>
-<li><a href="#org149d665">6.2. Definition 1 (Boolean domain)</a></li>
-<li><a href="#orgaf3d8dd">6.3. Definition 2 (Predicate)</a>
-<ul>
-<li><a href="#orgb58bae9">6.3.1. Example</a></li>
-<li><a href="#orge025b35">6.3.2. Question 1</a></li>
-</ul>
-</li>
-<li><a href="#org3050a84">6.4. Definition 4 (And)</a></li>
-<li><a href="#org962c658">6.5. Definition 5 (Or)</a>
-<ul>
-<li><a href="#org88b4496">6.5.1. Example</a></li>
-</ul>
-</li>
-<li><a href="#org655a44b">6.6. Definition 7 (Not)</a></li>
-<li><a href="#org25cb059">6.7. Short Circuits / Lazy Computation</a>
-<ul>
-<li><a href="#org13c240a">6.7.1. Example</a></li>
-<li><a href="#orge155189">6.7.2. Task</a></li>
+<li><a href="#org8f2e28a">4.1.1. Question 2</a></li>
+<li><a href="#org8c8ca9c">4.1.2. Question 3</a></li>
+<li><a href="#org05f1052">4.1.3. Question 4</a></li>
+<li><a href="#org57c7c3c">4.1.4. Question 5</a></li>
+<li><a href="#org6dbe0ba">4.1.5. Task 1 (Area of Triangle)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgdcbb45a">7. Scope (Global and Local Variables)</a>
+<li><a href="#orgf0369d5">5. Improving Our Functions (Doc Strings)</a>
 <ul>
-<li><a href="#org18abb4c">7.1. Definition 1 (Scope)</a>
+<li><a href="#orge07f7a1">5.1. Definition 2 (Python Function)</a></li>
+</ul>
+</li>
+<li><a href="#org0e6761e">6. Logical Operations and Constants</a>
 <ul>
-<li><a href="#org6371bd8">7.1.1. Task</a></li>
+<li><a href="#org2c85c3a">6.1. Basic Operands of Logic</a></li>
+<li><a href="#org50ebc98">6.2. Definition 1 (Boolean domain)</a></li>
+<li><a href="#orgd5541af">6.3. Definition 2 (Predicate)</a>
+<ul>
+<li><a href="#org58a97b0">6.3.1. Example</a></li>
+<li><a href="#orga5265e6">6.3.2. Question 1</a></li>
+</ul>
+</li>
+<li><a href="#orge243862">6.4. Definition 4 (And)</a></li>
+<li><a href="#orgbc55c48">6.5. Definition 5 (Or)</a>
+<ul>
+<li><a href="#org4479744">6.5.1. Example</a></li>
+</ul>
+</li>
+<li><a href="#org5b1d930">6.6. Definition 7 (Not)</a></li>
+<li><a href="#org00b795f">6.7. Short Circuits / Lazy Computation</a>
+<ul>
+<li><a href="#org8e013b3">6.7.1. Example</a></li>
+<li><a href="#org65ca758">6.7.2. Task</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgab667d5">8. Design Recipe</a>
+<li><a href="#orgc7e83b3">7. Scope (Global and Local Variables)</a>
 <ul>
-<li><a href="#org60e3c74">8.1. Step 1</a></li>
-<li><a href="#org1056b35">8.2. Step 2</a></li>
-<li><a href="#orgf7e7ead">8.3. Step 3</a></li>
-<li><a href="#org75a47c0">8.4. Step 4</a></li>
-<li><a href="#orge5601bf">8.5. Step 5</a></li>
-</ul>
-</li>
-<li><a href="#org6b1d8a1">9. Doctest</a></li>
-<li><a href="#org9f760c7">10. String</a>
+<li><a href="#org8f64eaf">7.1. Definition 1 (Scope)</a>
 <ul>
-<li><a href="#orgbd7fce5">10.1. Definition 1 (String)</a></li>
-<li><a href="#org1e224ca">10.2. Adding Strings</a></li>
-<li><a href="#orgb83b773">10.3. String Equality</a></li>
-<li><a href="#org89888d0">10.4. Comparing Strings</a></li>
-<li><a href="#org6c96d8e">10.5. New Line</a></li>
-<li><a href="#orga0fdb7d">10.6. Tab</a></li>
-<li><a href="#org4da9a06">10.7. Numbers versus Strings</a></li>
-<li><a href="#orgdb2fd10">10.8. Substitution</a></li>
-<li><a href="#org28531da">10.9. Length</a></li>
-<li><a href="#orgd028406">10.10. Inclusion</a></li>
-<li><a href="#orgba22440">10.11. String Indexing</a></li>
-<li><a href="#org78b4a8d">10.12. String Slicing</a></li>
-<li><a href="#org7088f85">10.13. Immutability of Strings</a></li>
-</ul>
-</li>
-<li><a href="#org96ea0ef">11. Methods</a>
-<ul>
-<li><a href="#orge883854">11.1. Built-In String Methods</a></li>
-<li><a href="#org30e0960">11.2. Interpreting Help</a></li>
-<li><a href="#orgfe99cc1">11.3. Parameters and Replacement</a></li>
-<li><a href="#orgd00e53e">11.4. Padding</a></li>
-<li><a href="#orgec11729">11.5. Justification</a></li>
-<li><a href="#org3ec5e5f">11.6. Precision</a></li>
-<li><a href="#org5520f74">11.7. Runtime Formatting</a></li>
-</ul>
-</li>
-<li><a href="#orge9766c8">12. If Statement</a>
-<ul>
-<li><a href="#orgfb42523">12.1. Definition 1 (If-Statement)</a></li>
-<li><a href="#org1239123">12.2. If-Then</a></li>
-<li><a href="#org2459693">12.3. Warning</a></li>
-<li><a href="#org25f7cbc">12.4. If-Then-Else</a></li>
-<li><a href="#org65db026">12.5. Else-If</a>
-<ul>
-<li><a href="#org6f210dd">12.5.1. Else-If-Else</a></li>
+<li><a href="#org06e4f64">7.1.1. Task</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgbe7c53c">13. Useful Python Knowledge</a>
+<li><a href="#orga47cf5a">8. Design Recipe</a>
 <ul>
-<li><a href="#org88c0d47">13.1. Definition 1 (Python Assignment Operators)</a></li>
-<li><a href="#orgc0ac38a">13.2. Ordinals and Characters</a></li>
-<li><a href="#orgd36e0ac">13.3. Definition 2 (Factoring)</a></li>
-<li><a href="#org2474972">13.4. Definition 3 (Refactoring)</a></li>
-<li><a href="#org8a29f72">13.5. Simplifying If-Statement</a></li>
+<li><a href="#org0d2a9d7">8.1. Step 1</a></li>
+<li><a href="#orgd4cebdf">8.2. Step 2</a></li>
+<li><a href="#org39e1838">8.3. Step 3</a></li>
+<li><a href="#org18f7bc0">8.4. Step 4</a></li>
+<li><a href="#org9b76f7e">8.5. Step 5</a></li>
 </ul>
 </li>
-<li><a href="#org17ae425">14. For Loop</a>
+<li><a href="#org53cb3c4">9. Doctest</a></li>
+<li><a href="#org818677b">10. String</a>
 <ul>
-<li><a href="#orgcf7a4f8">14.1. Definition 1 (Loop)</a></li>
-<li><a href="#org04e5b97">14.2. Definition 2 (For-Loop)</a></li>
-<li><a href="#orga287cc8">14.3. Definition 3 (For-Loop)</a></li>
-<li><a href="#org991ad88">14.4. Definition 4 (Accumulator)</a></li>
-<li><a href="#org0154aeb">14.5. Definition 5 (Range)</a></li>
+<li><a href="#org19ba17c">10.1. Definition 1 (String)</a></li>
+<li><a href="#org962816b">10.2. Adding Strings</a></li>
+<li><a href="#org1de28d1">10.3. String Equality</a></li>
+<li><a href="#org26a9cbe">10.4. Comparing Strings</a></li>
+<li><a href="#org11ecc5e">10.5. New Line</a></li>
+<li><a href="#org14f8d69">10.6. Tab</a></li>
+<li><a href="#orgb315857">10.7. Numbers versus Strings</a></li>
+<li><a href="#orgcdd6e7d">10.8. Substitution</a></li>
+<li><a href="#org06e4b89">10.9. Length</a></li>
+<li><a href="#orged9b6b1">10.10. Inclusion</a></li>
+<li><a href="#org942d275">10.11. String Indexing</a></li>
+<li><a href="#orgca5fdf0">10.12. String Slicing</a></li>
+<li><a href="#org3309d7b">10.13. Immutability of Strings</a></li>
 </ul>
 </li>
-<li><a href="#org7d33a6e">15. Nesting For-Loops</a>
+<li><a href="#org31152b5">11. Methods</a>
 <ul>
-<li><a href="#org4d29af7">15.1. Definition 1 (Nesting For-Loop)</a></li>
-<li><a href="#orgebbcdcd">15.2. Definition 2 (Nested For-Loop with Range)</a></li>
-<li><a href="#org8100595">15.3. Definition 3 (Enumerate)</a></li>
+<li><a href="#orga72a060">11.1. Built-In String Methods</a></li>
+<li><a href="#org6a35a64">11.2. Interpreting Help</a></li>
+<li><a href="#orgd212a7f">11.3. Parameters and Replacement</a></li>
+<li><a href="#org1ac93be">11.4. Padding</a></li>
+<li><a href="#org521aff5">11.5. Justification</a></li>
+<li><a href="#org866f53c">11.6. Precision</a></li>
+<li><a href="#org2116add">11.7. Runtime Formatting</a></li>
 </ul>
 </li>
-<li><a href="#org07513ea">16. While Loop</a>
+<li><a href="#orge161a0e">12. If Statement</a>
 <ul>
-<li><a href="#orgdf5e57b">16.1. Definition 2 (While-Loop)</a></li>
-<li><a href="#org1c977e3">16.2. Definition 3 (While-Loop)</a></li>
-<li><a href="#orgb965b05">16.3. Converting For to While</a></li>
-<li><a href="#org30b4008">16.4. Motivation</a>
+<li><a href="#orge2dc090">12.1. Definition 1 (If-Statement)</a></li>
+<li><a href="#org0601a1c">12.2. If-Then</a></li>
+<li><a href="#org8f62d84">12.3. Warning</a></li>
+<li><a href="#org8f4932f">12.4. If-Then-Else</a></li>
+<li><a href="#org6f2a1f2">12.5. Else-If</a>
 <ul>
-<li><a href="#org7c1b343">16.4.1. Single Command</a></li>
-<li><a href="#orgfb405ed">16.4.2. A word on random number generation</a></li>
-</ul>
-</li>
-<li><a href="#org12da8bb">16.5. Definition 4 (Break)</a></li>
-<li><a href="#org3f5c57d">16.6. Definition 5 (Do-While)</a></li>
-<li><a href="#org412c0c1">16.7. Do-While</a></li>
-<li><a href="#org7282d93">16.8. User Input</a></li>
-</ul>
-</li>
-<li><a href="#org86b4d21">17. List</a>
-<ul>
-<li><a href="#orgc710f89">17.1. Definition 1 (List)</a></li>
-<li><a href="#org1da7efc">17.2. Comparison</a></li>
-<li><a href="#orgb8d94ae">17.3. Add new elements</a></li>
-<li><a href="#orgccea52b">17.4. Remove elements</a></li>
-<li><a href="#org976d73f">17.5. Copy the list</a></li>
-<li><a href="#org7f523fa">17.6. Sort and reverse the elements</a></li>
-<li><a href="#orgb4dc472">17.7. Passing Lists to Functions</a></li>
-<li><a href="#orgae24c6a">17.8. Warning</a></li>
-<li><a href="#org7652282">17.9. Slicing</a></li>
-<li><a href="#orgce967c2">17.10. Range</a></li>
-<li><a href="#org612a994">17.11. List Comprehension</a></li>
-<li><a href="#org7fc492c">17.12. Nested For-Loop with Lists</a></li>
-<li><a href="#org49d6b91">17.13. Nested Loops</a></li>
-</ul>
-</li>
-<li><a href="#org64a1ac7">18. Files</a>
-<ul>
-<li><a href="#orgd77e8bb">18.1. Example 1</a></li>
-<li><a href="#org473df67">18.2. Open and close files</a></li>
-<li><a href="#org152c34b">18.3. Writing to Files</a></li>
-<li><a href="#org6b1b714">18.4. Appending to Files</a></li>
-</ul>
-</li>
-<li><a href="#org1c55c1e">19. CSV</a>
-<ul>
-<li><a href="#orgd7afd28">19.1. Definition 1 (CSV)</a>
-<ul>
-<li><a href="#org7aba4a9">19.1.1. Example</a></li>
-</ul>
-</li>
-<li><a href="#orgc552ca4">19.2. Reading from CSV</a></li>
-<li><a href="#org669717b">19.3. Headers</a></li>
-<li><a href="#org7bf7e2d">19.4. Writing to a CSV</a></li>
-</ul>
-</li>
-<li><a href="#orgbd2fc64">20. Dictionary</a>
-<ul>
-<li><a href="#org42f9080">20.1. Hash Function</a>
-<ul>
-<li><a href="#org0f20890">20.1.1. Example</a></li>
-</ul>
-</li>
-<li><a href="#org9d9efb9">20.2. Definition 3 (Dictionary)</a>
-<ul>
-<li><a href="#org71effd3">20.2.1. items</a></li>
-<li><a href="#orgff71863">20.2.2. values</a></li>
-<li><a href="#org50b5f2d">20.2.3. keys</a></li>
-<li><a href="#org49e02f7">20.2.4. get</a></li>
-</ul>
-</li>
-<li><a href="#org1b073f6">20.3. for loops with dictionaries</a>
-<ul>
-<li><a href="#org02b5895">20.3.1. Example</a></li>
+<li><a href="#orgc9e6a44">12.5.1. Else-If-Else</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org6da43ea">21. Tuple</a>
+<li><a href="#orga65f667">13. Useful Python Knowledge</a>
 <ul>
-<li><a href="#org81c0b50">21.1. Definition 1 (Tuple)</a></li>
+<li><a href="#org8b7d926">13.1. Definition 1 (Python Assignment Operators)</a></li>
+<li><a href="#org116343c">13.2. Ordinals and Characters</a></li>
+<li><a href="#org95b7f6d">13.3. Definition 2 (Factoring)</a></li>
+<li><a href="#org5234fa9">13.4. Definition 3 (Refactoring)</a></li>
+<li><a href="#org3949247">13.5. Simplifying If-Statement</a></li>
 </ul>
 </li>
-<li><a href="#org1b668ab">22. Nesting Dictionary</a></li>
-<li><a href="#orgc6d8cc7">23. Lazy Literature</a>
+<li><a href="#org1701b69">14. For Loop</a>
 <ul>
-<li><a href="#orgcf56446">23.1. Goal</a></li>
-<li><a href="#orgeb72dce">23.2. Plan</a></li>
-<li><a href="#org4bcebf3">23.3. Learn</a></li>
+<li><a href="#orgd90d639">14.1. Definition 1 (Loop)</a></li>
+<li><a href="#orgd62c95f">14.2. Definition 2 (For-Loop)</a></li>
+<li><a href="#org39fd878">14.3. Definition 3 (For-Loop)</a></li>
+<li><a href="#org163517c">14.4. Definition 4 (Accumulator)</a></li>
+<li><a href="#orgb9a70ae">14.5. Definition 5 (Range)</a></li>
 </ul>
 </li>
-<li><a href="#orgc4d1fe9">24. Doctest</a>
+<li><a href="#org9ae7df3">15. Nesting For-Loops</a>
 <ul>
-<li><a href="#orgf247b1f">24.1. Sample Test</a></li>
-<li><a href="#orga3a7f31">24.2. Doctest Outputs</a></li>
-<li><a href="#orga970b16">24.3. Factorial (Corrected Version)</a></li>
-<li><a href="#orgce19312">24.4. Writing Good Doctests</a></li>
-<li><a href="#orgbe7d2e2">24.5. Black-Box Approach</a></li>
-<li><a href="#org96017b9">24.6. White Space</a></li>
-<li><a href="#org0839975">24.7. Sets</a></li>
-<li><a href="#org8cf0166">24.8. Mulitiline Docstring</a></li>
-<li><a href="#orge0d84ca">24.9. White-Box Approach</a></li>
-<li><a href="#orge71ceaf">24.10. Levels of Testing</a></li>
-<li><a href="#orgc389880">24.11. Unit Testing</a></li>
-<li><a href="#orgf95b9bb">24.12. Example</a></li>
-<li><a href="#orgc092de4">24.13. Code Coverage</a></li>
-<li><a href="#org1d96bbc">24.14. Teseing Tips</a></li>
+<li><a href="#org9a6bb60">15.1. Definition 1 (Nesting For-Loop)</a></li>
+<li><a href="#org6762e54">15.2. Definition 2 (Nested For-Loop with Range)</a></li>
+<li><a href="#orge9220c7">15.3. Definition 3 (Enumerate)</a></li>
 </ul>
 </li>
-<li><a href="#orgb392aae">25. Regular Expressions (Regex)</a>
+<li><a href="#org990adb1">16. While Loop</a>
 <ul>
-<li><a href="#org6cea5df">25.1. Definition 1</a></li>
-<li><a href="#org338b5a8">25.2. Rules</a>
+<li><a href="#org1a2e6ba">16.1. Definition 2 (While-Loop)</a></li>
+<li><a href="#orge790c32">16.2. Definition 3 (While-Loop)</a></li>
+<li><a href="#org261d3a2">16.3. Converting For to While</a></li>
+<li><a href="#org12decab">16.4. Motivation</a>
 <ul>
-<li><a href="#org00d68c5">25.2.1. Simple Usage</a></li>
+<li><a href="#orgc687e79">16.4.1. Single Command</a></li>
+<li><a href="#org7a36faf">16.4.2. A word on random number generation</a></li>
 </ul>
 </li>
-<li><a href="#org6f8c979">25.3. Find all phone numbers with are code 416</a></li>
-<li><a href="#org9777970">25.4. Findall</a>
-<ul>
-<li><a href="#org62c7c78">25.4.1. Algorithm Steps</a></li>
+<li><a href="#org0c6a0e9">16.5. Definition 4 (Break)</a></li>
+<li><a href="#orge1ee9cc">16.6. Definition 5 (Do-While)</a></li>
+<li><a href="#org107dbca">16.7. Do-While</a></li>
+<li><a href="#org58de4d4">16.8. User Input</a></li>
 </ul>
 </li>
-<li><a href="#orgbb3a846">25.5. More Examples</a>
+<li><a href="#org86b63f0">17. List</a>
 <ul>
-<li><a href="#orge0fba7a">25.5.1. Find special characters</a></li>
-<li><a href="#org1e12b41">25.5.2. Groups</a></li>
-<li><a href="#orgd0f0a76">25.5.3. Or</a></li>
-<li><a href="#orgfa3463d">25.5.4. Words</a></li>
+<li><a href="#org4cc16ac">17.1. Definition 1 (List)</a></li>
+<li><a href="#org89e2c58">17.2. Comparison</a></li>
+<li><a href="#org01f7ec0">17.3. Add new elements</a></li>
+<li><a href="#org99e614e">17.4. Remove elements</a></li>
+<li><a href="#orgd0f3541">17.5. Copy the list</a></li>
+<li><a href="#org257314a">17.6. Sort and reverse the elements</a></li>
+<li><a href="#orgf814b05">17.7. Passing Lists to Functions</a></li>
+<li><a href="#org276c30e">17.8. Warning</a></li>
+<li><a href="#orge2400f8">17.9. Slicing</a></li>
+<li><a href="#orge123b2d">17.10. Range</a></li>
+<li><a href="#orgc68e40c">17.11. List Comprehension</a></li>
+<li><a href="#org1182238">17.12. Nested For-Loop with Lists</a></li>
+<li><a href="#orgc0ac115">17.13. Nested Loops</a></li>
 </ul>
 </li>
+<li><a href="#org2f301f3">18. Files</a>
+<ul>
+<li><a href="#org5e09755">18.1. Example 1</a></li>
+<li><a href="#org56c72df">18.2. Open and close files</a></li>
+<li><a href="#org2122a41">18.3. Writing to Files</a></li>
+<li><a href="#org090b252">18.4. Appending to Files</a></li>
 </ul>
 </li>
-<li><a href="#org7f129f7">26. Algorithms</a>
+<li><a href="#orgde92ed9">19. CSV</a>
 <ul>
-<li><a href="#orgd1d3571">26.1. Selection Sort</a></li>
-<li><a href="#org4e672ed">26.2. time.time</a></li>
-<li><a href="#org9baf968">26.3. Insertion Sort</a></li>
-<li><a href="#orgb8d3275">26.4. Bubble Sort</a></li>
-<li><a href="#orgccc6519">26.5. Merge Sort</a>
+<li><a href="#org448e8e4">19.1. Definition 1 (CSV)</a>
 <ul>
-<li><a href="#orgeff8793">26.5.1. Split</a></li>
-<li><a href="#org58b4dc6">26.5.2. Merge</a></li>
+<li><a href="#orgc7e2a70">19.1.1. Example</a></li>
 </ul>
 </li>
-<li><a href="#orgd23ba13">26.6. Other Sorting</a></li>
+<li><a href="#org34b186a">19.2. Reading from CSV</a></li>
+<li><a href="#org18dc931">19.3. Headers</a></li>
+<li><a href="#org68a9ef0">19.4. Writing to a CSV</a></li>
 </ul>
 </li>
-<li><a href="#org7ea1c81">27. Timing and Complexity</a>
+<li><a href="#org4df0812">20. Dictionary</a>
 <ul>
-<li><a href="#org1955c69">27.1. Definition 1 (Complexity)</a>
+<li><a href="#orgd6ed15b">20.1. Hash Function</a>
 <ul>
-<li><a href="#orge0b4bdf">27.1.1. Linear</a></li>
+<li><a href="#orga652007">20.1.1. Example</a></li>
 </ul>
 </li>
-<li><a href="#org0513d26">27.2. Definition 2 (Big-Oh Notation)</a>
+<li><a href="#org23cfc68">20.2. Definition 3 (Dictionary)</a>
 <ul>
-<li><a href="#orge0d94d7">27.2.1. Example</a></li>
-<li><a href="#org59fc0a8">27.2.2. Quadratic</a></li>
-<li><a href="#org8378b56">27.2.3. Constant</a></li>
-<li><a href="#org7ccae58">27.2.4. Logarithmic</a></li>
+<li><a href="#org7f7eeba">20.2.1. items</a></li>
+<li><a href="#org3453312">20.2.2. values</a></li>
+<li><a href="#orga535e1c">20.2.3. keys</a></li>
+<li><a href="#orgbc5459f">20.2.4. get</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#org6fa3762">28. Object Oriented Programming (OOP)</a>
+<li><a href="#orgccb79a1">20.3. for loops with dictionaries</a>
 <ul>
-<li><a href="#orgc5d6d51">28.1. Definition 1 (Object)</a></li>
-<li><a href="#org0d5075d">28.2. Instantiation vs. Initialization vs. Declaration</a>
-<ul>
-<li><a href="#orgf5b3c30">28.2.1. Initializing</a></li>
-<li><a href="#org983a400">28.2.2. Equality</a></li>
-<li><a href="#orgdac429a">28.2.3. Aliasing</a></li>
+<li><a href="#org09d9e5a">20.3.1. Example</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org1bb2fb6">29. Nesting</a>
+<li><a href="#orgef96684">21. Tuple</a>
 <ul>
-<li><a href="#org0a176ae">29.1. Nested List</a></li>
-<li><a href="#org5a72db3">29.2. Dictionary of Lists</a></li>
-<li><a href="#org0e864fa">29.3. Dictionary of Dictionaries</a></li>
-<li><a href="#orgd784bba">29.4. Methods</a>
-<ul>
-<li><a href="#org6808a37">29.4.1. Example 1</a></li>
-<li><a href="#org4827f96">29.4.2. Example 2</a></li>
+<li><a href="#org7aeaa86">21.1. Definition 1 (Tuple)</a></li>
 </ul>
 </li>
-<li><a href="#orge61d97a">29.5. Private Variables</a>
+<li><a href="#org3d2f040">22. Nesting Dictionary</a></li>
+<li><a href="#orgaaed99b">23. Lazy Literature</a>
 <ul>
-<li><a href="#orgf815c93">29.5.1. Underscores</a></li>
-<li><a href="#org3c53cb9">29.5.2. Magic Methods</a></li>
-<li><a href="#orgf70eec0">29.5.3. More Magic Methods</a></li>
+<li><a href="#org1defb51">23.1. Goal</a></li>
+<li><a href="#orga1620bf">23.2. Plan</a></li>
+<li><a href="#org50a5417">23.3. Learn</a></li>
 </ul>
 </li>
-<li><a href="#org04901ae">29.6. Inheritance</a></li>
+<li><a href="#org96f8394">24. Doctest</a>
+<ul>
+<li><a href="#org4ca921a">24.1. Sample Test</a></li>
+<li><a href="#org434c3e4">24.2. Doctest Outputs</a></li>
+<li><a href="#org19414a2">24.3. Factorial (Corrected Version)</a></li>
+<li><a href="#orgeaafbec">24.4. Writing Good Doctests</a></li>
+<li><a href="#org00b8b86">24.5. Black-Box Approach</a></li>
+<li><a href="#org370eee1">24.6. White Space</a></li>
+<li><a href="#org5e5524c">24.7. Sets</a></li>
+<li><a href="#orgd485662">24.8. Mulitiline Docstring</a></li>
+<li><a href="#org9ce7911">24.9. White-Box Approach</a></li>
+<li><a href="#org3935e69">24.10. Levels of Testing</a></li>
+<li><a href="#org6108a96">24.11. Unit Testing</a></li>
+<li><a href="#org7c3a47a">24.12. Example</a></li>
+<li><a href="#orgb59fd07">24.13. Code Coverage</a></li>
+<li><a href="#orgc77f9b2">24.14. Teseing Tips</a></li>
+</ul>
+</li>
+<li><a href="#orgb999b0c">25. Regular Expressions (Regex)</a>
+<ul>
+<li><a href="#org1415ec1">25.1. Definition 1</a></li>
+<li><a href="#orga08ba94">25.2. Rules</a>
+<ul>
+<li><a href="#orga400696">25.2.1. Simple Usage</a></li>
+</ul>
+</li>
+<li><a href="#org684d317">25.3. Find all phone numbers with are code 416</a></li>
+<li><a href="#org594cddf">25.4. Findall</a>
+<ul>
+<li><a href="#org2c39417">25.4.1. Algorithm Steps</a></li>
+</ul>
+</li>
+<li><a href="#orgf21e61b">25.5. More Examples</a>
+<ul>
+<li><a href="#org863e7e9">25.5.1. Find special characters</a></li>
+<li><a href="#orgc2841e7">25.5.2. Groups</a></li>
+<li><a href="#orgd85859c">25.5.3. Or</a></li>
+<li><a href="#org841e459">25.5.4. Words</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf4d8fb9">26. Algorithms</a>
+<ul>
+<li><a href="#org27a4c12">26.1. Selection Sort</a></li>
+<li><a href="#orgdf381a3">26.2. time.time</a></li>
+<li><a href="#org4212c14">26.3. Insertion Sort</a></li>
+<li><a href="#org661b9c3">26.4. Bubble Sort</a></li>
+<li><a href="#org1c118a3">26.5. Merge Sort</a>
+<ul>
+<li><a href="#org8cc47a1">26.5.1. Split</a></li>
+<li><a href="#org8640617">26.5.2. Merge</a></li>
+</ul>
+</li>
+<li><a href="#orge07eccc">26.6. Other Sorting</a></li>
+</ul>
+</li>
+<li><a href="#orge513539">27. Timing and Complexity</a>
+<ul>
+<li><a href="#org115fca4">27.1. Definition 1 (Complexity)</a>
+<ul>
+<li><a href="#org5008523">27.1.1. Linear</a></li>
+</ul>
+</li>
+<li><a href="#org3ecbccd">27.2. Definition 2 (Big-Oh Notation)</a>
+<ul>
+<li><a href="#org45ec3d5">27.2.1. Example</a></li>
+<li><a href="#orgc7d863a">27.2.2. Quadratic</a></li>
+<li><a href="#org2d80940">27.2.3. Constant</a></li>
+<li><a href="#org429f977">27.2.4. Logarithmic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2d31b61">28. Object Oriented Programming (OOP)</a>
+<ul>
+<li><a href="#org37f2a55">28.1. Definition 1 (Object)</a></li>
+<li><a href="#org495a9d3">28.2. Instantiation vs. Initialization vs. Declaration</a>
+<ul>
+<li><a href="#org8260ae9">28.2.1. Initializing</a></li>
+<li><a href="#orgd2f88f8">28.2.2. Equality</a></li>
+<li><a href="#orgcb842f9">28.2.3. Aliasing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga033658">29. Nesting</a>
+<ul>
+<li><a href="#orgbdb9635">29.1. Nested List</a></li>
+<li><a href="#org7c49dcd">29.2. Dictionary of Lists</a></li>
+<li><a href="#orgfa92b9f">29.3. Dictionary of Dictionaries</a></li>
+<li><a href="#orgdaf9997">29.4. Methods</a>
+<ul>
+<li><a href="#orgb88bdd8">29.4.1. Example 1</a></li>
+<li><a href="#org8038395">29.4.2. Example 2</a></li>
+</ul>
+</li>
+<li><a href="#orgb87283d">29.5. Private Variables</a>
+<ul>
+<li><a href="#org8799dec">29.5.1. Underscores</a></li>
+<li><a href="#org21790d7">29.5.2. Magic Methods</a></li>
+<li><a href="#orge0359a0">29.5.3. More Magic Methods</a></li>
+</ul>
+</li>
+<li><a href="#org1f5999b">29.6. Inheritance</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2bffbaf" class="outline-2">
-<h2 id="org2bffbaf"><span class="section-number-2">1</span> Notes</h2>
+<div id="outline-container-org8f53a32" class="outline-2">
+<h2 id="org8f53a32"><span class="section-number-2">1</span> Notes</h2>
 </div>
-<div id="outline-container-org1efbd75" class="outline-2">
-<h2 id="org1efbd75"><span class="section-number-2">2</span> Python As A Calculator (Operations)</h2>
+<div id="outline-container-org1149a41" class="outline-2">
+<h2 id="org1149a41"><span class="section-number-2">2</span> Python As A Calculator (Operations)</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd296366" class="outline-3">
-<h3 id="orgd296366"><span class="section-number-3">2.1</span> <b>Standard Arithmetic</b></h3>
+<div id="outline-container-org026c549" class="outline-3">
+<h3 id="org026c549"><span class="section-number-3">2.1</span> <b>Standard Arithmetic</b></h3>
 <div class="outline-text-3" id="text-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -482,8 +482,8 @@
 </div>
 </div>
 
-<div id="outline-container-org968b619" class="outline-3">
-<h3 id="org968b619"><span class="section-number-3">2.2</span> <b>Other Operations</b></h3>
+<div id="outline-container-orgf441f46" class="outline-3">
+<h3 id="orgf441f46"><span class="section-number-3">2.2</span> <b>Other Operations</b></h3>
 <div class="outline-text-3" id="text-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -589,8 +589,8 @@ For instance,
 </div>
 </div>
 
-<div id="outline-container-orgce16ebb" class="outline-3">
-<h3 id="orgce16ebb"><span class="section-number-3">2.3</span> Type of Variable</h3>
+<div id="outline-container-org3cbb4d9" class="outline-3">
+<h3 id="org3cbb4d9"><span class="section-number-3">2.3</span> Type of Variable</h3>
 <div class="outline-text-3" id="text-2-3">
 <div class="org-src-container">
 <pre>
@@ -654,8 +654,8 @@ ZeroDivisionError: division by zero
 </div>
 </div>
 
-<div id="outline-container-org4b1af21" class="outline-3">
-<h3 id="org4b1af21"><span class="section-number-3">2.4</span> Division Algorithm</h3>
+<div id="outline-container-orgb66b56e" class="outline-3">
+<h3 id="orgb66b56e"><span class="section-number-3">2.4</span> Division Algorithm</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Let x and y be positive integers. There is a <b>unique</b> <i>quotient</i> <code>q</code> and
@@ -664,13 +664,13 @@ x = q * y + 2
 \] In Python this means we have
 </p>
 
-<pre class="example" id="org506650b">
+<pre class="example" id="org5f9b9b5">
 x == (x // y) * y + (x % y)
 </pre>
 </div>
 
-<div id="outline-container-org341f83b" class="outline-4">
-<h4 id="org341f83b"><span class="section-number-4">2.4.1</span> Task</h4>
+<div id="outline-container-org8f5ce40" class="outline-4">
+<h4 id="org8f5ce40"><span class="section-number-4">2.4.1</span> Task</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <p>
 <b>Predict the following output without using your computer</b>
@@ -716,8 +716,8 @@ x == (x // y) * y + (x % y)
 </div>
 </div>
 
-<div id="outline-container-org7e5f85b" class="outline-3">
-<h3 id="org7e5f85b"><span class="section-number-3">2.5</span> Variable</h3>
+<div id="outline-container-org024b3cf" class="outline-3">
+<h3 id="org024b3cf"><span class="section-number-3">2.5</span> Variable</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Sometimes it is expedient to give values a <b>name</b>. These names are
@@ -815,8 +815,8 @@ NameError: name 'y' is not defined
 </div>
 </div>
 
-<div id="outline-container-org4a69a72" class="outline-4">
-<h4 id="org4a69a72"><span class="section-number-4">2.5.1</span> Task</h4>
+<div id="outline-container-org7bb0281" class="outline-4">
+<h4 id="org7bb0281"><span class="section-number-4">2.5.1</span> Task</h4>
 <div class="outline-text-4" id="text-2-5-1">
 <p>
 What is <code>y</code> after entering the following?
@@ -853,12 +853,12 @@ What are <code>x</code> and <code>y</code> after entering the following?
 </div>
 </div>
 
-<div id="outline-container-org384cd0c" class="outline-2">
-<h2 id="org384cd0c"><span class="section-number-2">3</span> Designing Functions</h2>
+<div id="outline-container-org3f58556" class="outline-2">
+<h2 id="org3f58556"><span class="section-number-2">3</span> Designing Functions</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org212094a" class="outline-3">
-<h3 id="org212094a"><span class="section-number-3">3.1</span> Functions</h3>
+<div id="outline-container-orgb86fa98" class="outline-3">
+<h3 id="orgb86fa98"><span class="section-number-3">3.1</span> Functions</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Unlike variables, Python <b>functions</b> are directly analogous to that of
@@ -893,7 +893,7 @@ associate lines of code with control structures (in this case function
 definition).
 </p>
 
-<pre class="example" id="orga1fd201">
+<pre class="example" id="orgc23d60a">
 &gt;&gt;&gt; def□f(X):
 ... □□□□return□x**2
 </pre>
@@ -914,8 +914,8 @@ check the formatting (<b><i>spaces/indents</i></b>).
 </p>
 </div>
 
-<div id="outline-container-orgb4dd25b" class="outline-4">
-<h4 id="orgb4dd25b"><span class="section-number-4">3.1.1</span> Question 1</h4>
+<div id="outline-container-org69e267f" class="outline-4">
+<h4 id="org69e267f"><span class="section-number-4">3.1.1</span> Question 1</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 What is the value of x after entering the following?
@@ -937,8 +937,8 @@ What is the value of x after entering the following?
 </div>
 </div>
 
-<div id="outline-container-orgc562d18" class="outline-2">
-<h2 id="orgc562d18"><span class="section-number-2">4</span> Return Statement</h2>
+<div id="outline-container-org3970ad2" class="outline-2">
+<h2 id="org3970ad2"><span class="section-number-2">4</span> Return Statement</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 <b>return</b> is a <b>reserved word</b> (one that cannot be assigned by us). It is
@@ -947,8 +947,8 @@ also <b><i>terminating</i></b> the function itself.
 </p>
 </div>
 
-<div id="outline-container-orgdde9fa9" class="outline-3">
-<h3 id="orgdde9fa9"><span class="section-number-3">4.1</span> Definition 1 (return)</h3>
+<div id="outline-container-orgcf5aa42" class="outline-3">
+<h3 id="orgcf5aa42"><span class="section-number-3">4.1</span> Definition 1 (return)</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 The <b><i>return</i></b> statement causes a function to <b><i>exit</i></b> and <b><i>hand back</i></b>
@@ -960,8 +960,8 @@ a value to its caller.
 </p>
 </div>
 
-<div id="outline-container-orgc9cfae4" class="outline-4">
-<h4 id="orgc9cfae4"><span class="section-number-4">4.1.1</span> Question 2</h4>
+<div id="outline-container-org8f2e28a" class="outline-4">
+<h4 id="org8f2e28a"><span class="section-number-4">4.1.1</span> Question 2</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <div class="org-src-container">
 <pre>
@@ -980,8 +980,8 @@ a value to its caller.
 </div>
 </div>
 
-<div id="outline-container-org6b9d127" class="outline-4">
-<h4 id="org6b9d127"><span class="section-number-4">4.1.2</span> Question 3</h4>
+<div id="outline-container-org8c8ca9c" class="outline-4">
+<h4 id="org8c8ca9c"><span class="section-number-4">4.1.2</span> Question 3</h4>
 <div class="outline-text-4" id="text-4-1-2">
 <div class="org-src-container">
 <pre>
@@ -1001,8 +1001,8 @@ a value to its caller.
 </div>
 </div>
 
-<div id="outline-container-org3f78cf4" class="outline-4">
-<h4 id="org3f78cf4"><span class="section-number-4">4.1.3</span> Question 4</h4>
+<div id="outline-container-org05f1052" class="outline-4">
+<h4 id="org05f1052"><span class="section-number-4">4.1.3</span> Question 4</h4>
 <div class="outline-text-4" id="text-4-1-3">
 <div class="org-src-container">
 <pre>
@@ -1021,8 +1021,8 @@ a value to its caller.
 </div>
 </div>
 
-<div id="outline-container-org3a9263e" class="outline-4">
-<h4 id="org3a9263e"><span class="section-number-4">4.1.4</span> Question 5</h4>
+<div id="outline-container-org57c7c3c" class="outline-4">
+<h4 id="org57c7c3c"><span class="section-number-4">4.1.4</span> Question 5</h4>
 <div class="outline-text-4" id="text-4-1-4">
 <div class="org-src-container">
 <pre>
@@ -1043,42 +1043,23 @@ None
 </div>
 </div>
 
-<div id="outline-container-orgcb67468" class="outline-4">
-<h4 id="orgcb67468"><span class="section-number-4">4.1.5</span> Task 1 (Area of Triangle)</h4>
+<div id="outline-container-org6dbe0ba" class="outline-4">
+<h4 id="org6dbe0ba"><span class="section-number-4">4.1.5</span> Task 1 (Area of Triangle)</h4>
 <div class="outline-text-4" id="text-4-1-5">
 
-<div id="orgb2d0528" class="figure">
-<p><img src="./images/trianlge_problem.png" alt="trianlge_problem.png" />
+<div id="orge3bad41" class="figure">
+<p><img src="images/trianlge_problem.png" alt="trianlge_problem.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Notes%2041f1f3a2565c4c45811ad8f26b5d3e2b/Screen_Shot_2020-09-14_at_11.39.10_PM.png</p>
 </div>
-
-<p>
-In Python we write:
-</p>
-
-<div class="org-src-container">
-<pre>
-<code class="python">def triangle_area(a: int, b: int, c: int) -&gt; float:
-    s = a + b + c
-    s = s / 2
-    return (s * (s - a) * (s - b) * (s - c)) ** 0.5
-
-# there are no actual type-checking
-&gt;&gt;&gt; triangle_area(1.1, 2.2, 3.3)
-1.194989539703172
-</code>
-</pre>
 </div>
 </div>
 </div>
 </div>
-</div>
-
-<div id="outline-container-orgb3eeae6" class="outline-2">
-<h2 id="orgb3eeae6"><span class="section-number-2">5</span> Improving Our Functions (Doc Strings)</h2>
+<div id="outline-container-orgf0369d5" class="outline-2">
+<h2 id="orgf0369d5"><span class="section-number-2">5</span> Improving Our Functions (Doc Strings)</h2>
 <div class="outline-text-2" id="text-5">
-<pre class="example" id="orgdb2f70b">
+<pre class="example" id="orgdd31bb4">
 def triangle_area(a: int, b: int, c: int) -&gt; float:
     """
     Computes the area of a triangle given its sides.
@@ -1089,10 +1070,10 @@ def triangle_area(a: int, b: int, c: int) -&gt; float:
 </pre>
 </div>
 
-<div id="outline-container-org7e5ac8b" class="outline-3">
-<h3 id="org7e5ac8b"><span class="section-number-3">5.1</span> Definition 2 (Python Function)</h3>
+<div id="outline-container-orge07f7a1" class="outline-3">
+<h3 id="orge07f7a1"><span class="section-number-3">5.1</span> Definition 2 (Python Function)</h3>
 <div class="outline-text-3" id="text-5-1">
-<pre class="example" id="orgad1a3c9">
+<pre class="example" id="org4f3113e">
 def function_name(arg0: type, arg1: type, ...) -&gt; type:
     """
     Short description of function for documentation.
@@ -1107,14 +1088,14 @@ def function_name(arg0: type, arg1: type, ...) -&gt; type:
 </div>
 </div>
 
-<div id="outline-container-org523cecf" class="outline-2">
-<h2 id="org523cecf"><span class="section-number-2">6</span> Logical Operations and Constants</h2>
+<div id="outline-container-org0e6761e" class="outline-2">
+<h2 id="org0e6761e"><span class="section-number-2">6</span> Logical Operations and Constants</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgb9f937a" class="outline-3">
-<h3 id="orgb9f937a"><span class="section-number-3">6.1</span> Basic Operands of Logic</h3>
+<div id="outline-container-org2c85c3a" class="outline-3">
+<h3 id="org2c85c3a"><span class="section-number-3">6.1</span> Basic Operands of Logic</h3>
 <div class="outline-text-3" id="text-6-1">
-<pre class="example" id="org723a765">
+<pre class="example" id="org4166013">
 # Booleans
 &gt;&gt;&gt; type(True)
 &lt;class 'bool'&gt;
@@ -1124,8 +1105,8 @@ def function_name(arg0: type, arg1: type, ...) -&gt; type:
 </div>
 </div>
 
-<div id="outline-container-org149d665" class="outline-3">
-<h3 id="org149d665"><span class="section-number-3">6.2</span> Definition 1 (Boolean domain)</h3>
+<div id="outline-container-org50ebc98" class="outline-3">
+<h3 id="org50ebc98"><span class="section-number-3">6.2</span> Definition 1 (Boolean domain)</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Let \(\mathbb {B}\) denote the <b><i>boolean domain</i></b> where
@@ -1137,8 +1118,8 @@ Let \(\mathbb {B}\) denote the <b><i>boolean domain</i></b> where
 </div>
 </div>
 
-<div id="outline-container-orgaf3d8dd" class="outline-3">
-<h3 id="orgaf3d8dd"><span class="section-number-3">6.3</span> Definition 2 (Predicate)</h3>
+<div id="outline-container-orgd5541af" class="outline-3">
+<h3 id="orgd5541af"><span class="section-number-3">6.3</span> Definition 2 (Predicate)</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 Any function that maps into \(\mathbb {B}\) is called a <b><i>predicate</i></b>
@@ -1146,8 +1127,8 @@ Any function that maps into \(\mathbb {B}\) is called a <b><i>predicate</i></b>
 </p>
 </div>
 
-<div id="outline-container-orgb58bae9" class="outline-4">
-<h4 id="orgb58bae9"><span class="section-number-4">6.3.1</span> Example</h4>
+<div id="outline-container-org58a97b0" class="outline-4">
+<h4 id="org58a97b0"><span class="section-number-4">6.3.1</span> Example</h4>
 <div class="outline-text-4" id="text-6-3-1">
 <p>
 The boolean function <b><i>greater than</i></b>
@@ -1163,8 +1144,8 @@ is a predicate.
 </div>
 </div>
 
-<div id="outline-container-orge025b35" class="outline-4">
-<h4 id="orge025b35"><span class="section-number-4">6.3.2</span> Question 1</h4>
+<div id="outline-container-orga5265e6" class="outline-4">
+<h4 id="orga5265e6"><span class="section-number-4">6.3.2</span> Question 1</h4>
 <div class="outline-text-4" id="text-6-3-2">
 <p>
 Evaluate the following:
@@ -1207,8 +1188,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-org3050a84" class="outline-3">
-<h3 id="org3050a84"><span class="section-number-3">6.4</span> Definition 4 (And)</h3>
+<div id="outline-container-orge243862" class="outline-3">
+<h3 id="orge243862"><span class="section-number-3">6.4</span> Definition 4 (And)</h3>
 <div class="outline-text-3" id="text-6-4">
 <p>
 The binary predicate <b><i>'and'</i></b> is used to express that <b>both</b> of two
@@ -1255,8 +1236,8 @@ statements are true and is false <b>if either is false</b>.
 </div>
 </div>
 
-<div id="outline-container-org962c658" class="outline-3">
-<h3 id="org962c658"><span class="section-number-3">6.5</span> Definition 5 (Or)</h3>
+<div id="outline-container-orgbc55c48" class="outline-3">
+<h3 id="orgbc55c48"><span class="section-number-3">6.5</span> Definition 5 (Or)</h3>
 <div class="outline-text-3" id="text-6-5">
 <p>
 The binary predicate <b><i>'or'</i></b> is used to express that <b>at least one</b> of
@@ -1302,8 +1283,8 @@ two statements are true and is false <b>only when both are false</b>.
 </table>
 </div>
 
-<div id="outline-container-org88b4496" class="outline-4">
-<h4 id="org88b4496"><span class="section-number-4">6.5.1</span> Example</h4>
+<div id="outline-container-org4479744" class="outline-4">
+<h4 id="org4479744"><span class="section-number-4">6.5.1</span> Example</h4>
 <div class="outline-text-4" id="text-6-5-1">
 <div class="org-src-container">
 <pre>
@@ -1318,8 +1299,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-org655a44b" class="outline-3">
-<h3 id="org655a44b"><span class="section-number-3">6.6</span> Definition 7 (Not)</h3>
+<div id="outline-container-org5b1d930" class="outline-3">
+<h3 id="org5b1d930"><span class="section-number-3">6.6</span> Definition 7 (Not)</h3>
 <div class="outline-text-3" id="text-6-6">
 <p>
 The logical statement <b><i>'not'</i></b> is the negation of logical statement:
@@ -1359,8 +1340,8 @@ not (a or b) == not a and not b
 </div>
 </div>
 
-<div id="outline-container-org25cb059" class="outline-3">
-<h3 id="org25cb059"><span class="section-number-3">6.7</span> Short Circuits / Lazy Computation</h3>
+<div id="outline-container-org00b795f" class="outline-3">
+<h3 id="org00b795f"><span class="section-number-3">6.7</span> Short Circuits / Lazy Computation</h3>
 <div class="outline-text-3" id="text-6-7">
 <div class="org-src-container">
 <pre>
@@ -1384,8 +1365,8 @@ SyntaxError: invalid syntax
 </div>
 </div>
 
-<div id="outline-container-org13c240a" class="outline-4">
-<h4 id="org13c240a"><span class="section-number-4">6.7.1</span> Example</h4>
+<div id="outline-container-org8e013b3" class="outline-4">
+<h4 id="org8e013b3"><span class="section-number-4">6.7.1</span> Example</h4>
 <div class="outline-text-4" id="text-6-7-1">
 <p>
 Consider that
@@ -1428,8 +1409,8 @@ and thus and order of operation is necessary to resolve ambiguities.
 </div>
 </div>
 
-<div id="outline-container-orge155189" class="outline-4">
-<h4 id="orge155189"><span class="section-number-4">6.7.2</span> Task</h4>
+<div id="outline-container-org65ca758" class="outline-4">
+<h4 id="org65ca758"><span class="section-number-4">6.7.2</span> Task</h4>
 <div class="outline-text-4" id="text-6-7-2">
 <p>
 Determine the output.
@@ -1479,12 +1460,12 @@ def is_odd(x: int) -&gt; bool:
 </div>
 </div>
 
-<div id="outline-container-orgdcbb45a" class="outline-2">
-<h2 id="orgdcbb45a"><span class="section-number-2">7</span> Scope (Global and Local Variables)</h2>
+<div id="outline-container-orgc7e83b3" class="outline-2">
+<h2 id="orgc7e83b3"><span class="section-number-2">7</span> Scope (Global and Local Variables)</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org18abb4c" class="outline-3">
-<h3 id="org18abb4c"><span class="section-number-3">7.1</span> Definition 1 (Scope)</h3>
+<div id="outline-container-org8f64eaf" class="outline-3">
+<h3 id="org8f64eaf"><span class="section-number-3">7.1</span> Definition 1 (Scope)</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 Suppose a computer program creats a variable.
@@ -1578,8 +1559,8 @@ the time of assignment.
 </p>
 </div>
 
-<div id="outline-container-org6371bd8" class="outline-4">
-<h4 id="org6371bd8"><span class="section-number-4">7.1.1</span> Task</h4>
+<div id="outline-container-org06e4f64" class="outline-4">
+<h4 id="org06e4f64"><span class="section-number-4">7.1.1</span> Task</h4>
 <div class="outline-text-4" id="text-7-1-1">
 <div class="org-src-container">
 <pre>
@@ -1643,12 +1624,12 @@ ___  # Answer: 25
 </div>
 </div>
 
-<div id="outline-container-orgab667d5" class="outline-2">
-<h2 id="orgab667d5"><span class="section-number-2">8</span> Design Recipe</h2>
+<div id="outline-container-orga47cf5a" class="outline-2">
+<h2 id="orga47cf5a"><span class="section-number-2">8</span> Design Recipe</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org60e3c74" class="outline-3">
-<h3 id="org60e3c74"><span class="section-number-3">8.1</span> Step 1</h3>
+<div id="outline-container-org0d2a9d7" class="outline-3">
+<h3 id="org0d2a9d7"><span class="section-number-3">8.1</span> Step 1</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 Pick a short, descriptive, name for the function. A good name answers
@@ -1662,8 +1643,8 @@ prime or not.
 </div>
 </div>
 
-<div id="outline-container-org1056b35" class="outline-3">
-<h3 id="org1056b35"><span class="section-number-3">8.2</span> Step 2</h3>
+<div id="outline-container-orgd4cebdf" class="outline-3">
+<h3 id="orgd4cebdf"><span class="section-number-3">8.2</span> Step 2</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 Write your function header with a doctoring. Assume your fumction works
@@ -1685,8 +1666,8 @@ already and give examples of how to use it.
 </div>
 </div>
 
-<div id="outline-container-orgf7e7ead" class="outline-3">
-<h3 id="orgf7e7ead"><span class="section-number-3">8.3</span> Step 3</h3>
+<div id="outline-container-org39e1838" class="outline-3">
+<h3 id="org39e1838"><span class="section-number-3">8.3</span> Step 3</h3>
 <div class="outline-text-3" id="text-8-3">
 <p>
 Write a short and concise description of your function.
@@ -1708,8 +1689,8 @@ Write a short and concise description of your function.
 </div>
 </div>
 
-<div id="outline-container-org75a47c0" class="outline-3">
-<h3 id="org75a47c0"><span class="section-number-3">8.4</span> Step 4</h3>
+<div id="outline-container-org18f7bc0" class="outline-3">
+<h3 id="org18f7bc0"><span class="section-number-3">8.4</span> Step 4</h3>
 <div class="outline-text-3" id="text-8-4">
 <p>
 Write your function. Return your answer.
@@ -1732,8 +1713,8 @@ Write your function. Return your answer.
 </div>
 </div>
 
-<div id="outline-container-orge5601bf" class="outline-3">
-<h3 id="orge5601bf"><span class="section-number-3">8.5</span> Step 5</h3>
+<div id="outline-container-org9b76f7e" class="outline-3">
+<h3 id="org9b76f7e"><span class="section-number-3">8.5</span> Step 5</h3>
 <div class="outline-text-3" id="text-8-5">
 <p>
 Test your function. Be sure to include <b><i>corner
@@ -1743,8 +1724,8 @@ cases</i></b>.
 </div>
 </div>
 
-<div id="outline-container-org6b1d8a1" class="outline-2">
-<h2 id="org6b1d8a1"><span class="section-number-2">9</span> Doctest</h2>
+<div id="outline-container-org53cb3c4" class="outline-2">
+<h2 id="org53cb3c4"><span class="section-number-2">9</span> Doctest</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 You will use doctests yo test your code!
@@ -1829,12 +1810,12 @@ Got:
 </div>
 </div>
 
-<div id="outline-container-org9f760c7" class="outline-2">
-<h2 id="org9f760c7"><span class="section-number-2">10</span> String</h2>
+<div id="outline-container-org818677b" class="outline-2">
+<h2 id="org818677b"><span class="section-number-2">10</span> String</h2>
 <div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-orgbd7fce5" class="outline-3">
-<h3 id="orgbd7fce5"><span class="section-number-3">10.1</span> Definition 1 (String)</h3>
+<div id="outline-container-org19ba17c" class="outline-3">
+<h3 id="org19ba17c"><span class="section-number-3">10.1</span> Definition 1 (String)</h3>
 <div class="outline-text-3" id="text-10-1">
 <p>
 Anything (with some exceptions) enclosed by single-quotes ' ' or
@@ -1865,8 +1846,8 @@ SyntaxError: invalid syntax
 </div>
 </div>
 
-<div id="outline-container-org1e224ca" class="outline-3">
-<h3 id="org1e224ca"><span class="section-number-3">10.2</span> Adding Strings</h3>
+<div id="outline-container-org962816b" class="outline-3">
+<h3 id="org962816b"><span class="section-number-3">10.2</span> Adding Strings</h3>
 <div class="outline-text-3" id="text-10-2">
 <div class="org-src-container">
 <pre>
@@ -1885,8 +1866,8 @@ SyntaxError: invalid syntax
 </div>
 </div>
 
-<div id="outline-container-orgb83b773" class="outline-3">
-<h3 id="orgb83b773"><span class="section-number-3">10.3</span> String Equality</h3>
+<div id="outline-container-org1de28d1" class="outline-3">
+<h3 id="org1de28d1"><span class="section-number-3">10.3</span> String Equality</h3>
 <div class="outline-text-3" id="text-10-3">
 <div class="org-src-container">
 <pre>
@@ -1907,8 +1888,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-org89888d0" class="outline-3">
-<h3 id="org89888d0"><span class="section-number-3">10.4</span> Comparing Strings</h3>
+<div id="outline-container-org26a9cbe" class="outline-3">
+<h3 id="org26a9cbe"><span class="section-number-3">10.4</span> Comparing Strings</h3>
 <div class="outline-text-3" id="text-10-4">
 <div class="org-src-container">
 <pre>
@@ -1929,8 +1910,8 @@ True
 </div>
 </div>
 
-<div id="outline-container-org6c96d8e" class="outline-3">
-<h3 id="org6c96d8e"><span class="section-number-3">10.5</span> New Line</h3>
+<div id="outline-container-org11ecc5e" class="outline-3">
+<h3 id="org11ecc5e"><span class="section-number-3">10.5</span> New Line</h3>
 <div class="outline-text-3" id="text-10-5">
 <p>
 A <b>new line</b> is an <b>escape character</b> that can be used in strings to
@@ -1956,8 +1937,8 @@ world
 </div>
 </div>
 
-<div id="outline-container-orga0fdb7d" class="outline-3">
-<h3 id="orga0fdb7d"><span class="section-number-3">10.6</span> Tab</h3>
+<div id="outline-container-org14f8d69" class="outline-3">
+<h3 id="org14f8d69"><span class="section-number-3">10.6</span> Tab</h3>
 <div class="outline-text-3" id="text-10-6">
 <p>
 A <b>tab</b> is a fixed amount of horizontal space. How a tab is displayed
@@ -1977,8 +1958,8 @@ hello   world
 </div>
 </div>
 
-<div id="outline-container-org4da9a06" class="outline-3">
-<h3 id="org4da9a06"><span class="section-number-3">10.7</span> Numbers versus Strings</h3>
+<div id="outline-container-orgb315857" class="outline-3">
+<h3 id="orgb315857"><span class="section-number-3">10.7</span> Numbers versus Strings</h3>
 <div class="outline-text-3" id="text-10-7">
 <div class="org-src-container">
 <pre>
@@ -2015,8 +1996,8 @@ ValueError: invalid literal for int() with base 10: 'hello'
 </div>
 </div>
 
-<div id="outline-container-orgdb2fd10" class="outline-3">
-<h3 id="orgdb2fd10"><span class="section-number-3">10.8</span> Substitution</h3>
+<div id="outline-container-orgcdd6e7d" class="outline-3">
+<h3 id="orgcdd6e7d"><span class="section-number-3">10.8</span> Substitution</h3>
 <div class="outline-text-3" id="text-10-8">
 <p>
 There is a mechanism for printing string variables in sentences through
@@ -2035,8 +2016,8 @@ There is a mechanism for printing string variables in sentences through
 </div>
 </div>
 
-<div id="outline-container-org28531da" class="outline-3">
-<h3 id="org28531da"><span class="section-number-3">10.9</span> Length</h3>
+<div id="outline-container-org06e4b89" class="outline-3">
+<h3 id="org06e4b89"><span class="section-number-3">10.9</span> Length</h3>
 <div class="outline-text-3" id="text-10-9">
 <p>
 A string length is the number of characters that comprise it.
@@ -2059,8 +2040,8 @@ True
 </div>
 </div>
 
-<div id="outline-container-orgd028406" class="outline-3">
-<h3 id="orgd028406"><span class="section-number-3">10.10</span> Inclusion</h3>
+<div id="outline-container-orged9b6b1" class="outline-3">
+<h3 id="orged9b6b1"><span class="section-number-3">10.10</span> Inclusion</h3>
 <div class="outline-text-3" id="text-10-10">
 <p>
 As a string can be regarded as an ordered set we can use the <b>element
@@ -2084,8 +2065,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-orgba22440" class="outline-3">
-<h3 id="orgba22440"><span class="section-number-3">10.11</span> String Indexing</h3>
+<div id="outline-container-org942d275" class="outline-3">
+<h3 id="org942d275"><span class="section-number-3">10.11</span> String Indexing</h3>
 <div class="outline-text-3" id="text-10-11">
 <p>
 Because a string is <b>ordered</b> we can number its characters <b>starting
@@ -2121,8 +2102,8 @@ We can also index from the end.
 </div>
 </div>
 
-<div id="outline-container-org78b4a8d" class="outline-3">
-<h3 id="org78b4a8d"><span class="section-number-3">10.12</span> String Slicing</h3>
+<div id="outline-container-orgca5fdf0" class="outline-3">
+<h3 id="orgca5fdf0"><span class="section-number-3">10.12</span> String Slicing</h3>
 <div class="outline-text-3" id="text-10-12">
 <p>
 Because the string's characters are numbered we can <b>slice</b> the string
@@ -2146,8 +2127,8 @@ to obtain only a part of it.
 </div>
 </div>
 
-<div id="outline-container-org7088f85" class="outline-3">
-<h3 id="org7088f85"><span class="section-number-3">10.13</span> Immutability of Strings</h3>
+<div id="outline-container-org3309d7b" class="outline-3">
+<h3 id="org3309d7b"><span class="section-number-3">10.13</span> Immutability of Strings</h3>
 <div class="outline-text-3" id="text-10-13">
 <p>
 Something is <b>immutable</b> when it cannot be changed. <b>String are
@@ -2167,8 +2148,8 @@ TypeError: 'str' object does not support item assignment
 </div>
 </div>
 
-<div id="outline-container-org96ea0ef" class="outline-2">
-<h2 id="org96ea0ef"><span class="section-number-2">11</span> Methods</h2>
+<div id="outline-container-org31152b5" class="outline-2">
+<h2 id="org31152b5"><span class="section-number-2">11</span> Methods</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 We will <b>eventually</b> learn that <b>strings</b> are <b>objects</b>.
@@ -2204,8 +2185,8 @@ but rather
 </div>
 </div>
 
-<div id="outline-container-orge883854" class="outline-3">
-<h3 id="orge883854"><span class="section-number-3">11.1</span> Built-In String Methods</h3>
+<div id="outline-container-orga72a060" class="outline-3">
+<h3 id="orga72a060"><span class="section-number-3">11.1</span> Built-In String Methods</h3>
 <div class="outline-text-3" id="text-11-1">
 <p>
 There are a myriad of <b>bulit-in</b> string methods in Python. You can
@@ -2245,8 +2226,8 @@ find(...)
 </div>
 </div>
 
-<div id="outline-container-org30e0960" class="outline-3">
-<h3 id="org30e0960"><span class="section-number-3">11.2</span> Interpreting Help</h3>
+<div id="outline-container-org6a35a64" class="outline-3">
+<h3 id="org6a35a64"><span class="section-number-3">11.2</span> Interpreting Help</h3>
 <div class="outline-text-3" id="text-11-2">
 <p>
 The funny way parameters for <b>find</b> are listed as
@@ -2267,8 +2248,8 @@ not allowed since <b>sub</b> is required.
 </div>
 </div>
 
-<div id="outline-container-orgfe99cc1" class="outline-3">
-<h3 id="orgfe99cc1"><span class="section-number-3">11.3</span> Parameters and Replacement</h3>
+<div id="outline-container-orgd212a7f" class="outline-3">
+<h3 id="orgd212a7f"><span class="section-number-3">11.3</span> Parameters and Replacement</h3>
 <div class="outline-text-3" id="text-11-3">
 <p>
 We are displaying the (usually hidden) empty character <code></code> for the
@@ -2288,8 +2269,8 @@ follow codes.
 </div>
 </div>
 
-<div id="outline-container-orgd00e53e" class="outline-3">
-<h3 id="orgd00e53e"><span class="section-number-3">11.4</span> Padding</h3>
+<div id="outline-container-org1ac93be" class="outline-3">
+<h3 id="org1ac93be"><span class="section-number-3">11.4</span> Padding</h3>
 <div class="outline-text-3" id="text-11-4">
 <div class="org-src-container">
 <pre>
@@ -2312,8 +2293,8 @@ string and numbers.
 </div>
 </div>
 
-<div id="outline-container-orgec11729" class="outline-3">
-<h3 id="orgec11729"><span class="section-number-3">11.5</span> Justification</h3>
+<div id="outline-container-org521aff5" class="outline-3">
+<h3 id="org521aff5"><span class="section-number-3">11.5</span> Justification</h3>
 <div class="outline-text-3" id="text-11-5">
 <div class="org-src-container">
 <pre>
@@ -2331,8 +2312,8 @@ string and numbers.
 </div>
 </div>
 
-<div id="outline-container-org3ec5e5f" class="outline-3">
-<h3 id="org3ec5e5f"><span class="section-number-3">11.6</span> Precision</h3>
+<div id="outline-container-org866f53c" class="outline-3">
+<h3 id="org866f53c"><span class="section-number-3">11.6</span> Precision</h3>
 <div class="outline-text-3" id="text-11-6">
 <div class="org-src-container">
 <pre>
@@ -2350,8 +2331,8 @@ string and numbers.
 </div>
 </div>
 
-<div id="outline-container-org5520f74" class="outline-3">
-<h3 id="org5520f74"><span class="section-number-3">11.7</span> Runtime Formatting</h3>
+<div id="outline-container-org2116add" class="outline-3">
+<h3 id="org2116add"><span class="section-number-3">11.7</span> Runtime Formatting</h3>
 <div class="outline-text-3" id="text-11-7">
 <div class="org-src-container">
 <pre>
@@ -2369,12 +2350,12 @@ string and numbers.
 </div>
 </div>
 
-<div id="outline-container-orge9766c8" class="outline-2">
-<h2 id="orge9766c8"><span class="section-number-2">12</span> If Statement</h2>
+<div id="outline-container-orge161a0e" class="outline-2">
+<h2 id="orge161a0e"><span class="section-number-2">12</span> If Statement</h2>
 <div class="outline-text-2" id="text-12">
 </div>
-<div id="outline-container-orgfb42523" class="outline-3">
-<h3 id="orgfb42523"><span class="section-number-3">12.1</span> Definition 1 (If-Statement)</h3>
+<div id="outline-container-orge2dc090" class="outline-3">
+<h3 id="orge2dc090"><span class="section-number-3">12.1</span> Definition 1 (If-Statement)</h3>
 <div class="outline-text-3" id="text-12-1">
 <p>
 Given a <b>condition</b> or <b>predicate</b> statement C (i.e. something that
@@ -2384,8 +2365,8 @@ executes a block of code when C is True.
 </div>
 </div>
 
-<div id="outline-container-org1239123" class="outline-3">
-<h3 id="org1239123"><span class="section-number-3">12.2</span> If-Then</h3>
+<div id="outline-container-org0601a1c" class="outline-3">
+<h3 id="org0601a1c"><span class="section-number-3">12.2</span> If-Then</h3>
 <div class="outline-text-3" id="text-12-2">
 <div class="org-src-container">
 <pre>
@@ -2434,8 +2415,8 @@ Very positive number
 </div>
 </div>
 
-<div id="outline-container-org2459693" class="outline-3">
-<h3 id="org2459693"><span class="section-number-3">12.3</span> Warning</h3>
+<div id="outline-container-org8f62d84" class="outline-3">
+<h3 id="org8f62d84"><span class="section-number-3">12.3</span> Warning</h3>
 <div class="outline-text-3" id="text-12-3">
 <p>
 Take care when defining variables in if-statement.
@@ -2479,8 +2460,8 @@ makes our code longer and checks the condition twice.
 </div>
 </div>
 
-<div id="outline-container-org25f7cbc" class="outline-3">
-<h3 id="org25f7cbc"><span class="section-number-3">12.4</span> If-Then-Else</h3>
+<div id="outline-container-org8f4932f" class="outline-3">
+<h3 id="org8f4932f"><span class="section-number-3">12.4</span> If-Then-Else</h3>
 <div class="outline-text-3" id="text-12-4">
 <div class="org-src-container">
 <pre>
@@ -2493,32 +2474,15 @@ else:
 </div>
 
 
-<div id="org8d8db26" class="figure">
-<p><img src="./images/if_else.png" alt="if_else.png" />
+<div id="orgf63b35e" class="figure">
+<p><img src="images/if_else.png" alt="if_else.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Notes%2041f1f3a2565c4c45811ad8f26b5d3e2b/Untitled_Diagram-2.png</p>
 </div>
-
-<div class="org-src-container">
-<pre>
-<code class="python">&gt;&gt;&gt; if balance &gt;= 0:
-		in_the_black = True
-		in_the_red = False
-	else:
-		in_the_black = False
-		in_the_red = True
-</code>
-</pre>
-</div>
-
-<p>
-Now <i>extra code</i> executes regardless of the truth of C.
-</p>
 </div>
 </div>
-
-<div id="outline-container-org65db026" class="outline-3">
-<h3 id="org65db026"><span class="section-number-3">12.5</span> Else-If</h3>
+<div id="outline-container-org6f2a1f2" class="outline-3">
+<h3 id="org6f2a1f2"><span class="section-number-3">12.5</span> Else-If</h3>
 <div class="outline-text-3" id="text-12-5">
 <div class="org-src-container">
 <pre>
@@ -2536,33 +2500,14 @@ elif &lt;condN&gt;:
 </div>
 
 
-<div id="org25b99f3" class="figure">
-<p><img src="./images/if_elif.png" alt="if_elif.png" />
+<div id="org8eef32f" class="figure">
+<p><img src="images/if_elif.png" alt="if_elif.png" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Notes%2041f1f3a2565c4c45811ad8f26b5d3e2b/Untitled_Diagram-3.png</p>
 </div>
-
-<div class="org-src-container">
-<pre>
-<code class="python">&gt;&gt;&gt; x = True
-&gt;&gt;&gt; y = False
-
-&gt;&gt;&gt; if not x:
-		ans = "panda"
-&gt;&gt;&gt; elif x and y:
-		ans = "snake"
-&gt;&gt;&gt; elif not x or y:
-		ans = "badger"
-
-&gt;&gt;&gt; ans
-NameError: name 'ans' is not defined
-</code>
-</pre>
 </div>
-</div>
-
-<div id="outline-container-org6f210dd" class="outline-4">
-<h4 id="org6f210dd"><span class="section-number-4">12.5.1</span> Else-If-Else</h4>
+<div id="outline-container-orgc9e6a44" class="outline-4">
+<h4 id="orgc9e6a44"><span class="section-number-4">12.5.1</span> Else-If-Else</h4>
 <div class="outline-text-4" id="text-12-5-1">
 <div class="org-src-container">
 <pre>
@@ -2582,41 +2527,21 @@ else:
 </div>
 
 
-<div id="org819fa92" class="figure">
-<p><img src="./images/if-elif-else.png" alt="if-elif-else.png" />
+<div id="orgbcec939" class="figure">
+<p><img src="images/if-elif-else.png" alt="if-elif-else.png" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Notes%2041f1f3a2565c4c45811ad8f26b5d3e2b/if-elif-else.png</p>
 </div>
-
-<div class="org-src-container">
-<pre>
-<code class="python">&gt;&gt;&gt; (x, y) = (True, False) # x = True y = False
-
-&gt;&gt;&gt; if not x:
-		ans = "panda"
-&gt;&gt;&gt; elif x and y:
-		ans = "snake"
-&gt;&gt;&gt; elif not x or y:
-		ans = "badger"
-&gt;&gt;&gt; else:
-		ans = "man_bear_pig"
-
-&gt;&gt;&gt; ans
-'man_bear_pig'
-</code>
-</pre>
 </div>
 </div>
 </div>
 </div>
-</div>
-
-<div id="outline-container-orgbe7c53c" class="outline-2">
-<h2 id="orgbe7c53c"><span class="section-number-2">13</span> Useful Python Knowledge</h2>
+<div id="outline-container-orga65f667" class="outline-2">
+<h2 id="orga65f667"><span class="section-number-2">13</span> Useful Python Knowledge</h2>
 <div class="outline-text-2" id="text-13">
 </div>
-<div id="outline-container-org88c0d47" class="outline-3">
-<h3 id="org88c0d47"><span class="section-number-3">13.1</span> Definition 1 (Python Assignment Operators)</h3>
+<div id="outline-container-org8b7d926" class="outline-3">
+<h3 id="org8b7d926"><span class="section-number-3">13.1</span> Definition 1 (Python Assignment Operators)</h3>
 <div class="outline-text-3" id="text-13-1">
 <p>
 <b>Assignment Operators</b>
@@ -2673,8 +2598,8 @@ else:
 </div>
 </div>
 
-<div id="outline-container-orgc0ac38a" class="outline-3">
-<h3 id="orgc0ac38a"><span class="section-number-3">13.2</span> Ordinals and Characters</h3>
+<div id="outline-container-org116343c" class="outline-3">
+<h3 id="org116343c"><span class="section-number-3">13.2</span> Ordinals and Characters</h3>
 <div class="outline-text-3" id="text-13-2">
 <div class="org-src-container">
 <pre>
@@ -2692,8 +2617,8 @@ else:
 </div>
 </div>
 
-<div id="outline-container-orgd36e0ac" class="outline-3">
-<h3 id="orgd36e0ac"><span class="section-number-3">13.3</span> Definition 2 (Factoring)</h3>
+<div id="outline-container-org95b7f6d" class="outline-3">
+<h3 id="org95b7f6d"><span class="section-number-3">13.3</span> Definition 2 (Factoring)</h3>
 <div class="outline-text-3" id="text-13-3">
 <p>
 In CS, <b>factoring</b> is breaking a complex problem into small. easy and
@@ -2702,8 +2627,8 @@ unstrandable parts.
 </div>
 </div>
 
-<div id="outline-container-org2474972" class="outline-3">
-<h3 id="org2474972"><span class="section-number-3">13.4</span> Definition 3 (Refactoring)</h3>
+<div id="outline-container-org5234fa9" class="outline-3">
+<h3 id="org5234fa9"><span class="section-number-3">13.4</span> Definition 3 (Refactoring)</h3>
 <div class="outline-text-3" id="text-13-4">
 <p>
 Code <b>refactoring</b> is the process of restructuring existing computer
@@ -2712,8 +2637,8 @@ code - changing the factoring - without changing its external behaviour.
 </div>
 </div>
 
-<div id="outline-container-org8a29f72" class="outline-3">
-<h3 id="org8a29f72"><span class="section-number-3">13.5</span> Simplifying If-Statement</h3>
+<div id="outline-container-org3949247" class="outline-3">
+<h3 id="org3949247"><span class="section-number-3">13.5</span> Simplifying If-Statement</h3>
 <div class="outline-text-3" id="text-13-5">
 <div class="org-src-container">
 <pre>
@@ -2763,12 +2688,12 @@ can simplify to
 </div>
 </div>
 
-<div id="outline-container-org17ae425" class="outline-2">
-<h2 id="org17ae425"><span class="section-number-2">14</span> For Loop</h2>
+<div id="outline-container-org1701b69" class="outline-2">
+<h2 id="org1701b69"><span class="section-number-2">14</span> For Loop</h2>
 <div class="outline-text-2" id="text-14">
 </div>
-<div id="outline-container-orgcf7a4f8" class="outline-3">
-<h3 id="orgcf7a4f8"><span class="section-number-3">14.1</span> Definition 1 (Loop)</h3>
+<div id="outline-container-orgd90d639" class="outline-3">
+<h3 id="orgd90d639"><span class="section-number-3">14.1</span> Definition 1 (Loop)</h3>
 <div class="outline-text-3" id="text-14-1">
 <p>
 A <b>loop</b> is a <b>control structure</b> that repeats code that belongs to it.
@@ -2776,8 +2701,8 @@ A <b>loop</b> is a <b>control structure</b> that repeats code that belongs to it
 </div>
 </div>
 
-<div id="outline-container-org04e5b97" class="outline-3">
-<h3 id="org04e5b97"><span class="section-number-3">14.2</span> Definition 2 (For-Loop)</h3>
+<div id="outline-container-orgd62c95f" class="outline-3">
+<h3 id="orgd62c95f"><span class="section-number-3">14.2</span> Definition 2 (For-Loop)</h3>
 <div class="outline-text-3" id="text-14-2">
 <p>
 A <b>for-loop</b> is a <b>control structure</b> that, given a group (or
@@ -2786,8 +2711,8 @@ A <b>for-loop</b> is a <b>control structure</b> that, given a group (or
 </div>
 </div>
 
-<div id="outline-container-orga287cc8" class="outline-3">
-<h3 id="orga287cc8"><span class="section-number-3">14.3</span> Definition 3 (For-Loop)</h3>
+<div id="outline-container-org39fd878" class="outline-3">
+<h3 id="org39fd878"><span class="section-number-3">14.3</span> Definition 3 (For-Loop)</h3>
 <div class="outline-text-3" id="text-14-3">
 <div class="org-src-container">
 <pre>
@@ -2816,8 +2741,8 @@ d       # Notice the order
 </div>
 </div>
 
-<div id="outline-container-org991ad88" class="outline-3">
-<h3 id="org991ad88"><span class="section-number-3">14.4</span> Definition 4 (Accumulator)</h3>
+<div id="outline-container-org163517c" class="outline-3">
+<h3 id="org163517c"><span class="section-number-3">14.4</span> Definition 4 (Accumulator)</h3>
 <div class="outline-text-3" id="text-14-4">
 <p>
 An <b>accumulator</b> is a variable that a loop uses to 'accumulator' an
@@ -2843,8 +2768,8 @@ abcd
 </div>
 </div>
 
-<div id="outline-container-org0154aeb" class="outline-3">
-<h3 id="org0154aeb"><span class="section-number-3">14.5</span> Definition 5 (Range)</h3>
+<div id="outline-container-orgb9a70ae" class="outline-3">
+<h3 id="orgb9a70ae"><span class="section-number-3">14.5</span> Definition 5 (Range)</h3>
 <div class="outline-text-3" id="text-14-5">
 <p>
 Python's <b>range</b> keyword allows us to quickly build an iterator for use
@@ -2883,12 +2808,12 @@ which is similar to list slicing.
 </div>
 </div>
 
-<div id="outline-container-org7d33a6e" class="outline-2">
-<h2 id="org7d33a6e"><span class="section-number-2">15</span> Nesting For-Loops</h2>
+<div id="outline-container-org9ae7df3" class="outline-2">
+<h2 id="org9ae7df3"><span class="section-number-2">15</span> Nesting For-Loops</h2>
 <div class="outline-text-2" id="text-15">
 </div>
-<div id="outline-container-org4d29af7" class="outline-3">
-<h3 id="org4d29af7"><span class="section-number-3">15.1</span> Definition 1 (Nesting For-Loop)</h3>
+<div id="outline-container-org9a6bb60" class="outline-3">
+<h3 id="org9a6bb60"><span class="section-number-3">15.1</span> Definition 1 (Nesting For-Loop)</h3>
 <div class="outline-text-3" id="text-15-1">
 <div class="org-src-container">
 <pre>
@@ -2901,8 +2826,8 @@ which is similar to list slicing.
 </div>
 </div>
 
-<div id="outline-container-orgebbcdcd" class="outline-3">
-<h3 id="orgebbcdcd"><span class="section-number-3">15.2</span> Definition 2 (Nested For-Loop with Range)</h3>
+<div id="outline-container-org6762e54" class="outline-3">
+<h3 id="org6762e54"><span class="section-number-3">15.2</span> Definition 2 (Nested For-Loop with Range)</h3>
 <div class="outline-text-3" id="text-15-2">
 <div class="org-src-container">
 <pre>
@@ -2920,8 +2845,8 @@ required.
 </div>
 </div>
 
-<div id="outline-container-org8100595" class="outline-3">
-<h3 id="org8100595"><span class="section-number-3">15.3</span> Definition 3 (Enumerate)</h3>
+<div id="outline-container-orge9220c7" class="outline-3">
+<h3 id="orge9220c7"><span class="section-number-3">15.3</span> Definition 3 (Enumerate)</h3>
 <div class="outline-text-3" id="text-15-3">
 <div class="org-src-container">
 <pre>
@@ -2963,12 +2888,12 @@ for i, c in enumerate(s)
 </div>
 </div>
 
-<div id="outline-container-org07513ea" class="outline-2">
-<h2 id="org07513ea"><span class="section-number-2">16</span> While Loop</h2>
+<div id="outline-container-org990adb1" class="outline-2">
+<h2 id="org990adb1"><span class="section-number-2">16</span> While Loop</h2>
 <div class="outline-text-2" id="text-16">
 </div>
-<div id="outline-container-orgdf5e57b" class="outline-3">
-<h3 id="orgdf5e57b"><span class="section-number-3">16.1</span> Definition 2 (While-Loop)</h3>
+<div id="outline-container-org1a2e6ba" class="outline-3">
+<h3 id="org1a2e6ba"><span class="section-number-3">16.1</span> Definition 2 (While-Loop)</h3>
 <div class="outline-text-3" id="text-16-1">
 <p>
 A <b>while-loop</b> is a <b>control structure</b> that repeats code while some
@@ -2977,8 +2902,8 @@ A <b>while-loop</b> is a <b>control structure</b> that repeats code while some
 </div>
 </div>
 
-<div id="outline-container-org1c977e3" class="outline-3">
-<h3 id="org1c977e3"><span class="section-number-3">16.2</span> Definition 3 (While-Loop)</h3>
+<div id="outline-container-orge790c32" class="outline-3">
+<h3 id="orge790c32"><span class="section-number-3">16.2</span> Definition 3 (While-Loop)</h3>
 <div class="outline-text-3" id="text-16-2">
 <div class="org-src-container">
 <pre>
@@ -3038,8 +2963,8 @@ while False:
 </div>
 </div>
 
-<div id="outline-container-orgb965b05" class="outline-3">
-<h3 id="orgb965b05"><span class="section-number-3">16.3</span> Converting For to While</h3>
+<div id="outline-container-org261d3a2" class="outline-3">
+<h3 id="org261d3a2"><span class="section-number-3">16.3</span> Converting For to While</h3>
 <div class="outline-text-3" id="text-16-3">
 <p>
 For every for-loop there is a while-loop equivalent (but not the
@@ -3048,8 +2973,8 @@ converse).
 </div>
 </div>
 
-<div id="outline-container-org30b4008" class="outline-3">
-<h3 id="org30b4008"><span class="section-number-3">16.4</span> Motivation</h3>
+<div id="outline-container-org12decab" class="outline-3">
+<h3 id="org12decab"><span class="section-number-3">16.4</span> Motivation</h3>
 <div class="outline-text-3" id="text-16-4">
 <p>
 There are (at least) two scenarios where for-loops are insufficient:
@@ -3066,8 +2991,8 @@ Random number generation is handled by an <b>external library</b>. It is
 </p>
 </div>
 
-<div id="outline-container-org7c1b343" class="outline-4">
-<h4 id="org7c1b343"><span class="section-number-4">16.4.1</span> Single Command</h4>
+<div id="outline-container-orgc687e79" class="outline-4">
+<h4 id="orgc687e79"><span class="section-number-4">16.4.1</span> Single Command</h4>
 <div class="outline-text-4" id="text-16-4-1">
 <div class="org-src-container">
 <pre>
@@ -3080,8 +3005,8 @@ Random number generation is handled by an <b>external library</b>. It is
 </div>
 </div>
 
-<div id="outline-container-orgfb405ed" class="outline-4">
-<h4 id="orgfb405ed"><span class="section-number-4">16.4.2</span> A word on random number generation</h4>
+<div id="outline-container-org7a36faf" class="outline-4">
+<h4 id="org7a36faf"><span class="section-number-4">16.4.2</span> A word on random number generation</h4>
 <div class="outline-text-4" id="text-16-4-2">
 <p>
 Generating truly random numbers from software alone is impossible (it
@@ -3118,8 +3043,8 @@ Consequently, you can generate the same sequence of random numbers
 </div>
 </div>
 
-<div id="outline-container-org12da8bb" class="outline-3">
-<h3 id="org12da8bb"><span class="section-number-3">16.5</span> Definition 4 (Break)</h3>
+<div id="outline-container-org0c6a0e9" class="outline-3">
+<h3 id="org0c6a0e9"><span class="section-number-3">16.5</span> Definition 4 (Break)</h3>
 <div class="outline-text-3" id="text-16-5">
 <p>
 The <code>break</code> keyword terminates a loop immediately and continues.
@@ -3138,8 +3063,8 @@ hello
 </div>
 </div>
 
-<div id="outline-container-org3f5c57d" class="outline-3">
-<h3 id="org3f5c57d"><span class="section-number-3">16.6</span> Definition 5 (Do-While)</h3>
+<div id="outline-container-orge1ee9cc" class="outline-3">
+<h3 id="orge1ee9cc"><span class="section-number-3">16.6</span> Definition 5 (Do-While)</h3>
 <div class="outline-text-3" id="text-16-6">
 <p>
 A <b>do-while</b> or <b>repeat-until</b> are while-loop variants available in
@@ -3161,8 +3086,8 @@ A <b>do-while</b> executes its code <b>at least once</b>.
 </div>
 </div>
 
-<div id="outline-container-org412c0c1" class="outline-3">
-<h3 id="org412c0c1"><span class="section-number-3">16.7</span> Do-While</h3>
+<div id="outline-container-org107dbca" class="outline-3">
+<h3 id="org107dbca"><span class="section-number-3">16.7</span> Do-While</h3>
 <div class="outline-text-3" id="text-16-7">
 <p>
 Although not natively supported in Python, we can simulate them.
@@ -3203,8 +3128,8 @@ Alternatively
 </div>
 </div>
 
-<div id="outline-container-org7282d93" class="outline-3">
-<h3 id="org7282d93"><span class="section-number-3">16.8</span> User Input</h3>
+<div id="outline-container-org58de4d4" class="outline-3">
+<h3 id="org58de4d4"><span class="section-number-3">16.8</span> User Input</h3>
 <div class="outline-text-3" id="text-16-8">
 <p>
 The command <code>x = input()</code> will wait for input from the keyboard and then
@@ -3214,12 +3139,12 @@ assign it to <b>x</b> with <code>type(x) is str =</code> True=
 </div>
 </div>
 
-<div id="outline-container-org86b4d21" class="outline-2">
-<h2 id="org86b4d21"><span class="section-number-2">17</span> List</h2>
+<div id="outline-container-org86b63f0" class="outline-2">
+<h2 id="org86b63f0"><span class="section-number-2">17</span> List</h2>
 <div class="outline-text-2" id="text-17">
 </div>
-<div id="outline-container-orgc710f89" class="outline-3">
-<h3 id="orgc710f89"><span class="section-number-3">17.1</span> Definition 1 (List)</h3>
+<div id="outline-container-org4cc16ac" class="outline-3">
+<h3 id="org4cc16ac"><span class="section-number-3">17.1</span> Definition 1 (List)</h3>
 <div class="outline-text-3" id="text-17-1">
 <p>
 A <b>list</b> is an ordered sequence of elements. These elements are not
@@ -3269,8 +3194,8 @@ Square brackets <code>[]</code> are used to create lists in Python.
 </div>
 </div>
 
-<div id="outline-container-org1da7efc" class="outline-3">
-<h3 id="org1da7efc"><span class="section-number-3">17.2</span> Comparison</h3>
+<div id="outline-container-org89e2c58" class="outline-3">
+<h3 id="org89e2c58"><span class="section-number-3">17.2</span> Comparison</h3>
 <div class="outline-text-3" id="text-17-2">
 <p>
 In Python, we can use <b>comparison operators</b> to compare two lists.
@@ -3312,8 +3237,8 @@ False                           # check in the item in the list
 </div>
 </div>
 
-<div id="outline-container-orgb8d94ae" class="outline-3">
-<h3 id="orgb8d94ae"><span class="section-number-3">17.3</span> Add new elements</h3>
+<div id="outline-container-org01f7ec0" class="outline-3">
+<h3 id="org01f7ec0"><span class="section-number-3">17.3</span> Add new elements</h3>
 <div class="outline-text-3" id="text-17-3">
 <p>
 In Python,
@@ -3390,8 +3315,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-orgccea52b" class="outline-3">
-<h3 id="orgccea52b"><span class="section-number-3">17.4</span> Remove elements</h3>
+<div id="outline-container-org99e614e" class="outline-3">
+<h3 id="org99e614e"><span class="section-number-3">17.4</span> Remove elements</h3>
 <div class="outline-text-3" id="text-17-4">
 <p>
 In Python,
@@ -3418,8 +3343,8 @@ list</li>
 </div>
 </div>
 
-<div id="outline-container-org976d73f" class="outline-3">
-<h3 id="org976d73f"><span class="section-number-3">17.5</span> Copy the list</h3>
+<div id="outline-container-orgd0f3541" class="outline-3">
+<h3 id="orgd0f3541"><span class="section-number-3">17.5</span> Copy the list</h3>
 <div class="outline-text-3" id="text-17-5">
 <p>
 In Python,
@@ -3448,8 +3373,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-org7f523fa" class="outline-3">
-<h3 id="org7f523fa"><span class="section-number-3">17.6</span> Sort and reverse the elements</h3>
+<div id="outline-container-org257314a" class="outline-3">
+<h3 id="org257314a"><span class="section-number-3">17.6</span> Sort and reverse the elements</h3>
 <div class="outline-text-3" id="text-17-6">
 <p>
 In Python,
@@ -3483,8 +3408,8 @@ In Python,
 </div>
 </div>
 
-<div id="outline-container-orgb4dc472" class="outline-3">
-<h3 id="orgb4dc472"><span class="section-number-3">17.7</span> Passing Lists to Functions</h3>
+<div id="outline-container-orgf814b05" class="outline-3">
+<h3 id="orgf814b05"><span class="section-number-3">17.7</span> Passing Lists to Functions</h3>
 <div class="outline-text-3" id="text-17-7">
 <p>
 It is possible to "unbracket" a <b>list</b> when passing to function.
@@ -3507,8 +3432,8 @@ TypeError: f() missing 2 required positional arguments: 'y' and 'z'
 </div>
 </div>
 
-<div id="outline-container-orgae24c6a" class="outline-3">
-<h3 id="orgae24c6a"><span class="section-number-3">17.8</span> Warning</h3>
+<div id="outline-container-org276c30e" class="outline-3">
+<h3 id="org276c30e"><span class="section-number-3">17.8</span> Warning</h3>
 <div class="outline-text-3" id="text-17-8">
 <p>
 In order to say <code>xs: List[int]</code> as a type-hint we must do
@@ -3523,8 +3448,8 @@ In order to say <code>xs: List[int]</code> as a type-hint we must do
 </div>
 </div>
 
-<div id="outline-container-org7652282" class="outline-3">
-<h3 id="org7652282"><span class="section-number-3">17.9</span> Slicing</h3>
+<div id="outline-container-orge2400f8" class="outline-3">
+<h3 id="orge2400f8"><span class="section-number-3">17.9</span> Slicing</h3>
 <div class="outline-text-3" id="text-17-9">
 <div class="org-src-container">
 <pre>
@@ -3541,8 +3466,8 @@ In order to say <code>xs: List[int]</code> as a type-hint we must do
 </div>
 </div>
 
-<div id="outline-container-orgce967c2" class="outline-3">
-<h3 id="orgce967c2"><span class="section-number-3">17.10</span> Range</h3>
+<div id="outline-container-orge123b2d" class="outline-3">
+<h3 id="orge123b2d"><span class="section-number-3">17.10</span> Range</h3>
 <div class="outline-text-3" id="text-17-10">
 <div class="org-src-container">
 <pre>
@@ -3558,8 +3483,8 @@ In order to say <code>xs: List[int]</code> as a type-hint we must do
 </div>
 </div>
 
-<div id="outline-container-org612a994" class="outline-3">
-<h3 id="org612a994"><span class="section-number-3">17.11</span> List Comprehension</h3>
+<div id="outline-container-orgc68e40c" class="outline-3">
+<h3 id="orgc68e40c"><span class="section-number-3">17.11</span> List Comprehension</h3>
 <div class="outline-text-3" id="text-17-11">
 <p>
 There is <b>set builder n*o*tation</b> in Python. It is called <b>list</b>
@@ -3590,8 +3515,8 @@ There is <b>set builder n*o*tation</b> in Python. It is called <b>list</b>
 </div>
 </div>
 
-<div id="outline-container-org7fc492c" class="outline-3">
-<h3 id="org7fc492c"><span class="section-number-3">17.12</span> Nested For-Loop with Lists</h3>
+<div id="outline-container-org1182238" class="outline-3">
+<h3 id="org1182238"><span class="section-number-3">17.12</span> Nested For-Loop with Lists</h3>
 <div class="outline-text-3" id="text-17-12">
 <div class="org-src-container">
 <pre>
@@ -3609,8 +3534,8 @@ There is <b>set builder n*o*tation</b> in Python. It is called <b>list</b>
 </div>
 </div>
 
-<div id="outline-container-org49d6b91" class="outline-3">
-<h3 id="org49d6b91"><span class="section-number-3">17.13</span> Nested Loops</h3>
+<div id="outline-container-orgc0ac115" class="outline-3">
+<h3 id="orgc0ac115"><span class="section-number-3">17.13</span> Nested Loops</h3>
 <div class="outline-text-3" id="text-17-13">
 <p>
 Recall that loops can be nested.
@@ -3630,8 +3555,8 @@ Recall that loops can be nested.
 </div>
 </div>
 
-<div id="outline-container-org64a1ac7" class="outline-2">
-<h2 id="org64a1ac7"><span class="section-number-2">18</span> Files</h2>
+<div id="outline-container-org2f301f3" class="outline-2">
+<h2 id="org2f301f3"><span class="section-number-2">18</span> Files</h2>
 <div class="outline-text-2" id="text-18">
 <p>
 Files are <b>persistent</b> and do not disappear when your computer reboots
@@ -3639,14 +3564,14 @@ or your Python session terminates.
 </p>
 </div>
 
-<div id="outline-container-orgd77e8bb" class="outline-3">
-<h3 id="orgd77e8bb"><span class="section-number-3">18.1</span> Example 1</h3>
+<div id="outline-container-org5e09755" class="outline-3">
+<h3 id="org5e09755"><span class="section-number-3">18.1</span> Example 1</h3>
 <div class="outline-text-3" id="text-18-1">
 <p>
 The following is the contents of the file <b>hello.txt</b>.
 </p>
 
-<pre class="example" id="org50d3308">
+<pre class="example" id="org8a9e07a">
 What a\n
 wonderful\n
 hello world.\n
@@ -3659,8 +3584,8 @@ displayed.
 </div>
 </div>
 
-<div id="outline-container-org473df67" class="outline-3">
-<h3 id="org473df67"><span class="section-number-3">18.2</span> Open and close files</h3>
+<div id="outline-container-org56c72df" class="outline-3">
+<h3 id="org56c72df"><span class="section-number-3">18.2</span> Open and close files</h3>
 <div class="outline-text-3" id="text-18-2">
 <div class="org-src-container">
 <pre>
@@ -3755,8 +3680,8 @@ ValueError: I/O operation on closed file.
 </div>
 </div>
 
-<div id="outline-container-org152c34b" class="outline-3">
-<h3 id="org152c34b"><span class="section-number-3">18.3</span> Writing to Files</h3>
+<div id="outline-container-org2122a41" class="outline-3">
+<h3 id="org2122a41"><span class="section-number-3">18.3</span> Writing to Files</h3>
 <div class="outline-text-3" id="text-18-3">
 <div class="org-src-container">
 <pre>
@@ -3767,7 +3692,7 @@ ValueError: I/O operation on closed file.
 </pre>
 </div>
 
-<pre class="example" id="org0f2b2b7">
+<pre class="example" id="org52e6973">
 # numbers.txt
 Hello World. 
 Hello
@@ -3781,8 +3706,8 @@ World.
 </div>
 </div>
 
-<div id="outline-container-org6b1b714" class="outline-3">
-<h3 id="org6b1b714"><span class="section-number-3">18.4</span> Appending to Files</h3>
+<div id="outline-container-org090b252" class="outline-3">
+<h3 id="org090b252"><span class="section-number-3">18.4</span> Appending to Files</h3>
 <div class="outline-text-3" id="text-18-4">
 <p>
 Appending will open a file <b>without overwriting</b>, instead <b>appending</b> to
@@ -3801,7 +3726,7 @@ the end of the file.
 </pre>
 </div>
 
-<pre class="example" id="org0bb6b4a">
+<pre class="example" id="org410fd04">
 # numbers.txt
 Hello World. 
 Hello
@@ -3812,12 +3737,12 @@ Hello World.
 </div>
 </div>
 
-<div id="outline-container-org1c55c1e" class="outline-2">
-<h2 id="org1c55c1e"><span class="section-number-2">19</span> CSV</h2>
+<div id="outline-container-orgde92ed9" class="outline-2">
+<h2 id="orgde92ed9"><span class="section-number-2">19</span> CSV</h2>
 <div class="outline-text-2" id="text-19">
 </div>
-<div id="outline-container-orgd7afd28" class="outline-3">
-<h3 id="orgd7afd28"><span class="section-number-3">19.1</span> Definition 1 (CSV)</h3>
+<div id="outline-container-org448e8e4" class="outline-3">
+<h3 id="org448e8e4"><span class="section-number-3">19.1</span> Definition 1 (CSV)</h3>
 <div class="outline-text-3" id="text-19-1">
 <p>
 A file that has <b>comma-separated</b> values is one that is comprised lines
@@ -3825,10 +3750,10 @@ of strings separated by commas or tabs.
 </p>
 </div>
 
-<div id="outline-container-org7aba4a9" class="outline-4">
-<h4 id="org7aba4a9"><span class="section-number-4">19.1.1</span> Example</h4>
+<div id="outline-container-orgc7e2a70" class="outline-4">
+<h4 id="orgc7e2a70"><span class="section-number-4">19.1.1</span> Example</h4>
 <div class="outline-text-4" id="text-19-1-1">
-<pre class="example" id="org49698f0">
+<pre class="example" id="orgef3c330">
 A0,A1,A2,A3
 B0,B1,B2,B3
 </pre>
@@ -3836,8 +3761,8 @@ B0,B1,B2,B3
 </div>
 </div>
 
-<div id="outline-container-orgc552ca4" class="outline-3">
-<h3 id="orgc552ca4"><span class="section-number-3">19.2</span> Reading from CSV</h3>
+<div id="outline-container-org34b186a" class="outline-3">
+<h3 id="org34b186a"><span class="section-number-3">19.2</span> Reading from CSV</h3>
 <div class="outline-text-3" id="text-19-2">
 <p>
 The string <code>split()</code> method is useful when reading from CSV files.
@@ -3877,15 +3802,15 @@ B3
 </div>
 </div>
 
-<div id="outline-container-org669717b" class="outline-3">
-<h3 id="org669717b"><span class="section-number-3">19.3</span> Headers</h3>
+<div id="outline-container-org18dc931" class="outline-3">
+<h3 id="org18dc931"><span class="section-number-3">19.3</span> Headers</h3>
 <div class="outline-text-3" id="text-19-3">
 <p>
 Some CSV files contain <b>headers</b> containing human readable strings
 describing the data in the column.
 </p>
 
-<pre class="example" id="org75613b9">
+<pre class="example" id="org05954b3">
 Frist Name,Last Name,Role    # header
 Alice,Liddel,Teaching Assistant
 </pre>
@@ -3906,8 +3831,8 @@ The header line can be skipped by reading once.
 </div>
 </div>
 
-<div id="outline-container-org7bf7e2d" class="outline-3">
-<h3 id="org7bf7e2d"><span class="section-number-3">19.4</span> Writing to a CSV</h3>
+<div id="outline-container-org68a9ef0" class="outline-3">
+<h3 id="org68a9ef0"><span class="section-number-3">19.4</span> Writing to a CSV</h3>
 <div class="outline-text-3" id="text-19-4">
 <p>
 The <code>join()</code> string method is useful for writing lists of strings to
@@ -3926,19 +3851,19 @@ files.
 </div>
 </div>
 
-<div id="outline-container-orgbd2fc64" class="outline-2">
-<h2 id="orgbd2fc64"><span class="section-number-2">20</span> Dictionary</h2>
+<div id="outline-container-org4df0812" class="outline-2">
+<h2 id="org4df0812"><span class="section-number-2">20</span> Dictionary</h2>
 <div class="outline-text-2" id="text-20">
 </div>
-<div id="outline-container-org42f9080" class="outline-3">
-<h3 id="org42f9080"><span class="section-number-3">20.1</span> Hash Function</h3>
+<div id="outline-container-orgd6ed15b" class="outline-3">
+<h3 id="orgd6ed15b"><span class="section-number-3">20.1</span> Hash Function</h3>
 <div class="outline-text-3" id="text-20-1">
 <p>
 In both cases we provided a way to map a <b>key</b> (character) to a <b>value</b>
 (number).
 </p>
 
-<pre class="example" id="orge10a805">
+<pre class="example" id="org8b06bcf">
 str → int
 
    h → 1
@@ -3955,8 +3880,8 @@ This mapping is called a <b>hash function.</b>
 </p>
 </div>
 
-<div id="outline-container-org0f20890" class="outline-4">
-<h4 id="org0f20890"><span class="section-number-4">20.1.1</span> Example</h4>
+<div id="outline-container-orga652007" class="outline-4">
+<h4 id="orga652007"><span class="section-number-4">20.1.1</span> Example</h4>
 <div class="outline-text-4" id="text-20-1-1">
 <p>
 The hash functions for the <b>two list</b>
@@ -3992,8 +3917,8 @@ Python uses <b>dictionary</b> data-type as the hash function.
 </div>
 </div>
 
-<div id="outline-container-org9d9efb9" class="outline-3">
-<h3 id="org9d9efb9"><span class="section-number-3">20.2</span> Definition 3 (Dictionary)</h3>
+<div id="outline-container-org23cfc68" class="outline-3">
+<h3 id="org23cfc68"><span class="section-number-3">20.2</span> Definition 3 (Dictionary)</h3>
 <div class="outline-text-3" id="text-20-2">
 <p>
 A <b>dictionary</b> in Python is a data-structure that stores <b>key: value</b>
@@ -4009,8 +3934,8 @@ Dictionaries / hash-tables are <b>very</b> useful.
 </p>
 </div>
 
-<div id="outline-container-org71effd3" class="outline-4">
-<h4 id="org71effd3"><span class="section-number-4">20.2.1</span> items</h4>
+<div id="outline-container-org7f7eeba" class="outline-4">
+<h4 id="org7f7eeba"><span class="section-number-4">20.2.1</span> items</h4>
 <div class="outline-text-4" id="text-20-2-1">
 <div class="org-src-container">
 <pre>
@@ -4027,8 +3952,8 @@ dict_items([("red": ["apple", "firetrucks", "cars"]), ("yellow": ["banana", "car
 </div>
 </div>
 
-<div id="outline-container-orgff71863" class="outline-4">
-<h4 id="orgff71863"><span class="section-number-4">20.2.2</span> values</h4>
+<div id="outline-container-org3453312" class="outline-4">
+<h4 id="org3453312"><span class="section-number-4">20.2.2</span> values</h4>
 <div class="outline-text-4" id="text-20-2-2">
 <div class="org-src-container">
 <pre>
@@ -4045,8 +3970,8 @@ dict_items([["apple", "firetrucks", "cars"], ["banana", "cars"], ["sky", "cars"]
 </div>
 </div>
 
-<div id="outline-container-org50b5f2d" class="outline-4">
-<h4 id="org50b5f2d"><span class="section-number-4">20.2.3</span> keys</h4>
+<div id="outline-container-orga535e1c" class="outline-4">
+<h4 id="orga535e1c"><span class="section-number-4">20.2.3</span> keys</h4>
 <div class="outline-text-4" id="text-20-2-3">
 <div class="org-src-container">
 <pre>
@@ -4073,8 +3998,8 @@ KeyError: 'green'
 </div>
 </div>
 
-<div id="outline-container-org49e02f7" class="outline-4">
-<h4 id="org49e02f7"><span class="section-number-4">20.2.4</span> get</h4>
+<div id="outline-container-orgbc5459f" class="outline-4">
+<h4 id="orgbc5459f"><span class="section-number-4">20.2.4</span> get</h4>
 <div class="outline-text-4" id="text-20-2-4">
 <div class="org-src-container">
 <pre>
@@ -4098,8 +4023,8 @@ None           # safer because no error is thrown here
 </div>
 </div>
 
-<div id="outline-container-org1b073f6" class="outline-3">
-<h3 id="org1b073f6"><span class="section-number-3">20.3</span> for loops with dictionaries</h3>
+<div id="outline-container-orgccb79a1" class="outline-3">
+<h3 id="orgccb79a1"><span class="section-number-3">20.3</span> for loops with dictionaries</h3>
 <div class="outline-text-3" id="text-20-3">
 <div class="org-src-container">
 <pre>
@@ -4118,8 +4043,8 @@ None           # safer because no error is thrown here
 </div>
 </div>
 
-<div id="outline-container-org02b5895" class="outline-4">
-<h4 id="org02b5895"><span class="section-number-4">20.3.1</span> Example</h4>
+<div id="outline-container-org09d9e5a" class="outline-4">
+<h4 id="org09d9e5a"><span class="section-number-4">20.3.1</span> Example</h4>
 <div class="outline-text-4" id="text-20-3-1">
 <div class="org-src-container">
 <pre>
@@ -4165,12 +4090,12 @@ return {c: cs.count(c) for c in set(cs.lower())}
 </div>
 </div>
 
-<div id="outline-container-org6da43ea" class="outline-2">
-<h2 id="org6da43ea"><span class="section-number-2">21</span> Tuple</h2>
+<div id="outline-container-orgef96684" class="outline-2">
+<h2 id="orgef96684"><span class="section-number-2">21</span> Tuple</h2>
 <div class="outline-text-2" id="text-21">
 </div>
-<div id="outline-container-org81c0b50" class="outline-3">
-<h3 id="org81c0b50"><span class="section-number-3">21.1</span> Definition 1 (Tuple)</h3>
+<div id="outline-container-org7aeaa86" class="outline-3">
+<h3 id="org7aeaa86"><span class="section-number-3">21.1</span> Definition 1 (Tuple)</h3>
 <div class="outline-text-3" id="text-21-1">
 <p>
 A <b>tuple</b> is an ordered sequence of elements. An n-tuple is a tuple with
@@ -4200,8 +4125,8 @@ TypeError: 'tuple' object does not support item assingment
 </div>
 </div>
 
-<div id="outline-container-org1b668ab" class="outline-2">
-<h2 id="org1b668ab"><span class="section-number-2">22</span> Nesting Dictionary</h2>
+<div id="outline-container-org3d2f040" class="outline-2">
+<h2 id="org3d2f040"><span class="section-number-2">22</span> Nesting Dictionary</h2>
 <div class="outline-text-2" id="text-22">
 <p>
 Dictionary can also be <b>nested</b>.
@@ -4223,12 +4148,12 @@ Dictionary can also be <b>nested</b>.
 </div>
 </div>
 
-<div id="outline-container-orgc6d8cc7" class="outline-2">
-<h2 id="orgc6d8cc7"><span class="section-number-2">23</span> Lazy Literature</h2>
+<div id="outline-container-orgaaed99b" class="outline-2">
+<h2 id="orgaaed99b"><span class="section-number-2">23</span> Lazy Literature</h2>
 <div class="outline-text-2" id="text-23">
 </div>
-<div id="outline-container-orgcf56446" class="outline-3">
-<h3 id="orgcf56446"><span class="section-number-3">23.1</span> Goal</h3>
+<div id="outline-container-org1defb51" class="outline-3">
+<h3 id="org1defb51"><span class="section-number-3">23.1</span> Goal</h3>
 <div class="outline-text-3" id="text-23-1">
 <p>
 Write a program that <b>consumes</b> text towards the goal of <b>generating</b>
@@ -4237,8 +4162,8 @@ text in the original style.
 </div>
 </div>
 
-<div id="outline-container-orgeb72dce" class="outline-3">
-<h3 id="orgeb72dce"><span class="section-number-3">23.2</span> Plan</h3>
+<div id="outline-container-orga1620bf" class="outline-3">
+<h3 id="orga1620bf"><span class="section-number-3">23.2</span> Plan</h3>
 <div class="outline-text-3" id="text-23-2">
 <p>
 it has two <b>phases</b>:
@@ -4252,14 +4177,14 @@ in the style of the consumed test.</li>
 </div>
 </div>
 
-<div id="outline-container-org4bcebf3" class="outline-3">
-<h3 id="org4bcebf3"><span class="section-number-3">23.3</span> Learn</h3>
+<div id="outline-container-org50a5417" class="outline-3">
+<h3 id="org50a5417"><span class="section-number-3">23.3</span> Learn</h3>
 <div class="outline-text-3" id="text-23-3">
 <p>
 The sample file:
 </p>
 
-<pre class="example" id="orga633957">
+<pre class="example" id="orgde02e01">
 Did you get the sword from the old man on the top of the waterfall?
 </pre>
 
@@ -4276,8 +4201,8 @@ Expected output:
 </div>
 </div>
 </div>
-<div id="outline-container-orgc4d1fe9" class="outline-2">
-<h2 id="orgc4d1fe9"><span class="section-number-2">24</span> Doctest</h2>
+<div id="outline-container-org96f8394" class="outline-2">
+<h2 id="org96f8394"><span class="section-number-2">24</span> Doctest</h2>
 <div class="outline-text-2" id="text-24">
 <p>
 we use <code>doctest</code> by <code>import doctest</code>
@@ -4292,8 +4217,8 @@ doctest.testmod(verbose=True)
 </div>
 </div>
 
-<div id="outline-container-orgf247b1f" class="outline-3">
-<h3 id="orgf247b1f"><span class="section-number-3">24.1</span> Sample Test</h3>
+<div id="outline-container-org4ca921a" class="outline-3">
+<h3 id="org4ca921a"><span class="section-number-3">24.1</span> Sample Test</h3>
 <div class="outline-text-3" id="text-24-1">
 <div class="org-src-container">
 <pre>
@@ -4315,8 +4240,8 @@ doctest.testmod(verbose=True)
 </div>
 </div>
 
-<div id="outline-container-orga3a7f31" class="outline-3">
-<h3 id="orga3a7f31"><span class="section-number-3">24.2</span> Doctest Outputs</h3>
+<div id="outline-container-org434c3e4" class="outline-3">
+<h3 id="org434c3e4"><span class="section-number-3">24.2</span> Doctest Outputs</h3>
 <div class="outline-text-3" id="text-24-2">
 <div class="org-src-container">
 <pre>
@@ -4352,8 +4277,8 @@ TestResults(failed=1, attempted=2)
 </div>
 </div>
 
-<div id="outline-container-orga970b16" class="outline-3">
-<h3 id="orga970b16"><span class="section-number-3">24.3</span> Factorial (Corrected Version)</h3>
+<div id="outline-container-org19414a2" class="outline-3">
+<h3 id="org19414a2"><span class="section-number-3">24.3</span> Factorial (Corrected Version)</h3>
 <div class="outline-text-3" id="text-24-3">
 <div class="org-src-container">
 <pre>
@@ -4368,8 +4293,8 @@ TestResults(failed=1, attempted=2)
 </div>
 </div>
 
-<div id="outline-container-orgce19312" class="outline-3">
-<h3 id="orgce19312"><span class="section-number-3">24.4</span> Writing Good Doctests</h3>
+<div id="outline-container-orgeaafbec" class="outline-3">
+<h3 id="orgeaafbec"><span class="section-number-3">24.4</span> Writing Good Doctests</h3>
 <div class="outline-text-3" id="text-24-4">
 <p>
 A comprehensive Doctest would:
@@ -4386,8 +4311,8 @@ A comprehensive Doctest would:
 </div>
 </div>
 
-<div id="outline-container-orgbe7d2e2" class="outline-3">
-<h3 id="orgbe7d2e2"><span class="section-number-3">24.5</span> Black-Box Approach</h3>
+<div id="outline-container-org00b8b86" class="outline-3">
+<h3 id="org00b8b86"><span class="section-number-3">24.5</span> Black-Box Approach</h3>
 <div class="outline-text-3" id="text-24-5">
 <p>
 Black-box
@@ -4402,8 +4327,8 @@ doctests, they employ the same strategy.
 </div>
 </div>
 
-<div id="outline-container-org96017b9" class="outline-3">
-<h3 id="org96017b9"><span class="section-number-3">24.6</span> White Space</h3>
+<div id="outline-container-org370eee1" class="outline-3">
+<h3 id="org370eee1"><span class="section-number-3">24.6</span> White Space</h3>
 <div class="outline-text-3" id="text-24-6">
 <p>
 Be careful with spacing! The following tests will <b>FAIL</b>.
@@ -4428,8 +4353,8 @@ We are doing <b>string testing</b> and not <b>unit testing</b>.
 </div>
 </div>
 
-<div id="outline-container-org0839975" class="outline-3">
-<h3 id="org0839975"><span class="section-number-3">24.7</span> Sets</h3>
+<div id="outline-container-org5e5524c" class="outline-3">
+<h3 id="org5e5524c"><span class="section-number-3">24.7</span> Sets</h3>
 <div class="outline-text-3" id="text-24-7">
 <p>
 A <b>set</b> is an unordered collection of distinct objects. Notice some sets
@@ -4452,8 +4377,8 @@ are sorted by Python.
 </div>
 </div>
 
-<div id="outline-container-org8cf0166" class="outline-3">
-<h3 id="org8cf0166"><span class="section-number-3">24.8</span> Mulitiline Docstring</h3>
+<div id="outline-container-orgd485662" class="outline-3">
+<h3 id="orgd485662"><span class="section-number-3">24.8</span> Mulitiline Docstring</h3>
 <div class="outline-text-3" id="text-24-8">
 <p>
 The following is allowed.
@@ -4499,8 +4424,8 @@ if __name__ == '__main__':
 </div>
 </div>
 
-<div id="outline-container-orge0d84ca" class="outline-3">
-<h3 id="orge0d84ca"><span class="section-number-3">24.9</span> White-Box Approach</h3>
+<div id="outline-container-org9ce7911" class="outline-3">
+<h3 id="org9ce7911"><span class="section-number-3">24.9</span> White-Box Approach</h3>
 <div class="outline-text-3" id="text-24-9">
 <p>
 White-box testing involves testing a system with complete knowledge of
@@ -4510,8 +4435,8 @@ path through the code to achieve some output.
 </div>
 </div>
 
-<div id="outline-container-orge71ceaf" class="outline-3">
-<h3 id="orge71ceaf"><span class="section-number-3">24.10</span> Levels of Testing</h3>
+<div id="outline-container-org3935e69" class="outline-3">
+<h3 id="org3935e69"><span class="section-number-3">24.10</span> Levels of Testing</h3>
 <div class="outline-text-3" id="text-24-10">
 <ol class="org-ol">
 <li>Unit Testing is done by Developers.</li>
@@ -4522,8 +4447,8 @@ path through the code to achieve some output.
 </div>
 </div>
 
-<div id="outline-container-orgc389880" class="outline-3">
-<h3 id="orgc389880"><span class="section-number-3">24.11</span> Unit Testing</h3>
+<div id="outline-container-org6108a96" class="outline-3">
+<h3 id="org6108a96"><span class="section-number-3">24.11</span> Unit Testing</h3>
 <div class="outline-text-3" id="text-24-11">
 <ul class="org-ul">
 <li>Unit Testing is intended to isolate components of a program and
@@ -4538,8 +4463,8 @@ fixed quicker than others!</li>
 </div>
 </div>
 
-<div id="outline-container-orgf95b9bb" class="outline-3">
-<h3 id="orgf95b9bb"><span class="section-number-3">24.12</span> Example</h3>
+<div id="outline-container-org7c3a47a" class="outline-3">
+<h3 id="org7c3a47a"><span class="section-number-3">24.12</span> Example</h3>
 <div class="outline-text-3" id="text-24-12">
 <div class="org-src-container">
 <pre>
@@ -4557,8 +4482,8 @@ class TestNumbers(unitest.Test.Case):
 </div>
 </div>
 
-<div id="outline-container-orgc092de4" class="outline-3">
-<h3 id="orgc092de4"><span class="section-number-3">24.13</span> Code Coverage</h3>
+<div id="outline-container-orgb59fd07" class="outline-3">
+<h3 id="orgb59fd07"><span class="section-number-3">24.13</span> Code Coverage</h3>
 <div class="outline-text-3" id="text-24-13">
 <p>
 The goal is to test every piece of code functionality. A program with
@@ -4568,8 +4493,8 @@ particular test suite.
 </div>
 </div>
 
-<div id="outline-container-org1d96bbc" class="outline-3">
-<h3 id="org1d96bbc"><span class="section-number-3">24.14</span> Teseing Tips</h3>
+<div id="outline-container-orgc77f9b2" class="outline-3">
+<h3 id="orgc77f9b2"><span class="section-number-3">24.14</span> Teseing Tips</h3>
 <div class="outline-text-3" id="text-24-14">
 <ul class="org-ul">
 <li>Each test case should be short and focused. This means having more
@@ -4584,12 +4509,12 @@ related to the change itself.</li>
 </div>
 </div>
 
-<div id="outline-container-orgb392aae" class="outline-2">
-<h2 id="orgb392aae"><span class="section-number-2">25</span> Regular Expressions (Regex)</h2>
+<div id="outline-container-orgb999b0c" class="outline-2">
+<h2 id="orgb999b0c"><span class="section-number-2">25</span> Regular Expressions (Regex)</h2>
 <div class="outline-text-2" id="text-25">
 </div>
-<div id="outline-container-org6cea5df" class="outline-3">
-<h3 id="org6cea5df"><span class="section-number-3">25.1</span> Definition 1</h3>
+<div id="outline-container-org1415ec1" class="outline-3">
+<h3 id="org1415ec1"><span class="section-number-3">25.1</span> Definition 1</h3>
 <div class="outline-text-3" id="text-25-1">
 <p>
 A sequence of characters that forms a search pattern.
@@ -4597,8 +4522,8 @@ A sequence of characters that forms a search pattern.
 </div>
 </div>
 
-<div id="outline-container-org338b5a8" class="outline-3">
-<h3 id="org338b5a8"><span class="section-number-3">25.2</span> Rules</h3>
+<div id="outline-container-orga08ba94" class="outline-3">
+<h3 id="orga08ba94"><span class="section-number-3">25.2</span> Rules</h3>
 <div class="outline-text-3" id="text-25-2">
 <ol class="org-ol">
 <li>Groups: <code>()</code>, <code>(?:)</code> capturing vs. Non-capturing</li>
@@ -4610,8 +4535,8 @@ A sequence of characters that forms a search pattern.
 </ol>
 </div>
 
-<div id="outline-container-org00d68c5" class="outline-4">
-<h4 id="org00d68c5"><span class="section-number-4">25.2.1</span> Simple Usage</h4>
+<div id="outline-container-orga400696" class="outline-4">
+<h4 id="orga400696"><span class="section-number-4">25.2.1</span> Simple Usage</h4>
 <div class="outline-text-4" id="text-25-2-1">
 <div class="org-src-container">
 <pre>
@@ -4632,14 +4557,14 @@ True
 </div>
 </div>
 
-<div id="outline-container-org6f8c979" class="outline-3">
-<h3 id="org6f8c979"><span class="section-number-3">25.3</span> Find all phone numbers with are code 416</h3>
+<div id="outline-container-org684d317" class="outline-3">
+<h3 id="org684d317"><span class="section-number-3">25.3</span> Find all phone numbers with are code 416</h3>
 <div class="outline-text-3" id="text-25-3">
 <p>
 We can find those phone numbers by the pattern (<b>begin with 416</b>)
 </p>
 
-<pre class="example" id="orgbe854a3">
+<pre class="example" id="org0ed9c00">
 txt = ‘143-614-3330, 556-732-3881, 680-964-1127, 568-769-3556,
         099-887-1597, 081-997-3959, 842-502-6372, 406-648-1681,
         416-475-8283, 259-778-2868, 105-776-7011, 912-576-5192,
@@ -4659,8 +4584,8 @@ txt = ‘143-614-3330, 556-732-3881, 680-964-1127, 568-769-3556,
 </div>
 </div>
 
-<div id="outline-container-org9777970" class="outline-3">
-<h3 id="org9777970"><span class="section-number-3">25.4</span> Findall</h3>
+<div id="outline-container-org594cddf" class="outline-3">
+<h3 id="org594cddf"><span class="section-number-3">25.4</span> Findall</h3>
 <div class="outline-text-3" id="text-25-4">
 <p>
 <b><i>General Methods to Findall:</i></b>
@@ -4700,8 +4625,8 @@ txt = ‘143-614-3330, 556-732-3881, 680-964-1127, 568-769-3556,
 </div>
 </div>
 
-<div id="outline-container-org62c7c78" class="outline-4">
-<h4 id="org62c7c78"><span class="section-number-4">25.4.1</span> Algorithm Steps</h4>
+<div id="outline-container-org2c39417" class="outline-4">
+<h4 id="org2c39417"><span class="section-number-4">25.4.1</span> Algorithm Steps</h4>
 <div class="outline-text-4" id="text-25-4-1">
 <p>
 "416-\d{3}-\d{4}" Search text: "416-555-1234 , 516-55-51234"
@@ -4721,12 +4646,12 @@ regex to its start</li>
 </div>
 </div>
 
-<div id="outline-container-orgbb3a846" class="outline-3">
-<h3 id="orgbb3a846"><span class="section-number-3">25.5</span> More Examples</h3>
+<div id="outline-container-orgf21e61b" class="outline-3">
+<h3 id="orgf21e61b"><span class="section-number-3">25.5</span> More Examples</h3>
 <div class="outline-text-3" id="text-25-5">
 </div>
-<div id="outline-container-orge0fba7a" class="outline-4">
-<h4 id="orge0fba7a"><span class="section-number-4">25.5.1</span> Find special characters</h4>
+<div id="outline-container-org863e7e9" class="outline-4">
+<h4 id="org863e7e9"><span class="section-number-4">25.5.1</span> Find special characters</h4>
 <div class="outline-text-4" id="text-25-5-1">
 <div class="org-src-container">
 <pre>
@@ -4746,8 +4671,8 @@ regex to its start</li>
 </div>
 </div>
 
-<div id="outline-container-org1e12b41" class="outline-4">
-<h4 id="org1e12b41"><span class="section-number-4">25.5.2</span> Groups</h4>
+<div id="outline-container-orgc2841e7" class="outline-4">
+<h4 id="orgc2841e7"><span class="section-number-4">25.5.2</span> Groups</h4>
 <div class="outline-text-4" id="text-25-5-2">
 <div class="org-src-container">
 <pre>
@@ -4764,8 +4689,8 @@ regex to its start</li>
 </div>
 </div>
 
-<div id="outline-container-orgd0f0a76" class="outline-4">
-<h4 id="orgd0f0a76"><span class="section-number-4">25.5.3</span> Or</h4>
+<div id="outline-container-orgd85859c" class="outline-4">
+<h4 id="orgd85859c"><span class="section-number-4">25.5.3</span> Or</h4>
 <div class="outline-text-4" id="text-25-5-3">
 <div class="org-src-container">
 <pre>
@@ -4782,8 +4707,8 @@ regex to its start</li>
 </div>
 </div>
 
-<div id="outline-container-orgfa3463d" class="outline-4">
-<h4 id="orgfa3463d"><span class="section-number-4">25.5.4</span> Words</h4>
+<div id="outline-container-org841e459" class="outline-4">
+<h4 id="org841e459"><span class="section-number-4">25.5.4</span> Words</h4>
 <div class="outline-text-4" id="text-25-5-4">
 <div class="org-src-container">
 <pre>
@@ -4803,12 +4728,12 @@ Myke Mason"
 </div>
 </div>
 
-<div id="outline-container-org7f129f7" class="outline-2">
-<h2 id="org7f129f7"><span class="section-number-2">26</span> Algorithms</h2>
+<div id="outline-container-orgf4d8fb9" class="outline-2">
+<h2 id="orgf4d8fb9"><span class="section-number-2">26</span> Algorithms</h2>
 <div class="outline-text-2" id="text-26">
 </div>
-<div id="outline-container-orgd1d3571" class="outline-3">
-<h3 id="orgd1d3571"><span class="section-number-3">26.1</span> Selection Sort</h3>
+<div id="outline-container-org27a4c12" class="outline-3">
+<h3 id="org27a4c12"><span class="section-number-3">26.1</span> Selection Sort</h3>
 <div class="outline-text-3" id="text-26-1">
 <p>
 Find (i.e. *select*) the largest member of XS and make it the last
@@ -4816,15 +4741,14 @@ element. Then find the next largest and make it the second last etc.
 </p>
 
 
-<div id="orgca8804e" class="figure">
-<p><img src="./images/selection_sort.png" alt="selection_sort.png" />
+<div id="org56641fc" class="figure">
+<p><img src="images/selection_sort.png" alt="selection_sort.png" />
 </p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org4e672ed" class="outline-3">
-<h3 id="org4e672ed"><span class="section-number-3">26.2</span> time.time</h3>
+<div id="outline-container-orgdf381a3" class="outline-3">
+<h3 id="orgdf381a3"><span class="section-number-3">26.2</span> time.time</h3>
 <div class="outline-text-3" id="text-26-2">
 <p>
 Use this library, we can easily compute the time that a function use.
@@ -4848,8 +4772,8 @@ Use this library, we can easily compute the time that a function use.
 </div>
 </div>
 
-<div id="outline-container-org9baf968" class="outline-3">
-<h3 id="org9baf968"><span class="section-number-3">26.3</span> Insertion Sort</h3>
+<div id="outline-container-org4212c14" class="outline-3">
+<h3 id="org4212c14"><span class="section-number-3">26.3</span> Insertion Sort</h3>
 <div class="outline-text-3" id="text-26-3">
 <p>
 Sort the list by <b>inserting</b> elements repeatedly into the front of the
@@ -4857,15 +4781,14 @@ list. After <i>k</i> steps the first <i>k</i> elements of the list will be sorte
 </p>
 
 
-<div id="org12aa413" class="figure">
-<p><img src="./images/insertion_sort.png" alt="insertion_sort.png" />
+<div id="org058b4fa" class="figure">
+<p><img src="images/insertion_sort.png" alt="insertion_sort.png" />
 </p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-orgb8d3275" class="outline-3">
-<h3 id="orgb8d3275"><span class="section-number-3">26.4</span> Bubble Sort</h3>
+<div id="outline-container-org661b9c3" class="outline-3">
+<h3 id="org661b9c3"><span class="section-number-3">26.4</span> Bubble Sort</h3>
 <div class="outline-text-3" id="text-26-4">
 <p>
 Pass through the list swapping elements so that larger element move
@@ -4875,15 +4798,15 @@ sorted.
 </p>
 
 
-<div id="orge641c59" class="figure">
+<div id="org6e4801b" class="figure">
 <p><img src="images/bubble_sort.png" alt="bubble_sort.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgccc6519" class="outline-3">
-<h3 id="orgccc6519"><span class="section-number-3">26.5</span> Merge Sort</h3>
+<div id="outline-container-org1c118a3" class="outline-3">
+<h3 id="org1c118a3"><span class="section-number-3">26.5</span> Merge Sort</h3>
 <div class="outline-text-3" id="text-26-5">
 <p>
 Break the list in half and sort the halves (using merge sort) then
@@ -4891,22 +4814,21 @@ combine these pieces into a single sorted list being the answer.
 </p>
 </div>
 
-<div id="outline-container-orgeff8793" class="outline-4">
-<h4 id="orgeff8793"><span class="section-number-4">26.5.1</span> Split</h4>
+<div id="outline-container-org8cc47a1" class="outline-4">
+<h4 id="org8cc47a1"><span class="section-number-4">26.5.1</span> Split</h4>
 <div class="outline-text-4" id="text-26-5-1">
 
-<div id="orgdec7fd8" class="figure">
-<p><img src="./images/split.png" alt="split.png" />
+<div id="orgc44c48a" class="figure">
+<p><img src="images/split.png" alt="split.png" />
 </p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org58b4dc6" class="outline-4">
-<h4 id="org58b4dc6"><span class="section-number-4">26.5.2</span> Merge</h4>
+<div id="outline-container-org8640617" class="outline-4">
+<h4 id="org8640617"><span class="section-number-4">26.5.2</span> Merge</h4>
 <div class="outline-text-4" id="text-26-5-2">
 
-<div id="org7f59e0f" class="figure">
+<div id="org847f158" class="figure">
 <p><img src="images/merge.png" alt="merge.png" />
 </p>
 </div>
@@ -4914,8 +4836,8 @@ combine these pieces into a single sorted list being the answer.
 </div>
 </div>
 
-<div id="outline-container-orgd23ba13" class="outline-3">
-<h3 id="orgd23ba13"><span class="section-number-3">26.6</span> Other Sorting</h3>
+<div id="outline-container-orge07eccc" class="outline-3">
+<h3 id="orge07eccc"><span class="section-number-3">26.6</span> Other Sorting</h3>
 <div class="outline-text-3" id="text-26-6">
 <ul class="org-ul">
 <li>quicksort</li>
@@ -4927,12 +4849,12 @@ combine these pieces into a single sorted list being the answer.
 </div>
 </div>
 
-<div id="outline-container-org7ea1c81" class="outline-2">
-<h2 id="org7ea1c81"><span class="section-number-2">27</span> Timing and Complexity</h2>
+<div id="outline-container-orge513539" class="outline-2">
+<h2 id="orge513539"><span class="section-number-2">27</span> Timing and Complexity</h2>
 <div class="outline-text-2" id="text-27">
 </div>
-<div id="outline-container-org1955c69" class="outline-3">
-<h3 id="org1955c69"><span class="section-number-3">27.1</span> Definition 1 (Complexity)</h3>
+<div id="outline-container-org115fca4" class="outline-3">
+<h3 id="org115fca4"><span class="section-number-3">27.1</span> Definition 1 (Complexity)</h3>
 <div class="outline-text-3" id="text-27-1">
 <p>
 We measure the complexity of an algorithm by counting the number of
@@ -4941,8 +4863,8 @@ denoted n).
 </p>
 </div>
 
-<div id="outline-container-orge0b4bdf" class="outline-4">
-<h4 id="orge0b4bdf"><span class="section-number-4">27.1.1</span> Linear</h4>
+<div id="outline-container-org5008523" class="outline-4">
+<h4 id="org5008523"><span class="section-number-4">27.1.1</span> Linear</h4>
 <div class="outline-text-4" id="text-27-1-1">
 <div class="org-src-container">
 <pre>
@@ -4959,8 +4881,8 @@ denoted n).
 </div>
 </div>
 
-<div id="outline-container-org0513d26" class="outline-3">
-<h3 id="org0513d26"><span class="section-number-3">27.2</span> Definition 2 (Big-Oh Notation)</h3>
+<div id="outline-container-org3ecbccd" class="outline-3">
+<h3 id="org3ecbccd"><span class="section-number-3">27.2</span> Definition 2 (Big-Oh Notation)</h3>
 <div class="outline-text-3" id="text-27-2">
 <p>
 We say that "\(f(n)\) is big-oh of \(g(n)\)" and write \(f(n)\) = \(O(g(n))\)
@@ -4979,8 +4901,8 @@ Do not need to understand this definition so far
 </blockquote>
 </div>
 
-<div id="outline-container-orge0d94d7" class="outline-4">
-<h4 id="orge0d94d7"><span class="section-number-4">27.2.1</span> Example</h4>
+<div id="outline-container-org45ec3d5" class="outline-4">
+<h4 id="org45ec3d5"><span class="section-number-4">27.2.1</span> Example</h4>
 <div class="outline-text-4" id="text-27-2-1">
 <ol class="org-ol">
 <li>\(2x^2+x+1=O(n^2)\) because for \(x > 2\) \(\Longrightarrow\)
@@ -4991,8 +4913,8 @@ Do not need to understand this definition so far
 </div>
 </div>
 
-<div id="outline-container-org59fc0a8" class="outline-4">
-<h4 id="org59fc0a8"><span class="section-number-4">27.2.2</span> Quadratic</h4>
+<div id="outline-container-orgc7d863a" class="outline-4">
+<h4 id="orgc7d863a"><span class="section-number-4">27.2.2</span> Quadratic</h4>
 <div class="outline-text-4" id="text-27-2-2">
 <div class="org-src-container">
 <pre>
@@ -5011,8 +4933,8 @@ Do not need to understand this definition so far
 </div>
 </div>
 
-<div id="outline-container-org8378b56" class="outline-4">
-<h4 id="org8378b56"><span class="section-number-4">27.2.3</span> Constant</h4>
+<div id="outline-container-org2d80940" class="outline-4">
+<h4 id="org2d80940"><span class="section-number-4">27.2.3</span> Constant</h4>
 <div class="outline-text-4" id="text-27-2-3">
 <div class="org-src-container">
 <pre>
@@ -5028,8 +4950,8 @@ Do not need to understand this definition so far
 </div>
 </div>
 
-<div id="outline-container-org7ccae58" class="outline-4">
-<h4 id="org7ccae58"><span class="section-number-4">27.2.4</span> Logarithmic</h4>
+<div id="outline-container-org429f977" class="outline-4">
+<h4 id="org429f977"><span class="section-number-4">27.2.4</span> Logarithmic</h4>
 <div class="outline-text-4" id="text-27-2-4">
 <div class="org-src-container">
 <pre>
@@ -5046,8 +4968,8 @@ Do not need to understand this definition so far
 </div>
 </div>
 </div>
-<div id="outline-container-org6fa3762" class="outline-2">
-<h2 id="org6fa3762"><span class="section-number-2">28</span> Object Oriented Programming (OOP)</h2>
+<div id="outline-container-org2d31b61" class="outline-2">
+<h2 id="org2d31b61"><span class="section-number-2">28</span> Object Oriented Programming (OOP)</h2>
 <div class="outline-text-2" id="text-28">
 <p>
 The fundamental building block of Object-Oriented Programming is the
@@ -5056,8 +4978,8 @@ of OOP is to create <b>objects</b> that interact with one another.
 </p>
 </div>
 
-<div id="outline-container-orgc5d6d51" class="outline-3">
-<h3 id="orgc5d6d51"><span class="section-number-3">28.1</span> Definition 1 (Object)</h3>
+<div id="outline-container-org37f2a55" class="outline-3">
+<h3 id="org37f2a55"><span class="section-number-3">28.1</span> Definition 1 (Object)</h3>
 <div class="outline-text-3" id="text-28-1">
 <p>
 An <b>object</b> is a collection of data called <b>fields</b> or <b>attributes</b>
@@ -5093,8 +5015,8 @@ keyword <b>self</b>.
 </div>
 </div>
 
-<div id="outline-container-org0d5075d" class="outline-3">
-<h3 id="org0d5075d"><span class="section-number-3">28.2</span> Instantiation vs. Initialization vs. Declaration</h3>
+<div id="outline-container-org495a9d3" class="outline-3">
+<h3 id="org495a9d3"><span class="section-number-3">28.2</span> Instantiation vs. Initialization vs. Declaration</h3>
 <div class="outline-text-3" id="text-28-2">
 <ul class="org-ul">
 <li><b>Instantiation</b> is when memory is allocated for an object.</li>
@@ -5105,8 +5027,8 @@ object of a specified type with a given name.</li>
 </ul>
 </div>
 
-<div id="outline-container-orgf5b3c30" class="outline-4">
-<h4 id="orgf5b3c30"><span class="section-number-4">28.2.1</span> Initializing</h4>
+<div id="outline-container-org8260ae9" class="outline-4">
+<h4 id="org8260ae9"><span class="section-number-4">28.2.1</span> Initializing</h4>
 <div class="outline-text-4" id="text-28-2-1">
 <p>
 <b>Instantiating</b> an object with input instead.
@@ -5129,8 +5051,8 @@ object of a specified type with a given name.</li>
 </div>
 </div>
 
-<div id="outline-container-org983a400" class="outline-4">
-<h4 id="org983a400"><span class="section-number-4">28.2.2</span> Equality</h4>
+<div id="outline-container-orgd2f88f8" class="outline-4">
+<h4 id="orgd2f88f8"><span class="section-number-4">28.2.2</span> Equality</h4>
 <div class="outline-text-4" id="text-28-2-2">
 <div class="org-src-container">
 <pre>
@@ -5148,8 +5070,8 @@ False
 </div>
 </div>
 
-<div id="outline-container-orgdac429a" class="outline-4">
-<h4 id="orgdac429a"><span class="section-number-4">28.2.3</span> Aliasing</h4>
+<div id="outline-container-orgcb842f9" class="outline-4">
+<h4 id="orgcb842f9"><span class="section-number-4">28.2.3</span> Aliasing</h4>
 <div class="outline-text-4" id="text-28-2-3">
 <div class="org-src-container">
 <pre>
@@ -5172,12 +5094,12 @@ True
 </div>
 </div>
 
-<div id="outline-container-org1bb2fb6" class="outline-2">
-<h2 id="org1bb2fb6"><span class="section-number-2">29</span> Nesting</h2>
+<div id="outline-container-orga033658" class="outline-2">
+<h2 id="orga033658"><span class="section-number-2">29</span> Nesting</h2>
 <div class="outline-text-2" id="text-29">
 </div>
-<div id="outline-container-org0a176ae" class="outline-3">
-<h3 id="org0a176ae"><span class="section-number-3">29.1</span> Nested List</h3>
+<div id="outline-container-orgbdb9635" class="outline-3">
+<h3 id="orgbdb9635"><span class="section-number-3">29.1</span> Nested List</h3>
 <div class="outline-text-3" id="text-29-1">
 <div class="org-src-container">
 <pre>
@@ -5193,7 +5115,7 @@ True
 <b>Problems</b>
 </p>
 
-<pre class="example" id="org07e7e81">
+<pre class="example" id="orgfcfd2a6">
 ...,
 [namek, gpak, utoidk]]
 </pre>
@@ -5208,8 +5130,8 @@ True
 </div>
 </div>
 
-<div id="outline-container-org5a72db3" class="outline-3">
-<h3 id="org5a72db3"><span class="section-number-3">29.2</span> Dictionary of Lists</h3>
+<div id="outline-container-org7c49dcd" class="outline-3">
+<h3 id="org7c49dcd"><span class="section-number-3">29.2</span> Dictionary of Lists</h3>
 <div class="outline-text-3" id="text-29-2">
 <div class="org-src-container">
 <pre>
@@ -5233,8 +5155,8 @@ True
 </div>
 </div>
 
-<div id="outline-container-org0e864fa" class="outline-3">
-<h3 id="org0e864fa"><span class="section-number-3">29.3</span> Dictionary of Dictionaries</h3>
+<div id="outline-container-orgfa92b9f" class="outline-3">
+<h3 id="orgfa92b9f"><span class="section-number-3">29.3</span> Dictionary of Dictionaries</h3>
 <div class="outline-text-3" id="text-29-3">
 <div class="org-src-container">
 <pre>
@@ -5257,12 +5179,12 @@ True
 </div>
 </div>
 
-<div id="outline-container-orgd784bba" class="outline-3">
-<h3 id="orgd784bba"><span class="section-number-3">29.4</span> Methods</h3>
+<div id="outline-container-orgdaf9997" class="outline-3">
+<h3 id="orgdaf9997"><span class="section-number-3">29.4</span> Methods</h3>
 <div class="outline-text-3" id="text-29-4">
 </div>
-<div id="outline-container-org6808a37" class="outline-4">
-<h4 id="org6808a37"><span class="section-number-4">29.4.1</span> Example 1</h4>
+<div id="outline-container-orgb88bdd8" class="outline-4">
+<h4 id="orgb88bdd8"><span class="section-number-4">29.4.1</span> Example 1</h4>
 <div class="outline-text-4" id="text-29-4-1">
 <div class="org-src-container">
 <pre>
@@ -5282,8 +5204,8 @@ True
 </div>
 </div>
 
-<div id="outline-container-org4827f96" class="outline-4">
-<h4 id="org4827f96"><span class="section-number-4">29.4.2</span> Example 2</h4>
+<div id="outline-container-org8038395" class="outline-4">
+<h4 id="org8038395"><span class="section-number-4">29.4.2</span> Example 2</h4>
 <div class="outline-text-4" id="text-29-4-2">
 <div class="org-src-container">
 <pre>
@@ -5318,8 +5240,8 @@ True
 </div>
 </div>
 
-<div id="outline-container-orge61d97a" class="outline-3">
-<h3 id="orge61d97a"><span class="section-number-3">29.5</span> Private Variables</h3>
+<div id="outline-container-orgb87283d" class="outline-3">
+<h3 id="orgb87283d"><span class="section-number-3">29.5</span> Private Variables</h3>
 <div class="outline-text-3" id="text-29-5">
 <p>
 The underscore on _value in the previous slide is used to denote this
@@ -5328,8 +5250,8 @@ this value outside the object.
 </p>
 </div>
 
-<div id="outline-container-orgf815c93" class="outline-4">
-<h4 id="orgf815c93"><span class="section-number-4">29.5.1</span> Underscores</h4>
+<div id="outline-container-org8799dec" class="outline-4">
+<h4 id="org8799dec"><span class="section-number-4">29.5.1</span> Underscores</h4>
 <div class="outline-text-4" id="text-29-5-1">
 <p>
 Some ways underscores are used in python:
@@ -5351,8 +5273,8 @@ like *init*().
 </div>
 </div>
 
-<div id="outline-container-org3c53cb9" class="outline-4">
-<h4 id="org3c53cb9"><span class="section-number-4">29.5.2</span> Magic Methods</h4>
+<div id="outline-container-org21790d7" class="outline-4">
+<h4 id="org21790d7"><span class="section-number-4">29.5.2</span> Magic Methods</h4>
 <div class="outline-text-4" id="text-29-5-2">
 <p>
 <b>Initializer</b>
@@ -5424,8 +5346,8 @@ object. For example Point:
 </div>
 </div>
 
-<div id="outline-container-orgf70eec0" class="outline-4">
-<h4 id="orgf70eec0"><span class="section-number-4">29.5.3</span> More Magic Methods</h4>
+<div id="outline-container-orge0359a0" class="outline-4">
+<h4 id="orge0359a0"><span class="section-number-4">29.5.3</span> More Magic Methods</h4>
 <div class="outline-text-4" id="text-29-5-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -5556,8 +5478,8 @@ object. For example Point:
 </div>
 </div>
 
-<div id="outline-container-org04901ae" class="outline-3">
-<h3 id="org04901ae"><span class="section-number-3">29.6</span> Inheritance</h3>
+<div id="outline-container-org1f5999b" class="outline-3">
+<h3 id="org1f5999b"><span class="section-number-3">29.6</span> Inheritance</h3>
 <div class="outline-text-3" id="text-29-6">
 <p>
 <b>Inheritance</b> refers to a new class with little or no modification to an
@@ -5593,7 +5515,7 @@ class Student(Person):
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Desmond Wang</p>
-<p class="date">Created: 2021-01-11 Mon 16:42</p>
+<p class="date">Created: 2021-01-11 Mon 16:49</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
