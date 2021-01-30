@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-01-30 Sat 11:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes for Week 2</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Desmond Wang" />
+<link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/one-atom-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes for Week 2</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orged36525">1. Classes</a>
+<ul>
+<li><a href="#org5b3289a">1.1. Classes and Objects</a></li>
+<li><a href="#orgec6b609">1.2. Classes and Methods</a></li>
+<li><a href="#org20c5467">1.3. Attributes</a></li>
+<li><a href="#orgd46281b">1.4. Object-Oriented Analysis</a></li>
+</ul>
+</li>
+<li><a href="#orgd53bffc">2. Design classes</a>
+<ul>
+<li><a href="#orgfe213e0">2.1. Design roadmap: Analyze the specs</a></li>
+<li><a href="#org30fe041">2.2. Design: Class API</a></li>
+<li><a href="#orgfd5b48a">2.3. Design: Class Implementation</a></li>
+<li><a href="#orgf8bdd87">2.4. Rebinding self</a></li>
+</ul>
+</li>
+<li><a href="#org65ace57">3. Composition</a>
+<ul>
+<li><a href="#org8200867">3.1. Summary</a></li>
+</ul>
+</li>
+<li><a href="#org1ce0d54">4. Data encapsulation</a>
+<ul>
+<li><a href="#org2796d63">4.1. Data encapsulation in Python</a></li>
+<li><a href="#org1f4d67d">4.2. Privacy is about communication</a></li>
+</ul>
+</li>
+<li><a href="#org95ba135">5. Representation invariants</a>
+<ul>
+<li><a href="#org43a2923">5.1. Representation invariants as assumptions</a></li>
+<li><a href="#orga2dd4a1">5.2. Enforcing representation invariants</a>
+<ul>
+<li><a href="#org02fdc10">5.2.1. Strategy 1: Preconditions</a></li>
+<li><a href="#orgac716a1">5.2.2. Strategy 2: Ignore “bad” inputs</a></li>
+<li><a href="#orgc87fad7">5.2.3. Strategy 3: Fix “bad” inputs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0fd0a6b">6. Direct attribute access</a></li>
+<li><a href="#org379435b">7. More design considerations</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orged36525" class="outline-2">
+<h2 id="orged36525"><span class="section-number-2">1</span> Classes</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org5b3289a" class="outline-3">
+<h3 id="org5b3289a"><span class="section-number-3">1.1</span> Classes and Objects</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+A <b>class</b> is
+</p>
+<ul class="org-ul">
+<li>Abstact data type that models a real-word concept</li>
+<li>Describes the attributes and "abilities" (methods) of that concept (<i>object</i>)</li>
+<li>Examples: int, str, list, etc., or user-defined: Tweet, User, Cat, Desk, FileReader, ColourPrinter, etc.</li>
+</ul>
+<p>
+An <b>object</b> is
+</p>
+<ul class="org-ul">
+<li>Instance of a class</li>
+<li>Everything in Python is an object</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgec6b609" class="outline-3">
+<h3 id="orgec6b609"><span class="section-number-3">1.2</span> Classes and Methods</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Sometimes, the built-in object types (e.g. string, list, dict) are not natural for supporting new types of data, so that by defining a new class, we can add a new type to Python.
+</p>
+<ul class="org-ul">
+<li>Class names are nouns: student, course, rectangle, animal, ship, (and str, list, dict)</li>
+<li>Methods are actions specific to each type of object
+<ul class="org-ul">
+<li>e.g. for car: move, stop, turn around&#x2026;</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org20c5467" class="outline-3">
+<h3 id="org20c5467"><span class="section-number-3">1.3</span> Attributes</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>An <b>attribute</b> is a feature or characteristic of an object
+<ul class="org-ul">
+<li>Implemented using instance variables</li>
+</ul></li>
+<li>Unlike a methond, it is not an action</li>
+<li>An attribute is something that an object has, not something the object does</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd46281b" class="outline-3">
+<h3 id="orgd46281b"><span class="section-number-3">1.4</span> Object-Oriented Analysis</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Suppose that you're given a description of how a system should operate</li>
+<li>Find the objects (nouns)</li>
+<li>Determine object behaviour (methods)</li>
+<li>Determine object state (instance variables)</li>
+<li>Determine object interactions</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd53bffc" class="outline-2">
+<h2 id="orgd53bffc"><span class="section-number-2">2</span> Design classes</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgfe213e0" class="outline-3">
+<h3 id="orgfe213e0"><span class="section-number-3">2.1</span> Design roadmap: Analyze the specs</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Analyze specification:
+</p>
+<blockquote>
+<p>
+The Twitter application allows users to broadcast short messages called tweets. A <span class="underline">tweet</span> includes the message <b>content</b> (of up to 280 characters), the <b>user</b> who wrote the tweet, <b>when</b> the tweet <i>was created</i>, and how many “likes” the tweet has. Once a tweet is created, it may <i>be liked</i> by other users. Furthermore, the tweet may <i>be edited</i> by its owner.
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>Class name: tweet</li>
+<li>Possible attributes: <b>user, date, content, likes</b></li>
+<li>Possible methods: <i>liked, edited, created</i></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org30fe041" class="outline-3">
+<h3 id="org30fe041"><span class="section-number-3">2.2</span> Design: Class API</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Define the class API according to the class design recipe:
+</p>
+<ol class="org-ol">
+<li>Class name and brief description (docstring)</li>
+<li>examples of client code</li>
+<li>Pubilc methods
+-Apply the function design recipe to design each method</li>
+<li>Public arrtibutes</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgfd5b48a" class="outline-3">
+<h3 id="orgfd5b48a"><span class="section-number-3">2.3</span> Design: Class Implementation</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Implement the class:
+</p>
+<ol class="org-ol">
+<li>Internal (private) attributes</li>
+<li>Representation invariants</li>
+<li>Implement public methods</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf8bdd87" class="outline-3">
+<h3 id="orgf8bdd87"><span class="section-number-3">2.4</span> Rebinding self</h3>
+<div class="outline-text-3" id="text-2-4">
+<div class="org-src-container">
+<pre>
+<code class="python">def mutate(self, x):
+    self = NewObject(x)
+</code>
+</pre>
+</div>
+
+<p>
+Rebinding self like above doesn't mutate anything!
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org65ace57" class="outline-2">
+<h2 id="org65ace57"><span class="section-number-2">3</span> Composition</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+To interact different classes, we can use existing types inside new user-defined types
+</p>
+</div>
+<div id="outline-container-org8200867" class="outline-3">
+<h3 id="org8200867"><span class="section-number-3">3.1</span> Summary</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Composition: a relationship between two classes where instances of one class contain references to instances of the other.</li>
+<li>Example:
+<ul class="org-ul">
+<li>User adn Tweet: "has" relationship, e.g. "user has tweets"</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1ce0d54" class="outline-2">
+<h2 id="org1ce0d54"><span class="section-number-2">4</span> Data encapsulation</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>General idea: attributes or methods of a class can be made “private” to hide implementation details or protect them from unauthorized use</li>
+<li>Only allow reading and writing to them via the methods made available by the class designer</li>
+<li>Marking an attribute/method as private signals that client code should not access it</li>
+</ul>
+</div>
+<div id="outline-container-org2796d63" class="outline-3">
+<h3 id="org2796d63"><span class="section-number-3">4.1</span> Data encapsulation in Python</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Python conventions for making attributes or methods “private”:
+</p>
+<ul class="org-ul">
+<li>_name: Should not be used outside of class definition.
+<ul class="org-ul">
+<li>e.g. _id if the ID should be private</li>
+</ul></li>
+<li>__name: Inaccessible and Invisible (in theory anyway; technically there is still a way to access it)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1f4d67d" class="outline-3">
+<h3 id="org1f4d67d"><span class="section-number-3">4.2</span> Privacy is about communication</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+A private attribute/method could be
+</p>
+<ul class="org-ul">
+<li>Very complicated</li>
+<li>Subject to several representation invariants</li>
+<li>Seemingly unrelated to the actual purpose of the class</li>
+<li>Changed at any time</li>
+</ul>
+<p>
+A client of the class shouldn’t need to worry about these.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org95ba135" class="outline-2">
+<h2 id="org95ba135"><span class="section-number-2">5</span> Representation invariants</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+To document the properties that must be true for every instance of given class:
+</p>
+<ul class="org-ul">
+<li>Every instance attribute has a type annotation, which restricts the kind of value this attribute can have</li>
+</ul>
+<p>
+However,  to restrict attributes values even further (like, Tweets can have at most 280 characters), we call there restrictions as <i><b>representation invariants</b></i> (RI)
+To express RIs:
+</p>
+<ul class="org-ul">
+<li>(in word) This tweet’s content is at most 280 characters.</li>
+<li>(in code) len(self.content) &lt;= 280</li>
+</ul>
+</div>
+<div id="outline-container-org43a2923" class="outline-3">
+<h3 id="org43a2923"><span class="section-number-3">5.1</span> Representation invariants as assumptions</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>When given an instance of that class, we can assume that every representation invariant is satisfied</li>
+</ul>
+<div class="org-src-container">
+<pre>
+<code class="python">class Tweet:
+
+    def like(self, n: int) -&gt; None:
+	self.likes += n
+</code>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>self is an instance of Tweet, so we assume that all RIs are satisfied when this method is called</li>
+<li>The representation invariants of Tweet are preconditions of self for every Tweet method
+<ul class="org-ul">
+<li>E.g., like adding a precondition in docstring of like(): “self.likes is an int”</li>
+</ul></li>
+<li>Preconditions of self for methods are generally implied from RIs (from type contracts or RIs in docstring)</li>
+<li>In general, the Zen of Python: “Explicit is better than implicit”</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga2dd4a1" class="outline-3">
+<h3 id="orga2dd4a1"><span class="section-number-3">5.2</span> Enforcing representation invariants</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>Every method must ensure that self satisfies all representation invariants after the method ends</li>
+<li>The representation invariants of a class are postconditions of self for every Tweet method</li>
+</ul>
+</div>
+<div id="outline-container-org02fdc10" class="outline-4">
+<h4 id="org02fdc10"><span class="section-number-4">5.2.1</span> Strategy 1: Preconditions</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<ul class="org-ul">
+<li>Require client code to call methods with “good” inputs, so that the methods won’t violate the representation invariants.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgac716a1" class="outline-4">
+<h4 id="orgac716a1"><span class="section-number-4">5.2.2</span> Strategy 2: Ignore “bad” inputs</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<ul class="org-ul">
+<li>Accept a wide range of inputs, and if an input would cause a representation invariant to be violated, do nothing instead</li>
+<li>Also known as failing silently</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc87fad7" class="outline-4">
+<h4 id="orgc87fad7"><span class="section-number-4">5.2.3</span> Strategy 3: Fix “bad” inputs</h4>
+<div class="outline-text-4" id="text-5-2-3">
+<ul class="org-ul">
+<li>Accept a wide range of inputs, and if an input would cause a representation invariant to be violated, change it to a “reasonable” or default value before continuing with the rest of the function.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0fd0a6b" class="outline-2">
+<h2 id="org0fd0a6b"><span class="section-number-2">6</span> Direct attribute access</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Even if our methods are perfect, client code can access and mutate most instance attributes directly</li>
+<li>Documenting representation invariants is essential!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org379435b" class="outline-2">
+<h2 id="org379435b"><span class="section-number-2">7</span> More design considerations</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>When adding some new feature in a class, consider what you already have and what you cannot implement without extra attributes and/or methods</li>
+<li>Remember: Redundant information is bad (memory space inefficiency, prone to bugs)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Desmond Wang</p>
+<p class="date">Created: 2021-01-30 Sat 11:03</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
