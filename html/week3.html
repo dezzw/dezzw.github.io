@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-30 Sat 08:01 -->
+<!-- 2021-01-30 Sat 11:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes for Week 3</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Desmond Wang" />
 <link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/one-atom-dark.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/style/atom-one-dark.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
@@ -43,30 +43,30 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0108d56">1. Inheritance</a>
+<li><a href="#orgbfdf2d6">1. Inheritance</a>
 <ul>
-<li><a href="#org4fde3db">1.1. Base class and subclasses</a></li>
-<li><a href="#orge822caa">1.2. Abstract classes</a></li>
-<li><a href="#org7d8af94">1.3. Class design with inheritance</a></li>
-<li><a href="#org964aae5">1.4. Write general code</a></li>
-<li><a href="#org3182bbf">1.5. Same codes, different types</a></li>
-<li><a href="#orgf757884">1.6. Avoid Duplicate Documentation</a></li>
-<li><a href="#org8996864">1.7. Is a vs. Has a</a></li>
+<li><a href="#org456181a">1.1. Base class and subclasses</a></li>
+<li><a href="#org05c1e0d">1.2. Abstract classes</a></li>
+<li><a href="#org210d17b">1.3. Class design with inheritance</a></li>
+<li><a href="#org94bfcf7">1.4. Write general code</a></li>
+<li><a href="#org236de2e">1.5. Same codes, different types</a></li>
+<li><a href="#orgc61137d">1.6. Avoid Duplicate Documentation</a></li>
+<li><a href="#org23355cc">1.7. Is a vs. Has a</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0108d56" class="outline-2">
-<h2 id="org0108d56"><span class="section-number-2">1</span> Inheritance</h2>
+<div id="outline-container-orgbfdf2d6" class="outline-2">
+<h2 id="orgbfdf2d6"><span class="section-number-2">1</span> Inheritance</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Using <b><i>inheritance</i></b> is to avoid repeating the same/common parts(attributes and methods) in similar classes
 </p>
 </div>
-<div id="outline-container-org4fde3db" class="outline-3">
-<h3 id="org4fde3db"><span class="section-number-3">1.1</span> Base class and subclasses</h3>
+<div id="outline-container-org456181a" class="outline-3">
+<h3 id="org456181a"><span class="section-number-3">1.1</span> Base class and subclasses</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <b><i>base class</i></b> is the class which handle all the common things and we only need to write them only once
@@ -87,8 +87,8 @@ Using <b><i>inheritance</i></b> is to avoid repeating the same/common parts(attr
 </ul>
 </div>
 </div>
-<div id="outline-container-orge822caa" class="outline-3">
-<h3 id="orge822caa"><span class="section-number-3">1.2</span> Abstract classes</h3>
+<div id="outline-container-org05c1e0d" class="outline-3">
+<h3 id="org05c1e0d"><span class="section-number-3">1.2</span> Abstract classes</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 <b><i>Abstract classes</i></b> are the explicit representation of an interface in a Python program
@@ -127,8 +127,8 @@ class Rabbits(Animals):
 </div>
 </div>
 
-<div id="outline-container-org7d8af94" class="outline-3">
-<h3 id="org7d8af94"><span class="section-number-3">1.3</span> Class design with inheritance</h3>
+<div id="outline-container-org210d17b" class="outline-3">
+<h3 id="org210d17b"><span class="section-number-3">1.3</span> Class design with inheritance</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>The four cases of method inheritance
@@ -141,8 +141,8 @@ class Rabbits(Animals):
 </ul>
 </div>
 </div>
-<div id="outline-container-org964aae5" class="outline-3">
-<h3 id="org964aae5"><span class="section-number-3">1.4</span> Write general code</h3>
+<div id="outline-container-org94bfcf7" class="outline-3">
+<h3 id="org94bfcf7"><span class="section-number-3">1.4</span> Write general code</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li>Client code writted to use <b>base classes</b> will work with their <b>subclasses</b></li>
@@ -150,8 +150,8 @@ class Rabbits(Animals):
 </ul>
 </div>
 </div>
-<div id="outline-container-org3182bbf" class="outline-3">
-<h3 id="org3182bbf"><span class="section-number-3">1.5</span> Same codes, different types</h3>
+<div id="outline-container-org236de2e" class="outline-3">
+<h3 id="org236de2e"><span class="section-number-3">1.5</span> Same codes, different types</h3>
 <div class="outline-text-3" id="text-1-5">
 <blockquote>
 <p>
@@ -179,8 +179,8 @@ Terminology: <i>polymorphism</i> ("taking multiple forms")
 </div>
 </div>
 
-<div id="outline-container-orgf757884" class="outline-3">
-<h3 id="orgf757884"><span class="section-number-3">1.6</span> Avoid Duplicate Documentation</h3>
+<div id="outline-container-orgc61137d" class="outline-3">
+<h3 id="orgc61137d"><span class="section-number-3">1.6</span> Avoid Duplicate Documentation</h3>
 <div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
 <li>Do not maintain documentation in two places, e.g. superclass and subclass (unless there's no differences)</li>
@@ -190,8 +190,8 @@ Terminology: <i>polymorphism</i> ("taking multiple forms")
 </ul>
 </div>
 </div>
-<div id="outline-container-org8996864" class="outline-3">
-<h3 id="org8996864"><span class="section-number-3">1.7</span> Is a vs. Has a</h3>
+<div id="outline-container-org23355cc" class="outline-3">
+<h3 id="org23355cc"><span class="section-number-3">1.7</span> Is a vs. Has a</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 <b>Inheritance</b> and <b>composition</b> is not always appropriate to describe the logical relationship between the entities you want to model.
@@ -206,7 +206,7 @@ Terminology: <i>polymorphism</i> ("taking multiple forms")
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Desmond Wang</p>
-<p class="date">Created: 2021-01-30 Sat 08:01</p>
+<p class="date">Created: 2021-01-30 Sat 11:16</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
