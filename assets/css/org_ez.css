@@ -1,6 +1,6 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-root {
-    backgroud: url("../../images/EZEDU.png")
+:root {
+    background-image: url("../../images/EZEDU.png")
 }
 
 html {
@@ -191,7 +191,7 @@ textarea {
 }
 body {
   color: #000;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .org-alert-high {
   color: #ff8c00;
