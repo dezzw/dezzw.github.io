@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-01-30 Sat 08:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes for Week 3</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Desmond Wang" />
+<link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/one-atom-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes for Week 3</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0108d56">1. Inheritance</a>
+<ul>
+<li><a href="#org4fde3db">1.1. Base class and subclasses</a></li>
+<li><a href="#orge822caa">1.2. Abstract classes</a></li>
+<li><a href="#org7d8af94">1.3. Class design with inheritance</a></li>
+<li><a href="#org964aae5">1.4. Write general code</a></li>
+<li><a href="#org3182bbf">1.5. Same codes, different types</a></li>
+<li><a href="#orgf757884">1.6. Avoid Duplicate Documentation</a></li>
+<li><a href="#org8996864">1.7. Is a vs. Has a</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0108d56" class="outline-2">
+<h2 id="org0108d56"><span class="section-number-2">1</span> Inheritance</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Using <b><i>inheritance</i></b> is to avoid repeating the same/common parts(attributes and methods) in similar classes
+</p>
+</div>
+<div id="outline-container-org4fde3db" class="outline-3">
+<h3 id="org4fde3db"><span class="section-number-3">1.1</span> Base class and subclasses</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<b><i>base class</i></b> is the class which handle all the common things and we only need to write them only once
+</p>
+
+<p>
+<b><i>Subclasses*</i> is a kind of the */base class/</b> and it is used to store the different parts
+</p>
+
+<p>
+<i>Example:</i>
+</p>
+<ul class="org-ul">
+<li><b>Base class:</b> Animals
+<ul class="org-ul">
+<li><b>Subclasses:</b> Dogs, Cats, etc.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge822caa" class="outline-3">
+<h3 id="orge822caa"><span class="section-number-3">1.2</span> Abstract classes</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<b><i>Abstract classes</i></b> are the explicit representation of an interface in a Python program
+</p>
+
+<p>
+An <b><i>abstract class</i></b> (as with all superclasses) also enables the sharing of code through method inheritance
+</p>
+<ul class="org-ul">
+<li>Some methods will be unimplemented and are to be implemented by subclasses</li>
+<li>For an abstract method, <code>raise NotImplementedError</code></li>
+<li>If some behaviours are identical in subclasses, those method can be implemented in an abstract class</li>
+</ul>
+<p>
+<i>Example:</i>
+</p>
+<div class="org-src-container">
+<pre>
+<code class="python">class Animals:
+
+    def eat(self) -&gt; str:
+	raise NotImplementedError
+
+class Dogs(Animals):
+
+    def eat(self) -&gt; str:
+	return "eating meat..."
+
+class Rabbits(Animals):
+
+    def eat(self) -&gt; str:
+	return "eating carrot..."
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7d8af94" class="outline-3">
+<h3 id="org7d8af94"><span class="section-number-3">1.3</span> Class design with inheritance</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>The four cases of method inheritance
+<ol class="org-ol">
+<li>Subclass inherits superclass methods</li>
+<li>Subclass overrides an abstract method (to implement it)</li>
+<li>Subclass overrides an implemented method (to replace it)</li>
+<li>Subclass overrides an implemented method (to extend it)</li>
+</ol></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org964aae5" class="outline-3">
+<h3 id="org964aae5"><span class="section-number-3">1.4</span> Write general code</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Client code writted to use <b>base classes</b> will work with their <b>subclasses</b></li>
+<li>The client code can rely on the <b>subclasses</b></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3182bbf" class="outline-3">
+<h3 id="org3182bbf"><span class="section-number-3">1.5</span> Same codes, different types</h3>
+<div class="outline-text-3" id="text-1-5">
+<blockquote>
+<p>
+"One code to rule them all"
+</p>
+</blockquote>
+<p>
+Terminology: <i>polymorphism</i> ("taking multiple forms")
+</p>
+<div class="org-src-container">
+<pre>
+<code class="python">class Zoo:
+    """
+    ...
+    """
+    animals: List[Animals]
+    ...
+
+    def eat_all(self) -&gt; None:
+	for animal in self.animals:
+	    animal.eat()
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf757884" class="outline-3">
+<h3 id="orgf757884"><span class="section-number-3">1.6</span> Avoid Duplicate Documentation</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Do not maintain documentation in two places, e.g. superclass and subclass (unless there's no differences)</li>
+<li>For inferited methods, common public attributes, there is no need to document again in subclass.</li>
+<li>Sometimes some differences may need to explained</li>
+<li><b><i>Remember:</i></b> docstring is part of the public API, which should contain how to use a method instead of how it is implemented internally</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8996864" class="outline-3">
+<h3 id="org8996864"><span class="section-number-3">1.7</span> Is a vs. Has a</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+<b>Inheritance</b> and <b>composition</b> is not always appropriate to describe the logical relationship between the entities you want to model.
+</p>
+<ul class="org-ul">
+<li>Inheritance: "is a" relationship</li>
+<li>Composition: "has a" relationship</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Desmond Wang</p>
+<p class="date">Created: 2021-01-30 Sat 08:01</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
