@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-30 Sat 11:03 -->
+<!-- 2021-01-30 Sat 11:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes for Week 2</title>
@@ -43,56 +43,56 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orged36525">1. Classes</a>
+<li><a href="#orgf7de356">1. Classes</a>
 <ul>
-<li><a href="#org5b3289a">1.1. Classes and Objects</a></li>
-<li><a href="#orgec6b609">1.2. Classes and Methods</a></li>
-<li><a href="#org20c5467">1.3. Attributes</a></li>
-<li><a href="#orgd46281b">1.4. Object-Oriented Analysis</a></li>
+<li><a href="#orgb8cb7ae">1.1. Classes and Objects</a></li>
+<li><a href="#orgb7cc2db">1.2. Classes and Methods</a></li>
+<li><a href="#org02e1f75">1.3. Attributes</a></li>
+<li><a href="#orgc64f833">1.4. Object-Oriented Analysis</a></li>
 </ul>
 </li>
-<li><a href="#orgd53bffc">2. Design classes</a>
+<li><a href="#org14756f2">2. Design classes</a>
 <ul>
-<li><a href="#orgfe213e0">2.1. Design roadmap: Analyze the specs</a></li>
-<li><a href="#org30fe041">2.2. Design: Class API</a></li>
-<li><a href="#orgfd5b48a">2.3. Design: Class Implementation</a></li>
-<li><a href="#orgf8bdd87">2.4. Rebinding self</a></li>
+<li><a href="#org4df1c4f">2.1. Design roadmap: Analyze the specs</a></li>
+<li><a href="#org9a0cfc3">2.2. Design: Class API</a></li>
+<li><a href="#org9b773be">2.3. Design: Class Implementation</a></li>
+<li><a href="#orgd9ce638">2.4. Rebinding self</a></li>
 </ul>
 </li>
-<li><a href="#org65ace57">3. Composition</a>
+<li><a href="#org50edf76">3. Composition</a>
 <ul>
-<li><a href="#org8200867">3.1. Summary</a></li>
+<li><a href="#org1a282af">3.1. Summary</a></li>
 </ul>
 </li>
-<li><a href="#org1ce0d54">4. Data encapsulation</a>
+<li><a href="#org527ea7b">4. Data encapsulation</a>
 <ul>
-<li><a href="#org2796d63">4.1. Data encapsulation in Python</a></li>
-<li><a href="#org1f4d67d">4.2. Privacy is about communication</a></li>
+<li><a href="#org69e3997">4.1. Data encapsulation in Python</a></li>
+<li><a href="#org70c5000">4.2. Privacy is about communication</a></li>
 </ul>
 </li>
-<li><a href="#org95ba135">5. Representation invariants</a>
+<li><a href="#org5496193">5. Representation invariants</a>
 <ul>
-<li><a href="#org43a2923">5.1. Representation invariants as assumptions</a></li>
-<li><a href="#orga2dd4a1">5.2. Enforcing representation invariants</a>
+<li><a href="#orgfced231">5.1. Representation invariants as assumptions</a></li>
+<li><a href="#org5234220">5.2. Enforcing representation invariants</a>
 <ul>
-<li><a href="#org02fdc10">5.2.1. Strategy 1: Preconditions</a></li>
-<li><a href="#orgac716a1">5.2.2. Strategy 2: Ignore “bad” inputs</a></li>
-<li><a href="#orgc87fad7">5.2.3. Strategy 3: Fix “bad” inputs</a></li>
+<li><a href="#org1480f8b">5.2.1. Strategy 1: Preconditions</a></li>
+<li><a href="#orge56a6cc">5.2.2. Strategy 2: Ignore “bad” inputs</a></li>
+<li><a href="#org0d071e7">5.2.3. Strategy 3: Fix “bad” inputs</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org0fd0a6b">6. Direct attribute access</a></li>
-<li><a href="#org379435b">7. More design considerations</a></li>
+<li><a href="#org7749ee6">6. Direct attribute access</a></li>
+<li><a href="#org4d809e9">7. More design considerations</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orged36525" class="outline-2">
-<h2 id="orged36525"><span class="section-number-2">1</span> Classes</h2>
+<div id="outline-container-orgf7de356" class="outline-2">
+<h2 id="orgf7de356"><span class="section-number-2">1</span> Classes</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org5b3289a" class="outline-3">
-<h3 id="org5b3289a"><span class="section-number-3">1.1</span> Classes and Objects</h3>
+<div id="outline-container-orgb8cb7ae" class="outline-3">
+<h3 id="orgb8cb7ae"><span class="section-number-3">1.1</span> Classes and Objects</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 A <b>class</b> is
@@ -111,8 +111,8 @@ An <b>object</b> is
 </ul>
 </div>
 </div>
-<div id="outline-container-orgec6b609" class="outline-3">
-<h3 id="orgec6b609"><span class="section-number-3">1.2</span> Classes and Methods</h3>
+<div id="outline-container-orgb7cc2db" class="outline-3">
+<h3 id="orgb7cc2db"><span class="section-number-3">1.2</span> Classes and Methods</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Sometimes, the built-in object types (e.g. string, list, dict) are not natural for supporting new types of data, so that by defining a new class, we can add a new type to Python.
@@ -126,8 +126,8 @@ Sometimes, the built-in object types (e.g. string, list, dict) are not natural f
 </ul>
 </div>
 </div>
-<div id="outline-container-org20c5467" class="outline-3">
-<h3 id="org20c5467"><span class="section-number-3">1.3</span> Attributes</h3>
+<div id="outline-container-org02e1f75" class="outline-3">
+<h3 id="org02e1f75"><span class="section-number-3">1.3</span> Attributes</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>An <b>attribute</b> is a feature or characteristic of an object
@@ -139,8 +139,8 @@ Sometimes, the built-in object types (e.g. string, list, dict) are not natural f
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd46281b" class="outline-3">
-<h3 id="orgd46281b"><span class="section-number-3">1.4</span> Object-Oriented Analysis</h3>
+<div id="outline-container-orgc64f833" class="outline-3">
+<h3 id="orgc64f833"><span class="section-number-3">1.4</span> Object-Oriented Analysis</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li>Suppose that you're given a description of how a system should operate</li>
@@ -152,12 +152,12 @@ Sometimes, the built-in object types (e.g. string, list, dict) are not natural f
 </div>
 </div>
 </div>
-<div id="outline-container-orgd53bffc" class="outline-2">
-<h2 id="orgd53bffc"><span class="section-number-2">2</span> Design classes</h2>
+<div id="outline-container-org14756f2" class="outline-2">
+<h2 id="org14756f2"><span class="section-number-2">2</span> Design classes</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfe213e0" class="outline-3">
-<h3 id="orgfe213e0"><span class="section-number-3">2.1</span> Design roadmap: Analyze the specs</h3>
+<div id="outline-container-org4df1c4f" class="outline-3">
+<h3 id="org4df1c4f"><span class="section-number-3">2.1</span> Design roadmap: Analyze the specs</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Analyze specification:
@@ -175,8 +175,8 @@ The Twitter application allows users to broadcast short messages called tweets. 
 </div>
 </div>
 
-<div id="outline-container-org30fe041" class="outline-3">
-<h3 id="org30fe041"><span class="section-number-3">2.2</span> Design: Class API</h3>
+<div id="outline-container-org9a0cfc3" class="outline-3">
+<h3 id="org9a0cfc3"><span class="section-number-3">2.2</span> Design: Class API</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Define the class API according to the class design recipe:
@@ -190,8 +190,8 @@ Define the class API according to the class design recipe:
 </ol>
 </div>
 </div>
-<div id="outline-container-orgfd5b48a" class="outline-3">
-<h3 id="orgfd5b48a"><span class="section-number-3">2.3</span> Design: Class Implementation</h3>
+<div id="outline-container-org9b773be" class="outline-3">
+<h3 id="org9b773be"><span class="section-number-3">2.3</span> Design: Class Implementation</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Implement the class:
@@ -203,8 +203,8 @@ Implement the class:
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf8bdd87" class="outline-3">
-<h3 id="orgf8bdd87"><span class="section-number-3">2.4</span> Rebinding self</h3>
+<div id="outline-container-orgd9ce638" class="outline-3">
+<h3 id="orgd9ce638"><span class="section-number-3">2.4</span> Rebinding self</h3>
 <div class="outline-text-3" id="text-2-4">
 <div class="org-src-container">
 <pre>
@@ -220,15 +220,15 @@ Rebinding self like above doesn't mutate anything!
 </div>
 </div>
 </div>
-<div id="outline-container-org65ace57" class="outline-2">
-<h2 id="org65ace57"><span class="section-number-2">3</span> Composition</h2>
+<div id="outline-container-org50edf76" class="outline-2">
+<h2 id="org50edf76"><span class="section-number-2">3</span> Composition</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 To interact different classes, we can use existing types inside new user-defined types
 </p>
 </div>
-<div id="outline-container-org8200867" class="outline-3">
-<h3 id="org8200867"><span class="section-number-3">3.1</span> Summary</h3>
+<div id="outline-container-org1a282af" class="outline-3">
+<h3 id="org1a282af"><span class="section-number-3">3.1</span> Summary</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Composition: a relationship between two classes where instances of one class contain references to instances of the other.</li>
@@ -240,8 +240,8 @@ To interact different classes, we can use existing types inside new user-defined
 </div>
 </div>
 </div>
-<div id="outline-container-org1ce0d54" class="outline-2">
-<h2 id="org1ce0d54"><span class="section-number-2">4</span> Data encapsulation</h2>
+<div id="outline-container-org527ea7b" class="outline-2">
+<h2 id="org527ea7b"><span class="section-number-2">4</span> Data encapsulation</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>General idea: attributes or methods of a class can be made “private” to hide implementation details or protect them from unauthorized use</li>
@@ -249,8 +249,8 @@ To interact different classes, we can use existing types inside new user-defined
 <li>Marking an attribute/method as private signals that client code should not access it</li>
 </ul>
 </div>
-<div id="outline-container-org2796d63" class="outline-3">
-<h3 id="org2796d63"><span class="section-number-3">4.1</span> Data encapsulation in Python</h3>
+<div id="outline-container-org69e3997" class="outline-3">
+<h3 id="org69e3997"><span class="section-number-3">4.1</span> Data encapsulation in Python</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Python conventions for making attributes or methods “private”:
@@ -264,8 +264,8 @@ Python conventions for making attributes or methods “private”:
 </ul>
 </div>
 </div>
-<div id="outline-container-org1f4d67d" class="outline-3">
-<h3 id="org1f4d67d"><span class="section-number-3">4.2</span> Privacy is about communication</h3>
+<div id="outline-container-org70c5000" class="outline-3">
+<h3 id="org70c5000"><span class="section-number-3">4.2</span> Privacy is about communication</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 A private attribute/method could be
@@ -282,8 +282,8 @@ A client of the class shouldn’t need to worry about these.
 </div>
 </div>
 </div>
-<div id="outline-container-org95ba135" class="outline-2">
-<h2 id="org95ba135"><span class="section-number-2">5</span> Representation invariants</h2>
+<div id="outline-container-org5496193" class="outline-2">
+<h2 id="org5496193"><span class="section-number-2">5</span> Representation invariants</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 To document the properties that must be true for every instance of given class:
@@ -300,8 +300,8 @@ To express RIs:
 <li>(in code) len(self.content) &lt;= 280</li>
 </ul>
 </div>
-<div id="outline-container-org43a2923" class="outline-3">
-<h3 id="org43a2923"><span class="section-number-3">5.1</span> Representation invariants as assumptions</h3>
+<div id="outline-container-orgfced231" class="outline-3">
+<h3 id="orgfced231"><span class="section-number-3">5.1</span> Representation invariants as assumptions</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>When given an instance of that class, we can assume that every representation invariant is satisfied</li>
@@ -327,16 +327,16 @@ To express RIs:
 </ul>
 </div>
 </div>
-<div id="outline-container-orga2dd4a1" class="outline-3">
-<h3 id="orga2dd4a1"><span class="section-number-3">5.2</span> Enforcing representation invariants</h3>
+<div id="outline-container-org5234220" class="outline-3">
+<h3 id="org5234220"><span class="section-number-3">5.2</span> Enforcing representation invariants</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li>Every method must ensure that self satisfies all representation invariants after the method ends</li>
 <li>The representation invariants of a class are postconditions of self for every Tweet method</li>
 </ul>
 </div>
-<div id="outline-container-org02fdc10" class="outline-4">
-<h4 id="org02fdc10"><span class="section-number-4">5.2.1</span> Strategy 1: Preconditions</h4>
+<div id="outline-container-org1480f8b" class="outline-4">
+<h4 id="org1480f8b"><span class="section-number-4">5.2.1</span> Strategy 1: Preconditions</h4>
 <div class="outline-text-4" id="text-5-2-1">
 <ul class="org-ul">
 <li>Require client code to call methods with “good” inputs, so that the methods won’t violate the representation invariants.</li>
@@ -344,8 +344,8 @@ To express RIs:
 </div>
 </div>
 
-<div id="outline-container-orgac716a1" class="outline-4">
-<h4 id="orgac716a1"><span class="section-number-4">5.2.2</span> Strategy 2: Ignore “bad” inputs</h4>
+<div id="outline-container-orge56a6cc" class="outline-4">
+<h4 id="orge56a6cc"><span class="section-number-4">5.2.2</span> Strategy 2: Ignore “bad” inputs</h4>
 <div class="outline-text-4" id="text-5-2-2">
 <ul class="org-ul">
 <li>Accept a wide range of inputs, and if an input would cause a representation invariant to be violated, do nothing instead</li>
@@ -354,8 +354,8 @@ To express RIs:
 </div>
 </div>
 
-<div id="outline-container-orgc87fad7" class="outline-4">
-<h4 id="orgc87fad7"><span class="section-number-4">5.2.3</span> Strategy 3: Fix “bad” inputs</h4>
+<div id="outline-container-org0d071e7" class="outline-4">
+<h4 id="org0d071e7"><span class="section-number-4">5.2.3</span> Strategy 3: Fix “bad” inputs</h4>
 <div class="outline-text-4" id="text-5-2-3">
 <ul class="org-ul">
 <li>Accept a wide range of inputs, and if an input would cause a representation invariant to be violated, change it to a “reasonable” or default value before continuing with the rest of the function.</li>
@@ -365,8 +365,8 @@ To express RIs:
 </div>
 </div>
 
-<div id="outline-container-org0fd0a6b" class="outline-2">
-<h2 id="org0fd0a6b"><span class="section-number-2">6</span> Direct attribute access</h2>
+<div id="outline-container-org7749ee6" class="outline-2">
+<h2 id="org7749ee6"><span class="section-number-2">6</span> Direct attribute access</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Even if our methods are perfect, client code can access and mutate most instance attributes directly</li>
@@ -375,8 +375,8 @@ To express RIs:
 </div>
 </div>
 
-<div id="outline-container-org379435b" class="outline-2">
-<h2 id="org379435b"><span class="section-number-2">7</span> More design considerations</h2>
+<div id="outline-container-org4d809e9" class="outline-2">
+<h2 id="org4d809e9"><span class="section-number-2">7</span> More design considerations</h2>
 <div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>When adding some new feature in a class, consider what you already have and what you cannot implement without extra attributes and/or methods</li>
@@ -387,7 +387,7 @@ To express RIs:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Desmond Wang</p>
-<p class="date">Created: 2021-01-30 Sat 11:03</p>
+<p class="date">Created: 2021-01-30 Sat 11:07</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
