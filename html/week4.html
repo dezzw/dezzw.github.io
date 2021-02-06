@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-02-06 Sat 07:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes for Week 4</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Desmond Wang" />
+<link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes for Week 4</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org07c2c26">1. ADT and Data Structure</a>
+<ul>
+<li><a href="#org6903032">1.1. ADT (Abstract Data Type)</a></li>
+<li><a href="#org87d1cd5">1.2. Data Structure</a></li>
+<li><a href="#org6c5a114">1.3. Purpose of ADTs</a></li>
+</ul>
+</li>
+<li><a href="#orgc27e119">2. Stack</a>
+<ul>
+<li><a href="#org65ae057">2.1. Data</a></li>
+<li><a href="#orgf25c469">2.2. Features</a></li>
+<li><a href="#org2ff0ceb">2.3. Operations</a></li>
+</ul>
+</li>
+<li><a href="#orge36bce1">3. Queue</a>
+<ul>
+<li><a href="#org324ace4">3.1. Data</a></li>
+<li><a href="#org94490fe">3.2. Features</a></li>
+<li><a href="#org05c47e1">3.3. Operations</a></li>
+</ul>
+</li>
+<li><a href="#orgdee05df">4. Exceptions</a>
+<ul>
+<li><a href="#org935b13e">4.1. Examples of Exceptions:</a></li>
+<li><a href="#orgd2dcb3e">4.2. Raising Exceptions</a></li>
+<li><a href="#org543b767">4.3. User-Defined Exceptions</a></li>
+<li><a href="#org2cbf869">4.4. Handling Exceptions</a></li>
+<li><a href="#orgc6629c2">4.5. Execution with Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org07c2c26" class="outline-2">
+<h2 id="org07c2c26"><span class="section-number-2">1</span> ADT and Data Structure</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org6903032" class="outline-3">
+<h3 id="org6903032"><span class="section-number-3">1.1</span> ADT (Abstract Data Type)</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>about the data it manages and the operations it supports</li>
+<li>not about how it is implemented</li>
+<li>It is an interface (like the public methods/attributes of an object)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org87d1cd5" class="outline-3">
+<h3 id="org87d1cd5"><span class="section-number-3">1.2</span> Data Structure</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>A chosen implementation strategy for an ADT</li>
+<li>Decides how to actually store the data and implement the operations</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6c5a114" class="outline-3">
+<h3 id="org6c5a114"><span class="section-number-3">1.3</span> Purpose of ADTs</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>ADTs handle common patterns fo manipulating data</li>
+<li>Help us work and communicate at higher levels of abstraction</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc27e119" class="outline-2">
+<h2 id="orgc27e119"><span class="section-number-2">2</span> Stack</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org65ae057" class="outline-3">
+<h3 id="org65ae057"><span class="section-number-3">2.1</span> Data</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>A collection of items</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf25c469" class="outline-3">
+<h3 id="orgf25c469"><span class="section-number-3">2.2</span> Features</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Last-In-First-Out (or LIFO)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ff0ceb" class="outline-3">
+<h3 id="org2ff0ceb"><span class="section-number-3">2.3</span> Operations</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>determine whether the stack is empty (<code>is_empty()</code>)</li>
+<li>add an item (<code>push()</code>)</li>
+<li>remove the most recently-added item (<code>pop()</code>)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge36bce1" class="outline-2">
+<h2 id="orge36bce1"><span class="section-number-2">3</span> Queue</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org324ace4" class="outline-3">
+<h3 id="org324ace4"><span class="section-number-3">3.1</span> Data</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>A collection of items</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org94490fe" class="outline-3">
+<h3 id="org94490fe"><span class="section-number-3">3.2</span> Features</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>First-in-First-Out (or FIFO)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org05c47e1" class="outline-3">
+<h3 id="org05c47e1"><span class="section-number-3">3.3</span> Operations</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>determine whether the stack is empty (<code>is_empty()</code>)</li>
+<li>add an item (<code>enqueue()</code>)</li>
+<li>remove the least recently-added item (<code>dequeue()</code>)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdee05df" class="outline-2">
+<h2 id="orgdee05df"><span class="section-number-2">4</span> Exceptions</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+An exception is an object that indicates an exceptional situation (not necessarily problem or error) and it allows error handling and recovery are isolated from the regular flow
+</p>
+<ul class="org-ul">
+<li>An exception gets raised during program execution and transfers control to an exception handler</li>
+<li>Exceptions must be “caught” by an exception handler to avoid the program crashing</li>
+</ul>
+</div>
+<div id="outline-container-org935b13e" class="outline-3">
+<h3 id="org935b13e"><span class="section-number-3">4.1</span> Examples of Exceptions:</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+<pre>
+<code class="python">&gt;&gt;&gt; 1 / 0
+Traceback (most recent call last):
+File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+ZeroDivisionError: division by zero
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd2dcb3e" class="outline-3">
+<h3 id="orgd2dcb3e"><span class="section-number-3">4.2</span> Raising Exceptions</h3>
+<div class="outline-text-3" id="text-4-2">
+<div class="org-src-container">
+<pre>
+<code class="python">&gt;&gt;&gt; raise ValueError
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+ValueError: invalid
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org543b767" class="outline-3">
+<h3 id="org543b767"><span class="section-number-3">4.3</span> User-Defined Exceptions</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Make new types of exceptions by inherit from Exception:
+</p>
+<div class="org-src-container">
+<pre>
+<code class="python">class MyError(Exception):
+    pass
+
+&gt;&gt;&gt; raise MyError
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+__main__.MyError
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2cbf869" class="outline-3">
+<h3 id="org2cbf869"><span class="section-number-3">4.4</span> Handling Exceptions</h3>
+<div class="outline-text-3" id="text-4-4">
+<div class="org-src-container">
+<pre>
+<code class="python"># Put the codes with exception in try block
+try:
+    f = open('myfile.txt')
+    s = f.readline()
+    i = int(s)
+# If except block mathches exception, this block will handle the exception
+except IOError:
+    print('Input/Output error')
+# There can be more than on except block matches (orders matter and use the first)
+except ValueError:
+    print('Could not convert data to an integer')
+print('continuing')
+</code>
+</pre>
+</div>
+
+<pre class="example">
+Input/Output error
+continuing
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc6629c2" class="outline-3">
+<h3 id="orgc6629c2"><span class="section-number-3">4.5</span> Execution with Exceptions</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>If no exception occurs, no except block is executed</li>
+<li>If an exception occurs and an except blck handles it, execution continues following the enclosing try block</li>
+<li>If an exception occurs and no except block handles it, the exception propagates up the function call stack until it is handled or terminates the program</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Desmond Wang</p>
+<p class="date">Created: 2021-02-06 Sat 07:13</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
