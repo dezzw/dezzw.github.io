@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-02-13 Sat 23:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes for Week 5</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Desmond Wang" />
+<link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes for Week 5</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org57f5c8c">1. Linked Lists</a>
+<ul>
+<li><a href="#org34fb63b">1.1. Nodes</a></li>
+<li><a href="#org99c9e06">1.2. LinkedLists</a></li>
+</ul>
+</li>
+<li><a href="#org0be98da">2. Linked-List Insertion</a>
+<ul>
+<li><a href="#org825a292">2.1. Prepend</a></li>
+<li><a href="#orgab3e45e">2.2. Append</a></li>
+<li><a href="#org682ea6d">2.3. Strategy 1: iterate to the node before the desired position</a></li>
+<li><a href="#org802e126">2.4. Strategy 2: explicitly track the previous node.</a></li>
+</ul>
+</li>
+<li><a href="#orgd589436">3. Another Linked List Design</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org57f5c8c" class="outline-2">
+<h2 id="org57f5c8c"><span class="section-number-2">1</span> Linked Lists</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+There are two classes for the implementation of linked lists
+</p>
+<ul class="org-ul">
+<li>_Node: allows us to string together elements of a list</li>
+<li>LinkedList: stores a reference to the first Node in the list</li>
+</ul>
+</div>
+<div id="outline-container-org34fb63b" class="outline-3">
+<h3 id="org34fb63b"><span class="section-number-3">1.1</span> Nodes</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre>
+<code class="python">def _Node:
+    item: Any
+    next: Optional[_Node]
+
+    def __init__(self, item: Any) -&gt; None:
+	self.item = item
+	self.next = None
+</code>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org99c9e06" class="outline-3">
+<h3 id="org99c9e06"><span class="section-number-3">1.2</span> LinkedLists</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre>
+<code class="python">class LinkedList:
+    _first: Optional[_Node]
+
+    def __init__(self) -&gt; None:
+	self._first = None
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0be98da" class="outline-2">
+<h2 id="org0be98da"><span class="section-number-2">2</span> Linked-List Insertion</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org825a292" class="outline-3">
+<h3 id="org825a292"><span class="section-number-3">2.1</span> Prepend</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Inserting at the front of a linked list.
+</p>
+<ul class="org-ul">
+<li>Change what <code>_first</code> refers to</li>
+<li>No need to iterate through the linked list</li>
+<li>Runtime: O(1)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab3e45e" class="outline-3">
+<h3 id="orgab3e45e"><span class="section-number-3">2.2</span> Append</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Inserting at the back of a linked list.
+</p>
+<ul class="org-ul">
+<li>Iterate through the linked list to find the last node</li>
+<li>Runtime: O(n)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org682ea6d" class="outline-3">
+<h3 id="org682ea6d"><span class="section-number-3">2.3</span> Strategy 1: iterate to the node before the desired position</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="org-src-container">
+<pre>
+<code class="python">i = 0
+curr = self._first
+while not (curr is None or i == index - 1):
+    curr = curr.next
+    i += 1
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org802e126" class="outline-3">
+<h3 id="org802e126"><span class="section-number-3">2.4</span> Strategy 2: explicitly track the previous node.</h3>
+<div class="outline-text-3" id="text-2-4">
+<div class="org-src-container">
+<pre>
+<code class="python">i = 0
+prev = None
+curr = self._first
+while not (curr is None or i == index):
+    prev, curr = curr, curr.next
+    i += 1
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd589436" class="outline-2">
+<h2 id="orgd589436"><span class="section-number-2">3</span> Another Linked List Design</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Store more info in linked lists:
+</p>
+<ul class="org-ul">
+<li><code>_first</code>: refers to first node</li>
+<li><code>_last</code>: refers to the last node</li>
+<li><code>_size</code>: refers to the length of the linked list</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Desmond Wang</p>
+<p class="date">Created: 2021-02-13 Sat 23:58</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
