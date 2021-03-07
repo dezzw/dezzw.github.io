@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-07 Sun 07:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes for Week 7</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Desmond Wang" />
+<link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes for Week 7</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org2b12075">1. Trees</a>
+<ul>
+<li><a href="#orgc992290">1.1. Definition</a></li>
+<li><a href="#org26a29f0">1.2. Terminology</a></li>
+<li><a href="#org5755288">1.3. Example</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2b12075" class="outline-2">
+<h2 id="org2b12075"><span class="section-number-2">1</span> Trees</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgc992290" class="outline-3">
+<h3 id="orgc992290"><span class="section-number-3">1.1</span> Definition</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>A tree is a set of nodes with values or labels, and directed edges that connect nodes</li>
+<li>One specificed node is the <b>root</b></li>
+<li>Every node besides the root has exactly one parent</li>
+<li>The relationship between nodes and edges: nodes = edges - 1</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org26a29f0" class="outline-3">
+<h3 id="org26a29f0"><span class="section-number-3">1.2</span> Terminology</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><i>Parent:</i> a node is the parent of all nodes to which it has outgoing edges</li>
+<li><i>Siblings:</i> set of nodes that share a common parent</li>
+<li><i>Leaf:</i> node that has no children</li>
+<li><i>Internal node:</i> nonleaf node</li>
+<li><i>Path:</i> sequence of nodes and each node is connected by an edge</li>
+<li><i>Descendant:</i> node <i>n</i> is a descendant of some node <i>p</i> if there is a path from <i>p</i> to <i>n</i></li>
+<li><i>Subtree:</i> a subtree of tree <i>T</i> is a tree whose root node <i>r</i> is a node in <i>T</i>, and which consists of all the descendants of <i>r</i> and the edges among them</li>
+<li><i>Branching factor:</i> maximum number of children of any node</li>
+<li><i>Length of a path:</i> number of edges on the path</li>
+<li><i>Tree height:</i> longest path from root to one of the leaves; count nodes</li>
+<li>Node's height is 1 plus maximem path length of tree rooted at that node</li>
+<li><i>Level (Depth):</i> the level (or depth) of node <i>n</i> is the length of the path from the root node to <i>n</i>. The level of the root is typically defined to be 0 or 1</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5755288" class="outline-3">
+<h3 id="org5755288"><span class="section-number-3">1.3</span> Example</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<div id="org6b81b16" class="figure">
+<p><img src="../images/tree.png" alt="tree.png" />
+</p>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Terminology</th>
+<th scope="col" class="org-right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">root value</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">size</td>
+<td class="org-right">11</td>
+</tr>
+
+<tr>
+<td class="org-left"># of leaves</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left"># of internal values</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-left">height</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">value of parent of 9</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left"># of children of 1</td>
+<td class="org-right">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Desmond Wang</p>
+<p class="date">Created: 2021-03-07 Sun 07:13</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
