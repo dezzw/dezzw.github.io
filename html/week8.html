@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-14 Sun 21:33 -->
+<!-- 2021-03-14 Sun 21:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes of Week 8</title>
@@ -65,24 +65,24 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0455c74">1. Binary Search Tree (BST)</a>
+<li><a href="#org14709fd">1. Binary Search Tree (BST)</a>
 <ul>
-<li><a href="#org872977c">1.1. BST Property</a></li>
-<li><a href="#org9946a5f">1.2. Searching a BST</a></li>
-<li><a href="#orgd47160a">1.3. BST Insertion</a></li>
-<li><a href="#org1ccbe7a">1.4. Deleting a Node</a>
+<li><a href="#orgd681100">1.1. BST Property</a></li>
+<li><a href="#orga53fbf0">1.2. Searching a BST</a></li>
+<li><a href="#org7ab0391">1.3. BST Insertion</a></li>
+<li><a href="#orgf209967">1.4. Deleting a Node</a>
 <ul>
-<li><a href="#orgf8d15f8">1.4.1. Deleting a Node is Leaf</a></li>
-<li><a href="#org72fc042">1.4.2. Deleting a Node has One Child</a></li>
-<li><a href="#org5004b60">1.4.3. Deleting a Node has Two Children</a></li>
+<li><a href="#org89cefda">1.4.1. Deleting a Node is Leaf</a></li>
+<li><a href="#org4b4b087">1.4.2. Deleting a Node has One Child</a></li>
+<li><a href="#org9bf101f">1.4.3. Deleting a Node has Two Children</a></li>
 </ul>
 </li>
-<li><a href="#org7114c7d">1.5. Height of a BST</a></li>
-<li><a href="#orgbef09a3">1.6. Minimum-Height BST</a></li>
-<li><a href="#org64a5621">1.7. Maximum Nodes per Height</a>
+<li><a href="#orgcdb9133">1.5. Height of a BST</a></li>
+<li><a href="#orgbaf77c5">1.6. Minimum-Height BST</a></li>
+<li><a href="#orgdb6f4bd">1.7. Maximum Nodes per Height</a>
 <ul>
-<li><a href="#orga7735f6">1.7.1. Proof of Maximum Nodes</a></li>
-<li><a href="#org284d534">1.7.2. Runtime Complexity</a></li>
+<li><a href="#org4cd81ca">1.7.1. Proof of Maximum Nodes</a></li>
+<li><a href="#org8e9c665">1.7.2. Runtime Complexity</a></li>
 </ul>
 </li>
 </ul>
@@ -91,12 +91,12 @@
 </div>
 </div>
 
-<div id="outline-container-org0455c74" class="outline-2">
-<h2 id="org0455c74"><span class="section-number-2">1</span> Binary Search Tree (BST)</h2>
+<div id="outline-container-org14709fd" class="outline-2">
+<h2 id="org14709fd"><span class="section-number-2">1</span> Binary Search Tree (BST)</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org872977c" class="outline-3">
-<h3 id="org872977c"><span class="section-number-3">1.1</span> BST Property</h3>
+<div id="outline-container-orgd681100" class="outline-3">
+<h3 id="orgd681100"><span class="section-number-3">1.1</span> BST Property</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Based on the binary tree</li>
@@ -105,8 +105,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org9946a5f" class="outline-3">
-<h3 id="org9946a5f"><span class="section-number-3">1.2</span> Searching a BST</h3>
+<div id="outline-container-orga53fbf0" class="outline-3">
+<h3 id="orga53fbf0"><span class="section-number-3">1.2</span> Searching a BST</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Suppose we want know whether value <i>v</i> exists in a BST, we compare <i>v</i> to the value <i>r</i> at the root
@@ -118,8 +118,8 @@ Suppose we want know whether value <i>v</i> exists in a BST, we compare <i>v</i>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd47160a" class="outline-3">
-<h3 id="orgd47160a"><span class="section-number-3">1.3</span> BST Insertion</h3>
+<div id="outline-container-org7ab0391" class="outline-3">
+<h3 id="org7ab0391"><span class="section-number-3">1.3</span> BST Insertion</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 To insert <i>v</i>, we compare <i>v</i> to the value r at the root
@@ -132,28 +132,28 @@ To insert <i>v</i>, we compare <i>v</i> to the value r at the root
 </ul>
 </div>
 </div>
-<div id="outline-container-org1ccbe7a" class="outline-3">
-<h3 id="org1ccbe7a"><span class="section-number-3">1.4</span> Deleting a Node</h3>
+<div id="outline-container-orgf209967" class="outline-3">
+<h3 id="orgf209967"><span class="section-number-3">1.4</span> Deleting a Node</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-orgf8d15f8" class="outline-4">
-<h4 id="orgf8d15f8"><span class="section-number-4">1.4.1</span> Deleting a Node is Leaf</h4>
+<div id="outline-container-org89cefda" class="outline-4">
+<h4 id="org89cefda"><span class="section-number-4">1.4.1</span> Deleting a Node is Leaf</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <p>
 To delete a leaf, just remove it
 </p>
 </div>
 </div>
-<div id="outline-container-org72fc042" class="outline-4">
-<h4 id="org72fc042"><span class="section-number-4">1.4.2</span> Deleting a Node has One Child</h4>
+<div id="outline-container-org4b4b087" class="outline-4">
+<h4 id="org4b4b087"><span class="section-number-4">1.4.2</span> Deleting a Node has One Child</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
 To delete a node with a single child, cut out that node
 </p>
 </div>
 </div>
-<div id="outline-container-org5004b60" class="outline-4">
-<h4 id="org5004b60"><span class="section-number-4">1.4.3</span> Deleting a Node has Two Children</h4>
+<div id="outline-container-org9bf101f" class="outline-4">
+<h4 id="org9bf101f"><span class="section-number-4">1.4.3</span> Deleting a Node has Two Children</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 To delete a node with two children, replace it by its predecessor
@@ -164,8 +164,8 @@ To delete a node with two children, replace it by its predecessor
 </div>
 </div>
 </div>
-<div id="outline-container-org7114c7d" class="outline-3">
-<h3 id="org7114c7d"><span class="section-number-3">1.5</span> Height of a BST</h3>
+<div id="outline-container-orgcdb9133" class="outline-3">
+<h3 id="orgcdb9133"><span class="section-number-3">1.5</span> Height of a BST</h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li>The efficiency of search depends on the height of the BST</li>
@@ -173,8 +173,8 @@ To delete a node with two children, replace it by its predecessor
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbef09a3" class="outline-3">
-<h3 id="orgbef09a3"><span class="section-number-3">1.6</span> Minimum-Height BST</h3>
+<div id="outline-container-orgbaf77c5" class="outline-3">
+<h3 id="orgbaf77c5"><span class="section-number-3">1.6</span> Minimum-Height BST</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 <img src="../images/min_tree.png" alt="min_tree.png" />
@@ -182,8 +182,8 @@ No other BST of 7 nodes can have less height.
 </p>
 </div>
 </div>
-<div id="outline-container-org64a5621" class="outline-3">
-<h3 id="org64a5621"><span class="section-number-3">1.7</span> Maximum Nodes per Height</h3>
+<div id="outline-container-orgdb6f4bd" class="outline-3">
+<h3 id="orgdb6f4bd"><span class="section-number-3">1.7</span> Maximum Nodes per Height</h3>
 <div class="outline-text-3" id="text-1-7">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -230,20 +230,22 @@ No other BST of 7 nodes can have less height.
 A binary tree of height <i>h</i> with <i>n</i> nodes satisfies \(n \le 2^h-1\)
 </p>
 </div>
-<div id="outline-container-orga7735f6" class="outline-4">
-<h4 id="orga7735f6"><span class="section-number-4">1.7.1</span> Proof of Maximum Nodes</h4>
+<div id="outline-container-org4cd81ca" class="outline-4">
+<h4 id="org4cd81ca"><span class="section-number-4">1.7.1</span> Proof of Maximum Nodes</h4>
 <div class="outline-text-4" id="text-1-7-1">
-<p>
-Base case: when \(h = 1\), we have at most 1 node, and \(1 \le 2^1-1 = 1\)
-Inductive step: \(h > 1\)
-left: \(l \le 2^{h-1} - 1\)
-right: \(r \le 2^{h-1} - 1\)
-Adding 1 for the root, we have \(n=l+r+1 \le 2^h - 1\)
-</p>
+<ul class="org-ul">
+<li>Base case: when \(h = 1\), we have at most 1 node, and \(1 \le 2^1-1 = 1\)</li>
+<li>Inductive step: \(h > 1\)
+<ul class="org-ul">
+<li>left: \(l \le 2^{h-1} - 1\)</li>
+<li>right: \(r \le 2^{h-1} - 1\)</li>
+</ul></li>
+<li>Adding 1 for the root, we have \(n=l+r+1 \le 2^h - 1\)</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org284d534" class="outline-4">
-<h4 id="org284d534"><span class="section-number-4">1.7.2</span> Runtime Complexity</h4>
+<div id="outline-container-org8e9c665" class="outline-4">
+<h4 id="org8e9c665"><span class="section-number-4">1.7.2</span> Runtime Complexity</h4>
 <div class="outline-text-4" id="text-1-7-2">
 <p>
 \(O(log(n))\)
@@ -255,7 +257,7 @@ Adding 1 for the root, we have \(n=l+r+1 \le 2^h - 1\)
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Desmond Wang</p>
-<p class="date">Created: 2021-03-14 Sun 21:33</p>
+<p class="date">Created: 2021-03-14 Sun 21:40</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
