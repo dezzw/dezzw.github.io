@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-28 Sun 10:06 -->
+<!-- 2021-03-28 Sun 10:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes For Week 10</title>
@@ -65,21 +65,21 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc97df28">1. Sorting Efficinecy</a></li>
-<li><a href="#org820b572">2. Merge Sort</a>
+<li><a href="#orgbfa952a">1. Sorting Efficinecy</a></li>
+<li><a href="#orgf69cdd6">2. Merge Sort</a>
 <ul>
-<li><a href="#orgaef3821">2.1. Implementation</a></li>
-<li><a href="#orga8767ab">2.2. Running Time of Merge Sort</a></li>
+<li><a href="#org004b071">2.1. Implementation</a></li>
+<li><a href="#org3871679">2.2. Running Time of Merge Sort</a></li>
 </ul>
 </li>
-<li><a href="#orgcedf052">3. Quick Sort</a>
+<li><a href="#orgc035093">3. Quick Sort</a>
 <ul>
-<li><a href="#org1c1eb82">3.1. Implementation</a></li>
-<li><a href="#orgd192b6a">3.2. Runing Time of Quick Sort</a>
+<li><a href="#orga4de31f">3.1. Implementation</a></li>
+<li><a href="#org801f10c">3.2. Runing Time of Quick Sort</a>
 <ul>
-<li><a href="#orge64daa0">3.2.1. Best Case</a></li>
-<li><a href="#org67cc14f">3.2.2. Worst Case</a></li>
-<li><a href="#org2bd2aed">3.2.3. Average Cases</a></li>
+<li><a href="#orgbcf8639">3.2.1. Best Case</a></li>
+<li><a href="#orge463fa5">3.2.2. Worst C</a></li>
+<li><a href="#org8d8e6e0">3.2.3. Average Cases</a></li>
 </ul>
 </li>
 </ul>
@@ -88,8 +88,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgc97df28" class="outline-2">
-<h2 id="orgc97df28"><span class="section-number-2">1</span> Sorting Efficinecy</h2>
+<div id="outline-container-orgbfa952a" class="outline-2">
+<h2 id="orgbfa952a"><span class="section-number-2">1</span> Sorting Efficinecy</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Bubble sort: \(O(n^2)\)</li>
@@ -101,8 +101,8 @@
 </div>
 </div>
 
-<div id="outline-container-org820b572" class="outline-2">
-<h2 id="org820b572"><span class="section-number-2">2</span> Merge Sort</h2>
+<div id="outline-container-orgf69cdd6" class="outline-2">
+<h2 id="orgf69cdd6"><span class="section-number-2">2</span> Merge Sort</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Merge sort works by
@@ -116,8 +116,8 @@ Merge sort works by
 </div>
 
 
-<div id="outline-container-orgaef3821" class="outline-3">
-<h3 id="orgaef3821"><span class="section-number-3">2.1</span> Implementation</h3>
+<div id="outline-container-org004b071" class="outline-3">
+<h3 id="org004b071"><span class="section-number-3">2.1</span> Implementation</h3>
 <div class="outline-text-3" id="text-2-1">
 <div class="org-src-container">
 <pre>
@@ -162,8 +162,8 @@ def _merge(lst1: List, lst2: List) -&gt; List:
 </div>
 </div>
 
-<div id="outline-container-orga8767ab" class="outline-3">
-<h3 id="orga8767ab"><span class="section-number-3">2.2</span> Running Time of Merge Sort</h3>
+<div id="outline-container-org3871679" class="outline-3">
+<h3 id="org3871679"><span class="section-number-3">2.2</span> Running Time of Merge Sort</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>The list is divided in half on each recursive call</li>
@@ -179,8 +179,8 @@ def _merge(lst1: List, lst2: List) -&gt; List:
 </div>
 </div>
 
-<div id="outline-container-orgcedf052" class="outline-2">
-<h2 id="orgcedf052"><span class="section-number-2">3</span> Quick Sort</h2>
+<div id="outline-container-orgc035093" class="outline-2">
+<h2 id="orgc035093"><span class="section-number-2">3</span> Quick Sort</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Quick sort works by
@@ -195,8 +195,8 @@ Quick sort works by
 </ul>
 </div>
 
-<div id="outline-container-org1c1eb82" class="outline-3">
-<h3 id="org1c1eb82"><span class="section-number-3">3.1</span> Implementation</h3>
+<div id="outline-container-orga4de31f" class="outline-3">
+<h3 id="orga4de31f"><span class="section-number-3">3.1</span> Implementation</h3>
 <div class="outline-text-3" id="text-3-1">
 <div class="org-src-container">
 <pre>
@@ -234,12 +234,12 @@ def _partition(lst: List, pivot: Any) -&gt; Tuple[List, List]:
 </div>
 </div>
 
-<div id="outline-container-orgd192b6a" class="outline-3">
-<h3 id="orgd192b6a"><span class="section-number-3">3.2</span> Runing Time of Quick Sort</h3>
+<div id="outline-container-org801f10c" class="outline-3">
+<h3 id="org801f10c"><span class="section-number-3">3.2</span> Runing Time of Quick Sort</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-orge64daa0" class="outline-4">
-<h4 id="orge64daa0"><span class="section-number-4">3.2.1</span> Best Case</h4>
+<div id="outline-container-orgbcf8639" class="outline-4">
+<h4 id="orgbcf8639"><span class="section-number-4">3.2.1</span> Best Case</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <ul class="org-ul">
 <li>The best case is choosing a pivot that partitions the exactly in half on each recursive call</li>
@@ -250,8 +250,8 @@ def _partition(lst: List, pivot: Any) -&gt; Tuple[List, List]:
 </p>
 </div>
 </div>
-<div id="outline-container-org67cc14f" class="outline-4">
-<h4 id="org67cc14f"><span class="section-number-4">3.2.2</span> Worst Case</h4>
+<div id="outline-container-orge463fa5" class="outline-4">
+<h4 id="orge463fa5"><span class="section-number-4">3.2.2</span> Worst C</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <ul class="org-ul">
 <li>Choosing the leftmost element as the pivot</li>
@@ -260,11 +260,11 @@ def _partition(lst: List, pivot: Any) -&gt; Tuple[List, List]:
 </ul>
 </div>
 </div>
-<div id="outline-container-org2bd2aed" class="outline-4">
-<h4 id="org2bd2aed"><span class="section-number-4">3.2.3</span> Average Cases</h4>
+<div id="outline-container-org8d8e6e0" class="outline-4">
+<h4 id="org8d8e6e0"><span class="section-number-4">3.2.3</span> Average Cases</h4>
 <div class="outline-text-4" id="text-3-2-3">
 <p>
-The running time of average cases is \(O(\))nlogn
+The running time of average cases is \(O(nlogn)\)
 </p>
 </div>
 </div>
@@ -273,7 +273,7 @@ The running time of average cases is \(O(\))nlogn
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Desmond Wang</p>
-<p class="date">Created: 2021-03-28 Sun 10:06</p>
+<p class="date">Created: 2021-03-28 Sun 10:14</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
