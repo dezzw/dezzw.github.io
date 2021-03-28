@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 10:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes For Week 10</title>
+<meta name="author" content="Desmond Wang" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="../assets/css/org_ez.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes For Week 10</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc97df28">1. Sorting Efficinecy</a></li>
+<li><a href="#org820b572">2. Merge Sort</a>
+<ul>
+<li><a href="#orgaef3821">2.1. Implementation</a></li>
+<li><a href="#orga8767ab">2.2. Running Time of Merge Sort</a></li>
+</ul>
+</li>
+<li><a href="#orgcedf052">3. Quick Sort</a>
+<ul>
+<li><a href="#org1c1eb82">3.1. Implementation</a></li>
+<li><a href="#orgd192b6a">3.2. Runing Time of Quick Sort</a>
+<ul>
+<li><a href="#orge64daa0">3.2.1. Best Case</a></li>
+<li><a href="#org67cc14f">3.2.2. Worst Case</a></li>
+<li><a href="#org2bd2aed">3.2.3. Average Cases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc97df28" class="outline-2">
+<h2 id="orgc97df28"><span class="section-number-2">1</span> Sorting Efficinecy</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Bubble sort: \(O(n^2)\)</li>
+<li>Selection sort: \(O(n^2)\)</li>
+<li>Insertion sort: \(O(n^2)\)</li>
+<li>Merge sort: \(O(nlogn)\)</li>
+<li>Quick sort: \(O(nlogn)\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org820b572" class="outline-2">
+<h2 id="org820b572"><span class="section-number-2">2</span> Merge Sort</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Merge sort works by
+</p>
+<ul class="org-ul">
+<li>Recursively sorting the first half of the list</li>
+<li>Recursively sorting the second half of the list</li>
+<li>Merging the two halves into a newly sorted list</li>
+<li>Require an auxiliary list</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgaef3821" class="outline-3">
+<h3 id="orgaef3821"><span class="section-number-3">2.1</span> Implementation</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre>
+<code class="python">def mergesort(lst: List) -&gt; List:
+    """Return a sorted list with the same elements as &lt;lst&gt;.
+    """
+    if len(lst) &lt; 2:
+	return lst[:]
+    else:
+	# Divide the list into two parts, and sort them recursively.
+	mid = len(lst) // 2
+	left_sorted = mergesort(lst[:mid])
+	right_sorted = mergesort(lst[mid:])
+
+	# Merge the two sorted halves.
+	return _merge(left_sorted, right_sorted)
+
+def _merge(lst1: List, lst2: List) -&gt; List:
+    """Return a sorted list with the elements in &lt;lst1&gt; and &lt;lst2&gt;.
+
+    Precondition: &lt;lst1&gt; and &lt;lst2&gt; are sorted.
+    """
+    index1 = 0
+    index2 = 0
+    merged_list = []
+
+    while index1 &lt; len(lst1) and index2 &lt; len(lst2):
+	if lst1[index1] &lt;= lst2[index2]:
+	    merged_list.append(lst1[index1])
+	    index1 += 1
+	else:
+	    merged_list.append(lst2[index2])
+	    index2 += 1
+
+    # Now either index1 == len(lst1) or index2 == len(lst2).
+    assert index1 == len(lst1) or index2 == len(lst2)
+
+    return merged_list + lst1[index1:] + lst2[index2:]
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga8767ab" class="outline-3">
+<h3 id="orga8767ab"><span class="section-number-3">2.2</span> Running Time of Merge Sort</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>The list is divided in half on each recursive call</li>
+<li>On the outermost level, the merge step takes \(n\) times (one step per element in list)</li>
+<li>On the two resulting subproblems of size \(n/2\), the the total merge is \(n/2 + n/2 = n\)</li>
+<li>On the resulting four subproblems of size \(n/4\), the total merge time is still \(n\)</li>
+<li>On each of \(logn\) levels of recursion,  total of works are \(n\)</li>
+</ul>
+<p>
+<b>Hence, runing time is \(O(nlogn)\)</b>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcedf052" class="outline-2">
+<h2 id="orgcedf052"><span class="section-number-2">3</span> Quick Sort</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Quick sort works by
+</p>
+<ul class="org-ul">
+<li>Choosing a pivot value</li>
+<li>Splitting (partitioning) the list into the part smaller than or equal to the pivot and the part greater of the list</li>
+<li>Recursively sorting the first part of the list</li>
+<li>Recursively sorting the second part of the list</li>
+<li>Recombining the two parts into a single list</li>
+<li><b>NOT</b> require an auxiliary list</li>
+</ul>
+</div>
+
+<div id="outline-container-org1c1eb82" class="outline-3">
+<h3 id="org1c1eb82"><span class="section-number-3">3.1</span> Implementation</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre>
+<code class="python">def quicksort(lst: List) -&gt; List:
+    """Return a sorted list with the same elements as &lt;lst&gt;.
+    """
+    if len(lst) &lt; 2:
+	return lst[:]
+    else:
+	pivot = lst[0]
+
+	smaller, bigger = _partition(lst[1:], pivot)
+
+	smaller_sorted = quicksort(smaller)
+	bigger_sorted = quicksort(bigger)
+
+	return smaller_sorted + [pivot] + bigger_sorted
+
+def _partition(lst: List, pivot: Any) -&gt; Tuple[List, List]:
+    """Return a partition of &lt;lst&gt; with the chosen pivot.
+    """
+    smaller = []
+    bigger = []
+
+    for item in lst:
+	if item &lt;= pivot:
+	    smaller.append(item)
+	else:
+	    bigger.append(item)
+
+    return smaller, bigger
+</code>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd192b6a" class="outline-3">
+<h3 id="orgd192b6a"><span class="section-number-3">3.2</span> Runing Time of Quick Sort</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orge64daa0" class="outline-4">
+<h4 id="orge64daa0"><span class="section-number-4">3.2.1</span> Best Case</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>The best case is choosing a pivot that partitions the exactly in half on each recursive call</li>
+<li>Working processing is as same as merge sort</li>
+</ul>
+<p>
+<b>Hence, the running time is \(O(nlogn)\)</b>
+</p>
+</div>
+</div>
+<div id="outline-container-org67cc14f" class="outline-4">
+<h4 id="org67cc14f"><span class="section-number-4">3.2.2</span> Worst Case</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>Choosing the leftmost element as the pivot</li>
+<li>On each recursive call operating on a list of size \(n\), partition in into a list of \(n-2\) elements and a "list" of just 1 element</li>
+<li>Now, there are \(n\) levels of recursion and its partitions take \(1+2+...+n=O(n^2)\) time</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2bd2aed" class="outline-4">
+<h4 id="org2bd2aed"><span class="section-number-4">3.2.3</span> Average Cases</h4>
+<div class="outline-text-4" id="text-3-2-3">
+<p>
+The running time of average cases is \(O(\))nlogn
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Desmond Wang</p>
+<p class="date">Created: 2021-03-28 Sun 10:06</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
