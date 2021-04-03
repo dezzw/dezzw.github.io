@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-03 Sat 11:45 -->
+<!-- 2021-04-03 Sat 11:50 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes for Week 11</title>
@@ -65,25 +65,25 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbb93fa3">1. Fib Function</a></li>
-<li><a href="#org8391cde">2. Memoization Fib</a>
+<li><a href="#org33611fd">1. Fib Function</a></li>
+<li><a href="#orga3122ba">2. Memoization Fib</a>
 <ul>
-<li><a href="#orgda2582b">2.1. Memoized</a></li>
+<li><a href="#org04a1fb6">2.1. Memoized</a></li>
 </ul>
 </li>
-<li><a href="#org513bf70">3. Dynamic Programming Fib</a>
+<li><a href="#org0490e76">3. Dynamic Programming Fib</a>
 <ul>
-<li><a href="#orge7a00a5">3.1. Dynamic Programming</a></li>
+<li><a href="#org30bb600">3.1. Dynamic Programming</a></li>
 </ul>
 </li>
-<li><a href="#org38d95cf">4. When NOT to Use Recursion</a></li>
-<li><a href="#org80462fe">5. Compare Sorting Algorithms</a></li>
+<li><a href="#org5438cba">4. When NOT to Use Recursion</a></li>
+<li><a href="#org3d06fcb">5. Compare Sorting Algorithms</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbb93fa3" class="outline-2">
-<h2 id="orgbb93fa3"><span class="section-number-2">1</span> Fib Function</h2>
+<div id="outline-container-org33611fd" class="outline-2">
+<h2 id="org33611fd"><span class="section-number-2">1</span> Fib Function</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <b>Fibonacci sequence</b> is the sequence with elements 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ……
@@ -123,8 +123,8 @@ This method is not very effcient, since there are a lots of duplicated cases.
 </p>
 </div>
 </div>
-<div id="outline-container-org8391cde" class="outline-2">
-<h2 id="org8391cde"><span class="section-number-2">2</span> Memoization Fib</h2>
+<div id="outline-container-orga3122ba" class="outline-2">
+<h2 id="orga3122ba"><span class="section-number-2">2</span> Memoization Fib</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 <pre>
@@ -151,8 +151,8 @@ This method is not very effcient, since there are a lots of duplicated cases.
 <li>Broken when fib_mem(1000), since there are too many recursion calls.</li>
 </ul>
 </div>
-<div id="outline-container-orgda2582b" class="outline-3">
-<h3 id="orgda2582b"><span class="section-number-3">2.1</span> Memoized</h3>
+<div id="outline-container-org04a1fb6" class="outline-3">
+<h3 id="org04a1fb6"><span class="section-number-3">2.1</span> Memoized</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>The problem is that the same recursive calls are repeated over and over, redoing the same work</li>
@@ -162,8 +162,8 @@ This method is not very effcient, since there are a lots of duplicated cases.
 </div>
 </div>
 </div>
-<div id="outline-container-org513bf70" class="outline-2">
-<h2 id="org513bf70"><span class="section-number-2">3</span> Dynamic Programming Fib</h2>
+<div id="outline-container-org0490e76" class="outline-2">
+<h2 id="org0490e76"><span class="section-number-2">3</span> Dynamic Programming Fib</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre>
@@ -178,8 +178,8 @@ This method is not very effcient, since there are a lots of duplicated cases.
 </div>
 </div>
 
-<div id="outline-container-orge7a00a5" class="outline-3">
-<h3 id="orge7a00a5"><span class="section-number-3">3.1</span> Dynamic Programming</h3>
+<div id="outline-container-org30bb600" class="outline-3">
+<h3 id="org30bb600"><span class="section-number-3">3.1</span> Dynamic Programming</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Dynamic Programming is a bottom-up approach that avoids recursion</li>
@@ -188,8 +188,8 @@ This method is not very effcient, since there are a lots of duplicated cases.
 </div>
 </div>
 </div>
-<div id="outline-container-org38d95cf" class="outline-2">
-<h2 id="org38d95cf"><span class="section-number-2">4</span> When NOT to Use Recursion</h2>
+<div id="outline-container-org5438cba" class="outline-2">
+<h2 id="org5438cba"><span class="section-number-2">4</span> When NOT to Use Recursion</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Two scary sithations for recursion:
@@ -200,11 +200,11 @@ Two scary sithations for recursion:
 </ul>
 </div>
 </div>
-<div id="outline-container-org80462fe" class="outline-2">
-<h2 id="org80462fe"><span class="section-number-2">5</span> Compare Sorting Algorithms</h2>
+<div id="outline-container-org3d06fcb" class="outline-2">
+<h2 id="org3d06fcb"><span class="section-number-2">5</span> Compare Sorting Algorithms</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-<a href="http://www.sorting-algorithms.com/">demo</a>
+<a href="http://www.sorting-algorithms.com/">Comparison Demo</a>
 </p>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -251,8 +251,10 @@ Two scary sithations for recursion:
 <ul class="org-ul">
 <li>It does <b>NOT</b> mean how many <b>seconds</b> are spent in running the algorinhm</li>
 <li>It means <b>the number of setps</b> that are taken by the algorithm</li>
-<li>The running time is <b>independent of the hardware</b> on which you run the algorithm</li>
+<li>The running time is <b>independent of the hardware</b> on which you run the algorithm
+<ul class="org-ul">
 <li>It only depends on the algorithm itself</li>
+</ul></li>
 </ul>
 
 <p>
@@ -333,7 +335,7 @@ so, the followings functions are of <b>the same class</b>
 <ul class="org-ul">
 <li>\(n^2\)</li>
 <li>\(2n^2+3n\)</li>
-<li>$\frac{n^2}{165}+1130n+3.14</li>
+<li>\(\frac{n^2}{165}+1130n+3.14\)</li>
 </ul>
 <p>
 <b>that class could be called \(O(n^2)\)</b>
@@ -352,7 +354,7 @@ so, the followings functions are of <b>the same class</b>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Desmond Wang</p>
-<p class="date">Created: 2021-04-03 Sat 11:45</p>
+<p class="date">Created: 2021-04-03 Sat 11:50</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
