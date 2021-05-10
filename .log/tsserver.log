@@ -1,0 +1,13 @@
+Info 0    [23:06:54.887] Starting TS Server
+Info 1    [23:06:54.892] Version: 4.2.4
+Info 2    [23:06:54.892] Arguments: /Users/desmond/.nvm/versions/node/v16.0.0/bin/node /Users/desmond/.nvm/versions/node/v16.0.0/bin/tsserver --logFile /Users/desmond/Documents/unclealone.github.io/.log/tsserver.log --logVerbosity info --cancellationPipeName /private/var/folders/xb/279dqn9j1p93ph316tx1xc9c0000gn/T/1b3140b63ae813943a74e8484cde4842/tscancellation*
+Info 3    [23:06:54.892] Platform: darwin NodeVersion: 16 CaseSensitive: false
+Info 4    [23:06:54.892] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [23:06:54.911] Search path: /Users/desmond/Documents/unclealone.github.io/assets/js
+Info 6    [23:06:54.912] For info: /Users/desmond/Documents/unclealone.github.io/assets/js/breakpoints.min.js :: No config files found.
+Info 7    [23:06:54.916] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 8    [23:06:55.621] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 705.4725269973278ms
+Info 9    [23:06:55.622] Project '/dev/null/inferredProject1*' (Inferred)
+Info 10   [23:06:55.622] 	Files (19)
+
+Info 11   [23:06:55.622] -----------------------------------------------
